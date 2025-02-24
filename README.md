@@ -10,8 +10,8 @@ https://github.com/Kayllany04?tab=repositories
 
 # Prototipo de telas (Cadastro e Login)
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
 
 # Requisitos Funcionais:
 
