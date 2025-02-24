@@ -17,14 +17,11 @@ https://github.com/Kayllany04?tab=repositories
 
 
  Naiara: 
-O sistema deve ter o cadastro unico para cada usuario
-O sistema deve salvar os dados no banco de dados
- 
+ RF1: O cliente deve ser capaz de se cadastrar na plataforma, e também editar ou excluir seu Perfil;
+
  Kayllany: 
-O Usuario deve conseguir excluir sua conta
-O usuario pode navegar pelo site
+RF2: O cliente deve ser capaz de cadastrar um comentário;
 
  Laura:
-O usuario deve conseguir editar os dados
-o usuario deve conseguir sair da conta dela
+RF3: O cliente deve ser capaz de comentar em outros comentários;
 
