@@ -15,13 +15,17 @@ https://github.com/Kayllany04?tab=repositories
 
 # Requisitos Funcionais:
 
+O usuário deve ser capaz de se cadastrar na plataforma, editar ou excluir sua conta.
 
- Naiara: 
- RF1: O cliente deve ser capaz de se cadastrar na plataforma, e também editar ou excluir seu Perfil;
+O usuário deve ser capaz de cadastrar uma ou mais postagem.
 
- Kayllany: 
-RF2: O cliente deve ser capaz de cadastrar um comentário;
+O usuário deve ser capaz de comentár em uma ou mais postagens.
 
- Laura:
-RF3: O cliente deve ser capaz de comentar em outros comentários;
+O usuário pode contatar a empresa(GP) via whatsapp, Linkedin, instagram e YouTube através dos ícones oferecidos em nossa plataforma.
 
+O usuário poderá ter acesso às informações oferecidas em nossa plataforma, como pontos turísticos, postos de saúde, leis do estados de Florianópolis, acesso à educação escolar e informações básicas de como obter passes para os ônibus.
+
+O usuário poderá visualizar o google maps com endereços oferecidos pela nossa plataforma.
+
+
+# Requisitos não-Funcionais

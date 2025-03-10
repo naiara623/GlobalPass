@@ -1,11 +1,14 @@
 import './App.css'
-import Teste from './pages/Teste'
+// import BoasVindas from './pages/BoasVindas'
+ import Cadastro from './pages/Cadastro'
 
 function App() {
 
   return (
     <>
-     <Teste/> 
+    <Cadastro/>
+    {/* <BoasVindas/> */}
+
     </>
   )
 }
