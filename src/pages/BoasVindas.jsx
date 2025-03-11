@@ -4,34 +4,38 @@ function BoasVindas() {
   return (
     <div className='amarela-BoasVindas'>
              <div className="vermelha-BoasVindas">
-
                    <button className='botaoEntrar-boasvindas'>ENTRAR</button>
                    <button className='botaoLogin-boasvindas' >LOGIN</button>
-
-
              </div>
-               <div className="roxa-BoasVindas">
-                <div className="verdemusgo-BoasVindas"></div>
-                <div className="verdeEscuro-BoasVindas"></div>
-               </div>
+
+                  <div className="roxa-BoasVindas">
+                      <div className="verdemusgo-BoasVindas">
+                          <div className="button_BoasVindas">
+                            <button>Cadastrar</button>
+                          </div>
+                      </div>
+
+                        <div className="verdeEscuro-BoasVindas">
+                              <div className="circulo-BoasVINDAS"></div>
+                              <div className="Quadrado-BoasVINDAS"></div>
+                        </div>
+                    </div>
 
                <div className="verdeClaro-BoasVindas">
-                <div className="laranja-BoasVindas"></div>
+                   <div className="laranja-BoasVindas"></div>
                </div>
 
                <div className="rosa-BoasVindas">
-                <div className="azul-BoasVindas">
-                    <div className="marrom-BoasVindas"></div>
-                         
-                    <div className="text-BoasVindas"></div>
-                  
-                </div>
+                    <div className="azul-BoasVindas">
+                        <div className="marrom-BoasVindas"></div>
+                        <div className="text-BoasVindas"></div>
+                    </div>
+
                      <div className="preto-BoasVindas">
                             <div className="vermelhoEscuro-BoasVinda"></div>
+                       </div>
 
-                     </div>
-
-                <div className="roxoClaro-BoasVindas"></div>
+                    <div className="roxoClaro-BoasVindas"></div>
                </div>
 
                <div className="cinza-BoasVindas">

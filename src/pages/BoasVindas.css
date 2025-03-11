@@ -9,7 +9,8 @@
     display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  
+  background-color: #2E0707;
+   
 }
 .botaoEntrar-boasvindas{
 border-radius: 5px;
@@ -33,26 +34,57 @@ width: 10%;
 }
 
 .verdemusgo-BoasVindas{
-    border: 4px solid #6B8E23;
+    border: 4px solid #617e28;
     height: 100%;
     width: 50%;
+    background-color: #130000;
 }
 
 .verdeEscuro-BoasVindas{
     border: 4px solid #156c1a;
     height: 100%;
     width: 50%;
+    background-color: #130000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
 }
 
+.circulo-BoasVINDAS{
+    border: 4px solid #02ff0e;
+    height: 35%;
+    width: 25%;
+    border-radius: 170px;
+    top: 330px;
+    left: 310px;
+    position: absolute;
+    background-color: #521919;
+
+}
+.Quadrado-BoasVINDAS{
+    border: 4px solid #02ff0e;
+    height: 60%;
+    width: 30%;
+    border-radius: 90px 0 90px 0;
+    position: absolute;
+    top: 60px;
+    left: 410px;
+    background-color: #7C0F0F;
+    
+}
 .verdeClaro-BoasVindas{
     border: 4px solid rgb(140, 233, 0);
     height: 7%;
+    background-color: #420C0C;
 }
 
 .laranja-BoasVindas{
     border: 4px solid orangered;
     height: 100%;
     width: 30%;
+    background-color: #9F1313;
 } 
 
 .rosa-BoasVindas{
@@ -72,15 +104,18 @@ width: 10%;
     border: 2px solid maroon;
     height: 100%;
     width: 50%;
+    background-color: #130000;
 }
 
 .text-BoasVindas{
     border: 4px solid rgb(157, 0, 255);
     width: 50%;
+    background-color: #130000;
 }
 .cinza-BoasVindas{
 border: 4px solid grey;
 height: 14%;
+background-color: #660C0C;
 }
 
 .preto-BoasVindas{
@@ -89,6 +124,7 @@ height: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: #130000;
 }
 
 .vermelhoEscuro-BoasVinda{
