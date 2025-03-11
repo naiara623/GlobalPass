@@ -1,0 +1,106 @@
+.conteiner-inicio{
+border: 4px solid rgb(123, 34, 206);
+height: 100vh;
+background-color: #140606;
+}
+.navebar{
+   border: 3px solid #ff0000;
+   height: 8%;
+   background-color: #2E0707;
+}
+
+.conteiner-imagens{
+    border: 3px solid #56ff01;
+    height: 92%;
+display: flex;
+}
+ .imagens{
+    border: 3px solid #012bff;
+    height: 100%;
+    width: 70%;
+    right: 70px;
+ }
+
+ .comentarios{
+    border: 3px solid #256306;
+    height: 100%;
+    width: 30%;
+ }
+
+
+
+
+.linha-bonita{
+    border: 4px solid #1c4f03;
+    height: 20%;
+    background-color: #420C0C;
+}
+
+.bolinha-estranha{
+    border: 5px solid #4f0303;
+    height: 100%;
+    width: 30%;
+    background-color: #970707;
+    border-radius: 0 120px 0 0;
+}
+.os-iconis{
+    border: 5px solid #ff00a6;
+    height: 100%;
+    background-color: #140606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado-icons{
+    background-color: #2E0707;
+    border: 4px solid #db9ac4;
+    height: 77%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+}
+.estudo{
+    background-color: #990000;
+    border: 4px solid #db9ac4;
+    height: 40%;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.saude{
+    background-color: #990000;
+    border: 4px solid #db9ac4;
+    height: 40%;
+    width: 20%;
+    border-radius: 50px 0 0 50px;
+}
+
+.transporte{
+    background-color: #990000;
+    border: 4px solid #db9ac4;
+    height: 40%;
+    width: 20%;
+    border-radius: 0 50px 50px 0;
+}
+
+.conteiner-barrinha{
+    background-color: #140606;
+    border: 4px solid #db9ac4;
+    height: 5%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.barrinha{
+    background-color: #2E0707;
+    border: 4px solid #db9ac4;
+    height: 40%;  
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
