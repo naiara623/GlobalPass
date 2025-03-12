@@ -4,55 +4,93 @@ function Inicio() {
   return (
     <div className='conteiner-inicio'>
 
-<div className='navebar'>
-global pass
-</div>
+      <div className='navebar'>
+  
+      </div>
+      
+      <div className='conteiner-imagens'>
+      
+        <div className='comentario'>
 
-<div className='conteiner-imagens'>
+        </div>
+        
+        <div className='imagens'>
+        
+        </div>
+      
+      </div>
+      
+      <div className='linha-bonita'>
+      
+        <div className='bolinha-estranha'>
+      
+        </div>
+      
+      </div>
+      
+      <div className='os-iconis'>
+      
+        <div className='quadrado-icons'>
+        
+          <button className='transporte'>
+          
+          </button>
+          
+          <button className='estudo'>
+          
+          </button>
+          
+          <button className='saude'>
+          
+          </button>
+        
+        </div>
+      
+      </div>
+      
+      <div className='conteiner-barrinha'>
+        <div className='barrinha'>
+          
+        </div>
+      </div>
+      
+      <div className='conteiner-video'>
+      
+        <div className='div-texto'>
+        
+        </div>
+        
+        <div className='div-video'>
+        
+        </div>
+      
+      </div>
+      
+      <div className='conteiner-barrinha'>
+        <div className='barrinha'>
+          
+        </div>
+      </div>
+      
+      <div className='conteiner-comentarios'>
+      
+        <div className='comentarios'>
+        
+          <div className='comentar'>
+            
+          </div>
+            
+          <div className='comentado'>
 
-<div className='comentarios'>
+         </div>
 
-</div>
+        </div>
+      
+      </div>
 
-<div className='imagens'>
+      <div className='roda-pe'>
 
-</div>
-
-</div>
-
-<div className='linha-bonita'>
-
-<div className='bolinha-estranha'>
-bolinha
-</div>
-
-</div>
-
-<div className='os-iconis'>
-
-<div className='quadrado-icons'>
-
-<button className='transporte'>
-
-</button>
-
-<button className='estudo'>
-
-</button>
-
-<button className='saude'>
-
-</button>
-
-</div>
-
-</div>
-
-<div className='conteiner-barrinha'>
-  <div className='barrinha'>
-    
-  </div>
-</div>
+      </div>
 
     </div>
   )
