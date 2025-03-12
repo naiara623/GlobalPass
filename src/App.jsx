@@ -9,9 +9,15 @@ function App() {
   return (
     <>
     {/* <Cadastro/> */}
+<<<<<<< HEAD
     <BoasVindas/>
  {/* <Login/> */}
  {/* <Inicio/> */}
+=======
+    {/* <BoasVindas/> */}
+ {/* <Login/> */}
+ <Inicio/>
+>>>>>>> 7be9a63535316fea3c056f1e3041020053bc82e3
     </>
   )
 }

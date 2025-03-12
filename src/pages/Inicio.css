@@ -21,12 +21,14 @@ display: flex;
     right: 70px;
  }
 
- .comentarios{
+ .comentario{
     border: 3px solid #256306;
     height: 100%;
     width: 30%;
  }
 
+
+  
 
 
 
@@ -99,8 +101,65 @@ display: flex;
     background-color: #2E0707;
     border: 4px solid #db9ac4;
     height: 40%;  
-    width: 98%;
+    width: 99%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.conteiner-video{
+    border: 5px solid #ff00a6;
+    height: 90%;
+    background-color: #140606;
+    display: flex;
+}
+
+.div-texto{
+    background-color: #140606;
+    border: 4px solid #db9ac4;
+    height: 100%;
+    width: 50%;
+}
+
+.div-video{
+    background-color: #140606;
+    border: 4px solid #5e003d;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+}
+
+.conteiner-comentarios{
+    border: 5px solid #ff00a6;
+    height: 70%;
+    background-color: #140606;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.comentarios{
+    border: 5px solid #ff00a6;
+    border-radius: 150px 150px 0 150px ;
+    height: 80%;
+    width: 90%;
+    background-color: #780000;
+    display: flex;
+margin: 1%;
+}
+
+.comentar{ border: 5px solid #ff9100;
+    border-radius: 140px 0 0 140px ;
+    height: 100%;
+    width: 50%;}
+
+.comentado{ border: 5px solid #91ff00;
+    border-radius: 0 140px 0 0 ;
+    height: 100%;
+    width: 50%;}    
+
+.roda-pe{
+    border: 5px solid #00f7ff;
+    height: 30%;
+    background-color: #660C0C;
 }
