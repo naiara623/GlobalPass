@@ -8,6 +8,10 @@ background-color: #140606;
    height: 8%;
    background-color: #2E0707;
 }
+.img-gp{border: 4px solid rgb(123, 34, 206);
+    height: 100%;
+    width: 10%;
+}
 
 .conteiner-imagens{
     border: 3px solid #56ff01;
@@ -25,8 +29,25 @@ display: flex;
     border: 3px solid #256306;
     height: 100%;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
-
+.frases{ display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #fffb00;
+    height: 60%;
+    width: 90%;
+    color: white;
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
 
   
 
@@ -135,7 +156,7 @@ display: flex;
     background-color: #140606;
 display: flex;
 justify-content: center;
-align-items: flex-end;
+align-items: center;
 }
 
 .comentarios{
@@ -145,21 +166,32 @@ align-items: flex-end;
     width: 90%;
     background-color: #780000;
     display: flex;
-margin: 1%;
+    align-items: center;
+    justify-content: center;
+gap: 1%;
 }
 
 .comentar{ border: 5px solid #ff9100;
     border-radius: 140px 0 0 140px ;
-    height: 100%;
-    width: 50%;}
+    height: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5F0002;
+    width:  49%;}
 
 .comentado{ border: 5px solid #91ff00;
     border-radius: 0 140px 0 0 ;
-    height: 100%;
-    width: 50%;}    
+    height: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5F0002;
+    width: 49%;}    
 
 .roda-pe{
     border: 5px solid #00f7ff;
     height: 30%;
+    
     background-color: #660C0C;
 }

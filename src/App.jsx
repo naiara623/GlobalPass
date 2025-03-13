@@ -8,16 +8,13 @@ function App() {
 
   return (
     <>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
     {/* <Cadastro/> */}
-<<<<<<< HEAD
-    <BoasVindas/>
- {/* <Login/> */}
- {/* <Inicio/> */}
-=======
     {/* <BoasVindas/> */}
  {/* <Login/> */}
  <Inicio/>
->>>>>>> 7be9a63535316fea3c056f1e3041020053bc82e3
     </>
   )
 }

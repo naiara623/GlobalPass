@@ -5,12 +5,18 @@ function Inicio() {
     <div className='conteiner-inicio'>
 
       <div className='navebar'>
-  
+  <img src="global-pass.png" alt="" className='img-gp'/>
       </div>
       
       <div className='conteiner-imagens'>
       
         <div className='comentario'>
+
+<div className='frases'>
+
+<p className='frases1'>Descubra novos destinos, crie memórias inesquecíveis.</p>
+
+</div>
 
         </div>
         
