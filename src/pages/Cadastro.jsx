@@ -3,10 +3,23 @@ import './Cadastro.css';
 
 function Cadastro() {
   const [selectedOption, setSelectedOption] = useState("");
+  const [nome, setNome] = useState("");
+  const [cpf, setCpf] = useState('')
+  const [email, setEmail] = useState('')
+  const [telefone, setTelefone] = useState ('')
+  // let telefone;
+  // let idioma;
+  // let nacionalidade;
+  // let destino;
+  // let tipoVisto;
+  // let senha;
+  // let confirmaSenha;
 
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
+
 
   return (
     <div className='divAmarelo-cadastro'>
