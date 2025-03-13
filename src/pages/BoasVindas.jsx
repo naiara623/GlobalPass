@@ -59,10 +59,14 @@ function BoasVindas() {
                <div className="cinza-BoasVindas">
 
                   <div className="cinza-1-Boasvindas">
-                              <img src="whatsapp_Icone.png" alt="" />
-                      <img src="linkedin-circled-icone.png" alt="" />
-                      <img src="instagram-circle-icone.png" alt="" />
-                      <img src="youtube-play-icone.png" alt="" />
+
+                      <div className='links-boasvindas'>Links</div>
+                        <div className='containe-do-icones'>
+                          <img className='icone-whatsapp-boasvindas'src="whatsapp_Icone.png" alt="" /><p> Whatsapp</p> 
+                          <img className='icone-linkedin-boasvindas' src="linkedin-circled-icone.png" alt="" />
+                          <img className='icone-instagram-boasvindas' src="instagram-circle-icone.png" alt="" />
+                          <img className='icone-youtube-boasvindas' src="youtube-play-icone.png" alt="" />
+                      </div>
                   </div>
 
                   <div className="cinza-2-Boasvindas"></div>
