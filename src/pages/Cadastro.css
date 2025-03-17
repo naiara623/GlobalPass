@@ -369,12 +369,12 @@ input::placeholder{
     left: -1%;
    }
  
-   button:hover span {
+   .button-cadastro:hover span {
     color: rgb(120, 0, 0);
    }
  
-   button::before,
-   button::after {
+  .button-cadastro::before,
+  .button-cadastro::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -383,7 +383,7 @@ input::placeholder{
     z-index: 0;
    }
  
-   button::before {
+   .button-cadastro::before {
     content: "";
     background: #ffffff;
     width: 120%;
@@ -392,7 +392,7 @@ input::placeholder{
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
    }
  
-   button:hover::before {
+   .button-cadastro:hover::before {
     transform: translate3d(100%, 0, 0);
    }
 

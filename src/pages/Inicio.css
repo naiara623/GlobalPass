@@ -3,6 +3,9 @@ border: 4px solid rgb(123, 34, 206);
 height: 100vh;
 background-color: #140606;
 }
+
+/* ""navbar" */
+
 .navebar{
    border: 3px solid #ff0000;
    height: 8%;
@@ -12,6 +15,8 @@ background-color: #140606;
     height: 100%;
     width: 10%;
 }
+
+/* frase inspiradora */
 
 .conteiner-imagens{
     border: 3px solid #56ff01;
@@ -43,14 +48,14 @@ display: flex;
     font-size: 60px;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 40;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
 }
 
   
-
+/* linhas com bola estranha */
 
 
 .linha-bonita{
@@ -66,6 +71,9 @@ display: flex;
     background-color: #970707;
     border-radius: 0 120px 0 0;
 }
+
+/* os botões */
+
 .os-iconis{
     border: 5px solid #ff00a6;
     height: 100%;
@@ -80,13 +88,62 @@ display: flex;
     border: 4px solid #db9ac4;
     height: 77%;
     width: 70%;
+
+}
+
+.palavras-quadrado{
+    border: 4px solid #9adbb3;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ppp{
+    font-size: 40px;
+}
+
+.barrinha-branca{
+    background-color: #fff;
+    height: 50%;
+    width: 0.5%;
+}
+
+.frases1{ display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fffb00;
+    height: 10%;
+    top: 145%;
+    width: 68.5%;
+    color: white;
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      gap: 6%;
+}
+
+
+.butoes-quadrado{
+    border: 4px solid #be0c80;
+    height: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10%;
-
 }
-.estudo{
+
+
+.estudo-icon{
     background-color: #990000;
     border: 4px solid #db9ac4;
     height: 40%;
@@ -94,7 +151,7 @@ display: flex;
     border-radius: 50px;
 }
 
-.saude{
+.saude-icon{
     background-color: #990000;
     border: 4px solid #db9ac4;
     height: 40%;
@@ -102,13 +159,15 @@ display: flex;
     border-radius: 50px 0 0 50px;
 }
 
-.transporte{
+.transporte-icon{
     background-color: #990000;
     border: 4px solid #db9ac4;
     height: 40%;
     width: 20%;
     border-radius: 0 50px 50px 0;
 }
+
+/* barrinhas */
 
 .conteiner-barrinha{
     background-color: #140606;
@@ -128,6 +187,8 @@ display: flex;
     align-items: center;
 }
 
+/* vidiozinho sobre florianopolis */
+
 .conteiner-video{
     border: 5px solid #ff00a6;
     height: 90%;
@@ -140,6 +201,33 @@ display: flex;
     border: 4px solid #db9ac4;
     height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-video{
+    background-color: #140606;
+    border: 4px solid #db9ac4;
+    height: 80%;
+    width: 70%;
+}
+
+.frases2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fffb00;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 .div-video{
@@ -150,6 +238,8 @@ display: flex;
     left: 50%;
 }
 
+/* comentarios bacanudos */
+
 .conteiner-comentarios{
     border: 5px solid #ff00a6;
     height: 70%;
@@ -157,6 +247,16 @@ display: flex;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+.fazer-comentario{
+    border: 5px solid #ff00a6;
+    position: absolute;
+    height: 10%;
+    width: 30%;
+    top: 320%;
+    border-radius: 30px;
+    background-image: radial-gradient(circle 700px at 50% 50%, #C82A2A, #740808);
 }
 
 .comentarios{
@@ -180,6 +280,50 @@ gap: 1%;
     background-color: #5F0002;
     width:  49%;}
 
+    .conteiner-arrumar{
+        border: 5px solid #664c29;
+        height: 90%;
+        width:  80%; 
+    }
+
+    .arrumar1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #a7a6a4;
+        height: 80%;
+        width:  100%;
+    }
+
+    .arrumar2{
+display: flex;
+justify-content: center;
+        border: 5px solid #000000;
+        height: 20%;
+        width:  100%;
+    }
+
+.input-comentar{
+    background-image: radial-gradient(circle 500px at 50% -90%, #000000da, #ffffff);
+    box-shadow: 0px 8px 20px -10px #000000;
+    border: 5px solid #ff6c6c;
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 90%;
+    width:  80%; 
+}
+
+.button-comentar{
+    background-color: #AC0404;
+    border: 5px solid #ff6c6c;
+    border-radius: 20px;
+    height: 90%;
+    width: 40%;
+  
+}
+
+
+
 .comentado{ border: 5px solid #91ff00;
     border-radius: 0 140px 0 0 ;
     height: 97%;
@@ -188,6 +332,31 @@ gap: 1%;
     justify-content: center;
     background-color: #5F0002;
     width: 49%;}    
+
+    .ajudar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-comentado {
+        border: 4px solid pink;
+        width: 80%;
+        height:80%;
+        border-radius: 20px;
+        background: #1f0000;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .card-div{
+        height: 20%;
+        width: 100%;
+        background-color: #4f0303;
+        border: 4px solid rgb(214, 6, 40);
+      }
+
+/* nosso roda-pé */
 
 .roda-pe{
     border: 5px solid #00f7ff;
