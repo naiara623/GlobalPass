@@ -10,10 +10,10 @@ function App() {
     <>
  
 
-    {/* <Cadastro/> */}
+    <Cadastro/>
     {/* <BoasVindas/> */}
  {/* <Login/> */}
- <Inicio/>
+ {/* <Inicio/> */}
 
     </>
   )
