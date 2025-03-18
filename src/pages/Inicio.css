@@ -11,10 +11,55 @@ background-color: #140606;
    height: 8%;
    background-color: #2E0707;
 }
-.img-gp{border: 4px solid rgb(123, 34, 206);
+
+.shine {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    align-items: center;
+   display: flex;
+    border: 4px solid rgb(123, 34, 206);
     height: 100%;
-    width: 10%;
-}
+    width: 15%;
+    font-size: 2em;
+    font-weight: 900;
+    color: rgba(146, 146, 146, 0.3);
+    background: #ffffff -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        to(#222),
+        color-stop(0.5, #222)
+      ) 0 0 no-repeat;
+    background-image: -webkit-linear-gradient(
+      -40deg,
+      transparent 0%,
+      transparent 40%,
+      #222 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-background-size: 50px;
+    -webkit-animation: zezzz;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes zezzz {
+    0%,
+    10% {
+      background-position: -200px;
+    }
+    20% {
+      background-position: top left;
+    }
+    100% {
+      background-position: 200px;
+    }
+  }
 
 /* frase inspiradora */
 
