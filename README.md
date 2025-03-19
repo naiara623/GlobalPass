@@ -1,6 +1,6 @@
 # GlobalPass
 
-# Breve descrição
+
 Site para ajudar imigrantes ou emigrantes em um novo pais 
 
 # Integrantes
@@ -19,7 +19,7 @@ O usuário deve ser capaz de se cadastrar na plataforma, editar ou excluir sua c
 
 O usuário deve ser capaz de cadastrar uma ou mais postagem.
 
-O usuário deve ser capaz de comentár em uma ou mais postagens.
+O usuário deve ser capaz de comenta em uma ou mais postagens.
 
 O usuário pode contatar a empresa(GP) via whatsapp, Linkedin, instagram e YouTube através dos ícones oferecidos em nossa plataforma.
 
@@ -28,4 +28,3 @@ O usuário poderá ter acesso às informações oferecidas em nossa plataforma, 
 O usuário poderá visualizar o google maps com endereços oferecidos pela nossa plataforma.
 
 
-# Requisitos não-Funcionais

@@ -220,11 +220,41 @@ background-color: #130000;
     .containe-do-icones{
         border: 4px solid rgb(245, 217, 6);
         height: 86%;
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         gap: 5px;
-        padding: 2%;
+        padding: 2%; */
     }
+
+    .conteine-whatsapp-boasVindas{
+        border: 4px solid rgb(6, 245, 82);
+        height: 25%;
+        display: flex;
+    }
+
+    .conteine-Linkedin-boasVindas{
+        border: 4px solid rgb(6, 245, 82);
+        height: 25%;
+        display: flex;
+    }
+
+    .conteine-instagram-boasVindas{
+        border: 4px solid rgb(6, 245, 82);
+        height: 25%;
+        display: flex;
+    }
+
+    .conteine-youTube-boasVindas{
+        border: 4px solid rgb(6, 245, 82);
+        height: 25%;
+        display: flex;
+    }
+
+    .conteine--boasVindas{
+        border: 4px solid rgb(6, 245, 82);
+        height: 25%;
+    }
+
 
     .cinza-1-Boasvindas{
         border: 4px solid rgb(48, 12, 99);
@@ -247,7 +277,6 @@ background-color: #130000;
 
     .icone-whatsapp-boasvindas{
         width: 10%;
-        border: 2px solid yellow;
     }
 
     .icone-linkedin-boasvindas{
