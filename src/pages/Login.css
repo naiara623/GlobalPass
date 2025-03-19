@@ -1,5 +1,5 @@
 .Amarela-Login{
-    background-color: #130000;
+    background-color: #060A14;
     height: 100vh;
     display: flex;
 }
@@ -23,7 +23,7 @@
 .roxo-Login{
     width: 65%;
     height: 70%;
-    background-color: #9B0000;
+    background-color: #13349F;
     border-radius: 100px 0 100px 0;
 }
 
@@ -49,12 +49,12 @@ height: 15%;
 .marron-login{
     height: 100%;
     width: 70%;
-    background-color: #9B0000;
+    background-color: #13349F;
     
 }
 
 .azulClaro1-Login{
-    background-color: #9B0000;
+    background-color: #13349F;
     height: 9%;
     width: 44%;
     position: relative;
@@ -63,7 +63,7 @@ height: 15%;
 }
 
 .azulClaro2-Login{
-    background-color: #9B0000;
+    background-color: #13349F;
     height: 9%;
     width: 44%;
     position: relative;
@@ -181,7 +181,7 @@ Titulo */
 }
 
 button:hover  {
-    color: rgb(120, 0, 0);
+    color: #13349F;
    }
 
    button span {

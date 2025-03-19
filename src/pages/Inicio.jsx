@@ -9,7 +9,7 @@ function Inicio() {
 </style> */}
 
       <div className='navebar'>
-  <img src="global-pass.png" alt="" className='img-gp'/>
+  <div class="shine">GLOBAL PASS</div>
       </div>
       
       <div className='conteiner-imagens'>

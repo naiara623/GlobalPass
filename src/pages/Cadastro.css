@@ -1,19 +1,19 @@
 .divAmarelo-cadastro{
-    border: 4px solid rgb(0, 0, 0);
-    background-color: #000000;
+    border: 4px solid #060A14;
+    background-color: #060A14;
     height: 100vh;
     display: flex;
 }
 
 .divVermelha1-cadastro{
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid #060A14;
     height: 100%;
     width: 20%;
 }
 
 .divimg1-cadastro{
-    border: 2px solid #9B0000;
-    background-color: #9B0000;
+    border: 2px solid #13349F;
+    background-color: #13349F;
     width: 60%;
     height: 8%;
     position: relative;
@@ -23,8 +23,8 @@
 }
 
 .divimg2-cadastro{
-    border: 2px solid #9B0000;
-    background-color: #9B0000;
+    border: 2px solid #13349F;
+    background-color: #13349F;
     width: 60%;
     height: 8%;
     position: relative;
@@ -34,7 +34,7 @@
 }
 
 .divAzul-cadastro{
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid #060A14;
     height: 100%;
    width: 60%;
    display: flex;
@@ -43,60 +43,60 @@
 }
 
 .divVermelha2-cadastro{
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid #060A14;
     height: 100%;
     width: 20%;
 }
 
 .divRoxa-cadastro{
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid #060A14;
     height: 80%;
     width: 90%; 
 }
 
 .divVerde1-cadastro{
-    border: 2px solid #9B0000;
+    border: 2px solid #13349F;
     width: 100%;
     height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #9B0000;
+    background-color: #13349F;
     border-radius: 200px 0 0 0;
 }
 
 .divLaranja1-cadastro{
-    border: 2px solid #9B0000;
+    border: 2px solid #13349F;
     width: 50%;
     height: 100%;
-    background-color: #9B0000;
+    background-color: #13349F;
 }
 
 .divPreta-cadastro{
-    border: 2px solid black;
+    border: 2px solid #060A14;
     width: 1%;
     height: 100%;
-    background-color: black;
+    background-color: #060A14;
 } 
 
 .divLaranja2-cadastro{
-    border: 2px solid #9B0000;
+    border: 2px solid #13349F;
     width: 50%;
     height: 100%;
-    background-color: #9B0000;
+    background-color: #13349F;
 } 
 
 .divVerdeEscuro-cadastro{
-    border: 2px solid #9B0000;
+    border: 2px solid #13349F;
     height: 71%;
     display: flex;
 }
 
 .divVerde2-cadastro{
-    border: 2px solid #9B0000;
+    border: 2px solid #13349F;
     width: 100%;
     height: 14%;
-    background-color: #9B0000;
+    background-color: #13349F;
     border-radius: 0 0 200px 0;
 }
 
@@ -366,11 +366,11 @@ input::placeholder{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 100%;
-    left: -1%;
+    left: -1%; 
    }
  
    .button-cadastro:hover span {
-    color: rgb(120, 0, 0);
+    color: #13349F;
    }
  
   .button-cadastro::before,
