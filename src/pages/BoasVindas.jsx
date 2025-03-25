@@ -64,7 +64,7 @@ function BoasVindas() {
                         <div className='containe-do-icones'>
 
                             <div className="conteine-whatsapp-boasVindas">
-                               <img className='icone-whatsapp-boasvindas'src="whatsapp_Icone.png" alt="" /> <p className='nome-WTS'>Whatsapp</p> 
+                               <img className='icone-whatsapp-boasvindas'src="whatsapp_Icone.png" alt="" /> <p className='nome-WTS'>WhatsApp</p> 
                             </div>
 
                             <div className="conteine-Linkedin-boasVindas">
@@ -72,11 +72,11 @@ function BoasVindas() {
                             </div>
 
                             <div className="conteine-instagram-boasVindas">
-                               <img className='icone-instagram-boasvindas' src="instagram-circle-icone.png" alt="" /><p  className='nome-Linke-boasvindas'>Intagram</p> 
+                               <img className='icone-instagram-boasvindas' src="instagram-circle-icone.png" alt="" /><p  className='nome-instagram-boasvindas'>Instagram</p> 
                             </div>
 
                             <div className="conteine-youTube-boasVindas">
-                                <img className='icone-youtube-boasvindas' src="youtube-play-icone.png" alt="" /><p  className='nome-Linke-boasvindas'>YouTube</p> 
+                                <img className='icone-youtube-boasvindas' src="youtube-play-icone.png" alt="" /><p  className='nome-youtube-boasvindas'>YouTube</p> 
                             </div>
                       </div>
                   </div>
