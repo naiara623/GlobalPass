@@ -40,11 +40,11 @@ function BoasVindas() {
 
                      <div className="preto-BoasVindas">
 
-                              <div className="verde-claro2-Boasvindas">
+                              <div className="sobreNos-Boasvindas">
                                 <p>Sobre Nós</p>
                               </div>
                               <div className="cinza2-Boasvindas">
-                                      <div className="vermelhoEscuro-BoasVinda">
+                                      <div className="conteine-do-texto2-BoasVinda">
                                   <p className='texto2-BoasVindas'>Bem-vindo ao GlobalPass! Somos uma equipe focada em ajudar imigrantes em sua nova jornada em Florianópolis. Neste site, você encontrará informações sobre educação, saúde, transportes e muito mais. </p>
                                      </div>
                               </div>
@@ -58,7 +58,7 @@ function BoasVindas() {
 
                <div className="cinza-BoasVindas">
 
-                  <div className="cinza-1-Boasvindas">
+                  <div className="conteine-dos-links-Boasvindas">
 
                       <div className='links-boasvindas'>Links</div>
                         <div className='containe-do-icones'>
@@ -81,7 +81,31 @@ function BoasVindas() {
                       </div>
                   </div>
 
-                  <div className="cinza-2-Boasvindas"></div>
+                  <div className="cinza-2-Boasvindas">
+
+                      <div className="conteine-contato-boasvindas">
+                          <div className="contato-BoasVindas">Contatos</div>
+                      </div>
+
+                      <div className="conteine-icone-telefone-BoasVindas">
+                          <img className='icone-telefone' src="icone-telefone.png" alt="" />
+                          <p className='numero-contato-boasvindas'>(00) 0000-0000</p>
+                      </div>
+
+                      <div className="conteine-icone-carta-BoasVindas">
+                          <img className='icone-carta' src="icone-carta.png" alt="" />
+                          <p className='Email-boasvindas'>Globalpass@gmail.com</p>
+                      </div>
+
+
+
+
+
+
+                  </div>
+
+
+
                   <div className="cinza-3-Boasvindas"></div>
 
              
