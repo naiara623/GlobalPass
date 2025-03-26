@@ -9,7 +9,7 @@ function App() {
   return (
     <>
  
-
+   {/* <TermosUso/> */}
     {/* <Cadastro/> */}
     {/* <BoasVindas/> */}
     {/* <Login/>  */}

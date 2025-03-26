@@ -41,12 +41,13 @@ background-color: #060A14;
       #4580b1 50%,
       transparent 60%,
       transparent 100%
+      
     );
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     -webkit-background-size: 50px;
     -webkit-animation: zezzz;
     -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite; */
   }
   @-webkit-keyframes zezzz {
     0%,
@@ -59,7 +60,7 @@ background-color: #060A14;
     100% {
       background-position: 200px;
     }
-  }
+  } 
 
 /* frase inspiradora */
 
