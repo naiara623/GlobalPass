@@ -11,9 +11,9 @@ function App() {
  
 
     {/* <Cadastro/> */}
-    <BoasVindas/>
+    {/* <BoasVindas/> */}
     {/* <Login/>  */}
-    {/* <Inicio/> */}
+    <Inicio/>
 
     </>
   )

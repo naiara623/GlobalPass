@@ -2,75 +2,75 @@ import './Inicio.css'
 
 function Inicio() {
   return (
-    <div className='conteiner-inicio'>
+    <div className='inicio-conteiner-inicio'>
 
    {/* <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style> */}
 
-      <div className='navebar'>
-  <div class="shine">GLOBAL PASS</div>
+      <div className='inicio-navebar'>
+  <div class="inicio-shine">GLOBAL PASS</div>
       </div>
       
-      <div className='conteiner-imagens'>
+      <div className='inicio-conteiner-imagens'>
       
-        <div className='comentario'>
+        <div className='inicio-comentario'>
             
-            <p className='frases'>Descubra novos destinos, crie memórias inesquecíveis.</p>
+            <p className='inicio-frases'>Descubra novos destinos, crie memórias inesquecíveis.</p>
             
         </div>
         
-        <div className='imagens'>
+        <div className='inicio-imagens'>
         
-<div className='imagem-1'><img src="" alt="" /></div>
-<div className='imagem-2'><img src="" alt="" /></div>
-<div className='imagem-3'><img src="" alt="" /></div>
+<div className='inicio-imagem-1'><img src="" alt="" /></div>
+<div className='inicio-imagem-2'><img src="" alt="" /></div>
+<div className='inicio-imagem-3'><img src="" alt="" /></div>
 
         </div>
       
       </div>
       
-      <div className='linha-bonita'>
+      <div className='inicio-linha-bonita'>
       
-        <div className='bolinha-estranha'>
+        <div className='inicio-bolinha-estranha'>
       
         </div>
       
       </div>
       
-      <div className='os-iconis'>
+      <div className='inicio-os-iconis'>
       
-        <div className='quadrado-icons'>
+        <div className='inicio-quadrado-icons'>
         
-<div className='palavras-quadrado'>
-<h2 className='frases'>Nossos serviços</h2>
+<div className='inicio-palavras-quadrado'>
+<h2 className='inicio-frases'>Nossos serviços</h2>
 </div>
 
 
-<div className='butoes-quadrado'>
-<div className='frases1'>
-<p className='ppp'>
+<div className='inicio-butoes-quadrado'>
+<div className='inicio-frases1'>
+<p className='inicio-ppp'>
 Transporte
 </p>
-<div className='barrinha-branca'></div>
-<p className='ppp'>
+<div className='inicio-barrinha-branca'></div>
+<p className='inicio-ppp'>
 Processo de ensino 
 </p>
-<div className='barrinha-branca'></div>
-<p className='ppp'>
+<div className='inicio-barrinha-branca'></div>
+<p className='inicio-ppp'>
 Saúde
 </p>
 </div>
 
-          <button className='transporte-icon'>
+          <button className='inicio-transporte-icon'>
           
           </button>
           
-          <button className='estudo-icon'>
+          <button className='inicio-estudo-icon'>
           
           </button>
           
-          <button className='saude-icon'>
+          <button className='inicio-saude-icon'>
 
           </button>
 </div>
@@ -79,69 +79,65 @@ Saúde
       
       </div>
       
-      <div className='conteiner-barrinha'>
-        <div className='barrinha'>
+      <div className='inicio-conteiner-barrinha'>
+        <div className='inicio-barrinha'>
           
         </div>
       </div>
       
-      <div className='conteiner-video'>
+      <div className='inicio-conteiner-video'>
       
-        <div className='div-texto'>
+        <div className='inicio-div-texto'>
 
-<div className='texto-video'>
+<div className='inicio-texto-video'>
 
-        <p className='frases2'>Florianópolis, capital de Santa Catarina, é uma ilha no sul do Brasil famosa por suas praias, natureza e qualidade de vida. A cidade combina história e modernidade, com pontos turísticos como a Lagoa da Conceição e a Ponte Hercílio Luz. Sua economia se destaca no turismo, tecnologia e pesca artesanal, enquanto a cultura açoriana influencia suas festas e gastronomia à base de frutos do mar.</p>
+        <p className='inicio-frases2'>Florianópolis, capital de Santa Catarina, é uma ilha no sul do Brasil famosa por suas praias, natureza e qualidade de vida. A cidade combina história e modernidade, com pontos turísticos como a Lagoa da Conceição e a Ponte Hercílio Luz. Sua economia se destaca no turismo, tecnologia e pesca artesanal, enquanto a cultura açoriana influencia suas festas e gastronomia à base de frutos do mar.</p>
         
 </div>
 
         </div>
         
-        <div className='div-video'>
+        <div className='inicio-div-video'>
         
         </div>
       
       </div>
       
-      <div className='conteiner-barrinha'>
-        <div className='barrinha'>
+      <div className='inicio-conteiner-barrinha'>
+        <div className='inicio-barrinha'>
           
         </div>
       </div>
       
-      <div className='conteiner-comentarios'>
+      <div className='inicio-conteiner-comentarios'>
       
-      <div className='fazer-comentario'></div>
+      <div className='inicio-fazer-comentario'></div>
 
-        <div className='comentarios'>
+        <div className='inicio-comentarios'>
         
-          <div className='comentar'>
+          <div className='inicio-comentar'>
 
-            <div className='conteiner-arrumar'>
+            <div className='inicio-conteiner-arrumar'>
 
-<div className='arrumar1'>
-                <input className='input-comentar' type="text" />
+<div className='inicio-arrumar1'>
+                <input className='inicio-input-comentar' type="text" />
 </div>
 
-<div className='arrumar2'>
-                <button className='button-comentar'></button>
+<div className='inicio-arrumar2'>
+                <button className='inicio-button-comentar'></button>
 </div>
 
             </div>
 
           </div>
             
-          <div className='comentado'>
+          <div className='inicio-comentado'>
 
 
 
-<div className='div-comentado'>
+<div className='inicio-div-comentado'>
 
-<div className='card-div'></div>
-<div className='card-div'></div>
-<div className='card-div'></div>
-<div className='card-div'></div>
-<div className='card-div'></div>
+
 
 </div>
 
@@ -154,7 +150,7 @@ Saúde
       
       </div>
 
-      <div className='roda-pe'>
+      <div className='inicio-roda-pe'>
 
       </div>
 
