@@ -1,0 +1,36 @@
+.divAmarela-termos{
+    border: 3px solid yellow;
+    height: 100vh;
+    display: flex;
+}
+
+.DivVermelha1-termos{
+ border: 2px solid red;
+ height: 100%;
+ width: 20%;
+
+}
+
+.DivVermelha2-termos{
+    border: 2px solid red;
+    height: 100%;
+    width: 20%;
+    left: 60%;
+   }
+
+   .DivAzul-termos{
+    border: 2px solid blue;
+    width: 60%;
+   }
+
+   .DivRoxa-termos{
+    border: 4px solid rgb(123, 66, 1);
+    width: 100%;
+    height: 20%;
+   }
+
+   .DivMarrom-termos{
+    border: 4px solid purple;
+    width: 100%;
+    height: 100%;
+   }

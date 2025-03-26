@@ -1,6 +1,7 @@
 import './App.css'
-// import Inicio from './pages/Inicio'
-import Login from './pages/Login'
+import TermosUso from './pages/TermosUso'
+// // import Inicio from './pages/Inicio'
+// import Login from './pages/Login'
 // import BoasVindas from './pages/BoasVindas'
 //  import Cadastro from './pages/Cadastro'
 
@@ -9,10 +10,10 @@ function App() {
   return (
     <>
  
-
+   <TermosUso/>
     {/* <Cadastro/> */}
     {/* <BoasVindas/> */}
- <Login/> 
+ {/* <Login/>  */}
  {/* <Inicio/> */}
 
     </>
