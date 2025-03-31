@@ -119,13 +119,31 @@ Saúde
 
             <div className='inicio-conteiner-arrumar'>
 
+<div className='inicio-bloco'>
+
 <div className='inicio-arrumar1'>
                 <input className='inicio-input-comentar' type="text" />
 </div>
 
 <div className='inicio-arrumar2'>
+
+<div className='inicio-de-emoje'>
+                <button className='inicio-button-emoje'></button>
+</div>
+
+<div className='inicio-de-imagem'>
+                <button className='inicio-button-imagem'></button>
+</div>
+
+<div className='inicio-de-comentar'>
                 <button className='inicio-button-comentar'></button>
 </div>
+</div>
+
+
+
+</div>
+
 
             </div>
 
