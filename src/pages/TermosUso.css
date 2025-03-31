@@ -115,3 +115,29 @@
     font-size: 30px;
     color: #FFFFFF;
 }
+
+
+
+.Aceito-termos{
+    color: #EAF4F4;
+    margin-left: 2%;
+    font-size: 140%;
+    /* border: 2px solid; */
+    width: 90%;
+    margin-top: -0.1%;
+    /* border: 2px solid red; */
+  }
+
+  .arrow{
+    border: 4px solid rgb(255, 255, 255);
+    margin-left: 4%;
+    margin-top: -1.2%;
+    
+  }
+
+  .arrow-termos{
+    /* border: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+  }
