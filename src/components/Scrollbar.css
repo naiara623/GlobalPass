@@ -1,0 +1,27 @@
+/* Estilizando a scrollbar */
+.scroll-container {
+    width: 300px;
+    height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Para Firefox */
+}
+
+/* Para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
