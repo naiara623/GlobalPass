@@ -1,5 +1,6 @@
 import './BoasVindas.css'
 
+
 function BoasVindas() {
   return (
     <div className='amarela-BoasVindas'>
@@ -35,7 +36,12 @@ function BoasVindas() {
                         <div className="marrom-BoasVindas">
                             <p className='texto-boasvinda'>Cada imigrante tem uma história. Vamos escrever a sua juntos!</p>
                         </div>
-                        <div className="divRoxoEscuro-BoasVindas"></div>
+                        <div className="divRoxoEscuro-BoasVindas">
+
+                            <div className='img-beiraM-boasvindas'  >
+                                <img src="Foto-beira-mar-norte.png" alt="" />
+                            </div>
+                        </div>
                     </div>
 
                      <div className="preto-BoasVindas">
