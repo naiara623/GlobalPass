@@ -5,7 +5,7 @@
 
 # Kayllany/Linkedin
 
+[Linkedin](https://www.linkedin.com/posts/kayllany-ketylly-da-silva-lima-022a52312_o-globalpass-%C3%A9-um-site-dedicado-a-imigrantes-activity-7312559591446257664-Fp8g?utm_source=share&utm_medium=member_android&rcm=ACoAAE-IepoB3M1JIZ2-8jio22tNZ619IjTXaRw)
+
 # Laura/Youtube
 
-# Link do Figma
-[Figma](https://www.figma.com/design/FO2W79j3uIpQj9vex1nWEU/GlobalPass?node-id=0-1&p=f&t=fRLAKnY8K8Ey3bEj-0) 

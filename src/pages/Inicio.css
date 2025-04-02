@@ -16,51 +16,44 @@ background-color: #060A14;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
+    
+    display: flex;
     align-items: center;
-   display: flex;
+    justify-content: center; /* Centraliza o texto */
+    
     border: 4px solid rgb(123, 34, 206);
     height: 100%;
     width: 15%;
+    
     font-size: 2em;
     font-weight: 900;
-    color: rgba(146, 146, 146, 0.3);
-    background: #ffffff -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        from(#043053),
-        to(#043053),
-        color-stop(0.5, #043053)
-      ) 0 0 no-repeat;
-    background-image: -webkit-linear-gradient(
-      -40deg,
-      transparent 0%,
-      transparent 40%,
-      #4580b1 50%,
-      transparent 60%,
-      transparent 100%
-      
+    color: rgba(0, 0, 0, 0.726);
+    
+    background: linear-gradient(
+        -50deg,
+        transparent 0%,
+        transparent 40%,
+        #0087f5 50%,
+        transparent 60%,
+        transparent 100%
     );
-    /* -webkit-background-clip: text;
-    -webkit-background-size: 50px;
-    -webkit-animation: zezzz;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite; */
-  }
-  @-webkit-keyframes zezzz {
-    0%,
-    10% {
-      background-position: -200px;
-    }
-    20% {
-      background-position: top left;
+    background-size: 100% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    animation: shine 8s infinite linear;
+}
+
+/* Animação do brilho */
+@keyframes shine {
+    0% {
+        background-position: -200px;
     }
     100% {
-      background-position: 200px;
+        background-position: 200px;
     }
-  } 
+}
 
 /* frase inspiradora */
 
@@ -302,7 +295,8 @@ align-items: center;
     width: 30%;
     top: 320%;
     border-radius: 30px;
-    background-image: radial-gradient(circle 700px at 50% 50%, #C82A2A, #740808);
+    background-image: radial-gradient(circle 1000px at 50% 50%, #0026A1, #8193ff
+    );
 }
 
 .inicio-comentarios{
@@ -310,7 +304,7 @@ align-items: center;
     border-radius: 150px 150px 0 150px ;
     height: 80%;
     width: 90%;
-    background-color: #780000;
+    background-color: #1E2F83;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,12 +313,12 @@ gap: 1%;
 
 .inicio-comentar{ border: 5px solid #ff9100;
     border-radius: 140px 0 0 140px ;
-    height: 97%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5F0002;
-    width:  49%;}
+    background-color: #001E5F;
+    width:  48%;}
 
     .inicio-conteiner-arrumar{
         border: 5px solid #664c29;
@@ -332,12 +326,23 @@ gap: 1%;
         width:  80%; 
     }
 
+.inicio-bloco{background-image: radial-gradient(circle 800px at 50% -150%, #022e68d7, #596FB8);
+background-color: #596FB8;
+    border: 5px solid #00ff95;
+    height: 100%;
+    width:  100%;
+border-radius: 20px;
+
+
+
+}
+
     .inicio-arrumar1{
         display: flex;
         justify-content: center;
         align-items: center;
         border: 5px solid #a7a6a4;
-        height: 80%;
+        height: 70%;
         width:  100%;
     }
 
@@ -345,39 +350,79 @@ gap: 1%;
 display: flex;
 justify-content: center;
         border: 5px solid #000000;
-        height: 20%;
+        height: 30%;
         width:  100%;
     }
 
 .inicio-input-comentar{
-    background-image: radial-gradient(circle 500px at 50% -90%, #000000da, #ffffff);
+    background-image: radial-gradient(circle 800px at 50% -150%, #022e6891, #B0C7F2);
     box-shadow: 0px 8px 20px -10px #000000;
-    border: 5px solid #ff6c6c;
-    background-color: #ffffff;
-    border-radius: 20px;
-    height: 90%;
-    width:  80%; 
+    border: 5px solid #001E5F;
+    background-color: #B0C7F2;
+
+    height: 80%;
+    width:  90%; 
 }
 
-.inicio-button-comentar{
-    background-color: #AC0404;
-    border: 5px solid #ff6c6c;
+.inicio-de-emoje{  display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #917600a4;
+    height: 100%;
+    width:  20%; 
+}
+
+.inicio-button-emoje{
+    background-color: #819AD8;
+    border: 5px solid #001E5F;
     border-radius: 20px;
-    height: 90%;
-    width: 40%;
+    height: 80%;
+    width: 80%;
   
 }
 
 
+.inicio-de-imagem{  display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #f3e192a4;
+    height: 100%;
+    width:  20%; 
+}
+
+.inicio-button-imagem{
+    background-color: #819AD8;
+    border: 5px solid #001E5F;
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+  
+}
+.inicio-de-comentar{  display: flex;
+    align-items: center;
+    border: 5px solid #917600a4;
+    height: 100%;
+    width:  60%; 
+}
+.inicio-button-comentar{
+    margin-left: 33%;
+    background-color: #819AD8;
+    border: 5px solid #001E5F;
+    border-radius: 20px;
+    height: 80%;
+    width: 60%;
+    
+}
+
 
 .inicio-comentado{ border: 5px solid #91ff00;
     border-radius: 0 140px 0 0 ;
-    height: 97%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5F0002;
-    width: 49%;}    
+    background-color: #001E5F;
+    width: 48%;}    
 
     .inicio-ajudar{
         display: flex;
@@ -408,5 +453,5 @@ justify-content: center;
     border: 5px solid #00f7ff;
     height: 30%;
     
-    background-color: #660C0C;
+    background-color: #0F3275;
 }
