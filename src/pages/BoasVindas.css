@@ -123,7 +123,7 @@
 } 
 
 .rosa-BoasVindas{
-    border: 2px solid rgb(255, 37, 179);
+    /* border: 2px solid rgb(255, 37, 179); */
     height: 51%;
     position: relative;
     top: 0%;
@@ -136,7 +136,7 @@
 }
 
 .marrom-BoasVindas{
-    border: 4px solid rgb(128, 5, 5);
+    border: 4px solid rgb(111, 54, 4);
     height: 100%;
     width: 50%;
     background-color:#060A14;
@@ -154,12 +154,19 @@ color: #ffffff;
     border: 4px solid rgb(148, 9, 234);
     width: 50%;
     background-color:#060A14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
+.img-beiraM-boasvindas{
+    width: 55%;
+   
+ }
 
 .preto-BoasVindas{
-border: 4px solid rgb(220, 227, 5);
+/* border: 4px solid rgb(220, 227, 5); */
 height: 50%;
 /* display: flex;
 justify-content: center;
@@ -208,7 +215,7 @@ background-color:#060A14;
     }
 
     .links-boasvindas{
-        border: 4px solid rgb(246, 8, 8);
+        /* border: 4px solid rgb(246, 8, 8); */
         height: 14%;
         display: flex;
         justify-content: center;
@@ -223,7 +230,7 @@ background-color:#060A14;
     }
 
     .conteine-whatsapp-boasVindas{
-        border: 4px solid rgb(6, 245, 82);
+        /* border: 4px solid rgb(6, 245, 82); */
         height: 25%;
         display: flex;
        padding-left: 7%;
@@ -263,7 +270,7 @@ background-color:#060A14;
     }
 
     .conteine-contato-boasvindas{
-        border: 4px solid #ffffff;
+        /* border: 4px solid #ffffff; */
         height: 14%;
         display: flex;
         justify-content: center;
@@ -273,7 +280,7 @@ background-color:#060A14;
 
     .conteine-icone-telefone-BoasVindas{
       height: 22%;
-       border: 4px solid #00439B;
+       /* border: 4px solid #00439B; */
        display: flex;
     }
     
@@ -282,14 +289,26 @@ background-color:#060A14;
         height: 70%;
     }
 
+    .numero-contato-boasvindas{
+        padding-left: 5%;
+        padding-top: 2%;
+        color: #ffffff;
+        font-size: 130%;
+
+    }
+
+    
+
     .Email-boasvindas{
         padding-left: 4%;
         padding-top: 2%;
+        color: #ffffff;
+        font-size: 130%;
     }
     
     .conteine-icone-carta-BoasVindas{
         height: 22%;
-         border: 4px solid #00439B;
+         /* border: 4px solid #00439B; */
          display: flex;
       }
 
@@ -298,7 +317,7 @@ background-color:#060A14;
         height: 70%;
     }
 
-
+666666666666666666666666666666
 
 
     .cinza-3-Boasvindas{

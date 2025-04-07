@@ -38,9 +38,12 @@ function BoasVindas() {
                         </div>
                         <div className="divRoxoEscuro-BoasVindas">
 
-                            <div className='img-beiraM-boasvindas'  >
-                                <img src="Foto-beira-mar-norte.png" alt="" />
+                            <div>
+                                <img className='img-beiraM-boasvindas' src="Foto-beira-mar-norte.png" alt="" />
                             </div>
+
+                            <div className=""></div>
+
                         </div>
                     </div>
 
