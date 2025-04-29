@@ -1,0 +1,396 @@
+.amarela-Cadastro{
+    background-color: #F9FAFB;
+    height: 100vh;
+    display: flex;
+}
+
+.azul-Cadastro{
+    height: 99%;
+    width: 20%;
+    display: flex;
+}
+
+.rosa-Cadastro{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vermelha-Cadastro{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verde-Cadastro{
+    background-color: #3B444F;
+    width: 25%;
+    height: 100vh;
+}
+
+.marrom-Cadastro{
+    background-color: #545D69;
+    width: 15%;
+    height: 100vh;
+}
+
+.roxa-Cadastro{
+    background-color: #2D405A;
+    width: 25%;
+    height:5%;
+    border-radius: 100%;
+    position: relative;
+    top: 5%;
+}
+
+.verdeClaro-Cadastro{
+    width: 80%;
+    height: 90%;
+}
+
+.azulEscuro-Cadastro{
+    background-color: #3B444F;
+    width: 100%;
+    height: 15%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rosaEscuro-Cadastro{
+    background-color: #3B444F;
+    width: 100%;
+    height: 70%;
+    display: flex;
+
+
+}
+
+.roxaClaro-Cadastro{
+    background-color: #3B444F;
+    width: 100%;
+    height: 15%;
+    border-radius:0 0 20px 20px;  
+    display: flex;            
+    justify-content: center;
+}
+
+.Input-Cadastro1{
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center;
+    gap: 15px;
+}
+.Input-Cadastro2{
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.3%;
+}
+
+.divDentroDeOutra-Cadastro{
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.DivDoOutroLado-Cadastro{
+    width: 50%;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Divs inputs */
+.nome-Cadastro{
+    height: 71px;
+    width: 74%;
+    /* border: 2px solid red; */
+}
+
+.cpf-Cadastro{
+    height: 50px;
+    width: 74% 
+}
+
+/* Titulos */
+
+.titulo-Cadastro{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 48px;
+
+}
+
+/* Input */
+.vistoIn-Cadastro{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    height: 65%;
+}
+
+select.vistoIn-Cadastro:valid {
+    background-color: transparent; /* fundo branco quando uma opção válida for escolhida */
+    color: white;
+  }
+
+  select.vistoIn-Cadastro{
+    background-color: #2e3642; /* fundo do select fechado */
+    color: black;              /* texto dentro do select */
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+  }
+
+  select.vistoIn-Cadastro:focus{
+    color: black;
+  }
+
+  select {
+    background-color: #f0f0f0;  /* cor de fundo do select */
+    border: 2px solid #333;     /* borda do select */
+    border-radius: 8px;         /* borda arredondada */
+    padding: 10px;              /* espaço interno */
+    font-size: 16px;            /* tamanho da fonte */
+    width: 100%;                /* largura do select */
+    box-sizing: border-box;     /* inclui a borda e o padding na largura */
+  }
+
+
+.NomeIn-Cadastro{
+    width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  height: 55%;
+}
+
+.cpfIn-Cadastro{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    height: 60%;
+}
+
+.EmaIn-Cadastro{
+    width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  height: 100%;
+}
+
+.TeleIn-Cadastro{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    height: 100%;
+}
+
+.IdiIn-Cadastro{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    height: 100%;
+}
+
+.nacioIn-Cadastro{
+    width: 100%;
+    margin-bottom: 15px;
+    /* padding: 10px; */
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+   height: 100%;
+}
+
+
+
+/* Label */
+
+.nomeLabel-Cadastro{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   left: 3%;
+}
+
+.Cpf-Cadastro{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 22%;
+}
+
+.email-Cadastro{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 20%; 
+}
+
+.telefone-cadastro{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 17%;
+}
+
+.Idioma-cadastro{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 8%;
+}
+
+/* CHECBOX */
+
+.checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+
+  .checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #7C8D69;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: #7C8D69;
+  }
+
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+    background: #7C8D69;
+    border-color: #7C8D69;
+    animation: wave-46 0.4s ease;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+
+  @keyframes wave-46 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+
+  span{
+    color: #FFFFFF;
+  }
+
+  .ButtonCa-Cadastrar{
+    background-color: #F9FAFB;
+    color: #2D405A;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 100%;
+  }
+
+  .Button-Cadastro{
+    width: 40%;
+    height: 40%;
+  }
+
+
+  .imgSenha-Cadastro{
+    width: 26px;
+    position: relative;
+    left: 80%;
+    top: -47px;
+  }
