@@ -101,14 +101,16 @@
 }
 
 .divDentroDeOutra-Cadastro{
-width: 50%;
+  border: 2px solid red;
+width: 60%;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 
 .DivDoOutroLado-Cadastro{
-    width: 50%;
+  border: 2px solid white;
+    width: 40%;
     display: flex;
 justify-content: center;
 align-items: center;
@@ -116,8 +118,9 @@ align-items: center;
 
 /* Divs inputs */
 .nome-Cadastro{
-    height: 71px;
-    width: 74%;
+  /* border: 2px solid white; */
+    height: 78px;
+    width: 75%;
     /* border: 2px solid red; */
 }
 
@@ -144,7 +147,7 @@ align-items: center;
     border-radius: 10px;
     background-color: transparent;
     color: rgb(0, 0, 0);
-    height: 65%;
+    height: 55%;
 }
 
 select.vistoIn-Cadastro:valid {
@@ -191,7 +194,7 @@ select.vistoIn-Cadastro:valid {
   border-radius: 10px;
   background-color: transparent;
   color: white;
-  height: 55%;
+  height: 39%;
 }
 
 .cpfIn-Cadastro{
@@ -296,6 +299,7 @@ select.vistoIn-Cadastro:valid {
   }
 
   .checkbox-wrapper-46 .cbx {
+    /* border: 2px solid black; */
     margin: auto;
     -webkit-user-select: none;
     user-select: none;
@@ -393,4 +397,42 @@ select.vistoIn-Cadastro:valid {
     position: relative;
     left: 80%;
     top: -47px;
+  }
+
+  .divDentroDeOutra-Cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .erro-msg {
+    border: 2px solid blue;
+    color: red;
+    font-size: 0.85rem;
+    margin-top: -5%;
+    margin-left: 4%;
+  }
+ 
+  .erro-wrapper {
+    margin-top: 4px;
+  }
+  
+  .erro-msg {
+    color: red;
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Erros{
+    height: 15%;
+    position: relative;
+    top: -39%;
+  }
+
+  .erros{
+    height: 15%;
+    position: relative;
+    top: 1%;
   }
