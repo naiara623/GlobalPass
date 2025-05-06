@@ -61,9 +61,9 @@ function TermosUso() {
             <p className='Tra'> <br /> <br /><br />  <br /><br /></p>
         </div>
       )}
- <div className="arrow-termos">
 
- 
+
+ <div className="arrow-termos">
 <button className={`toggle-button ${isOpen1 ? "open1" : ""}`} onClick={toggleContent1}>
 <span className='arrow'> ▶ </span>
 </button><p className='Objetivo-Termos'>Objetivo do site</p>
