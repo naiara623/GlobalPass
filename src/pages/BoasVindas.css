@@ -106,7 +106,7 @@
     width: 25%;
     height: 25%;
     border-radius: 50px;
-    background-color: #1B3864;
+    background-color: #2D405A;
     color: aliceblue;
 }
 
@@ -126,39 +126,181 @@
 .Rosa-BoasVindas{
     border: 4px solid rgb(235, 15, 191);
     width: 100%;
-    height: 25%;
-    display: flex;
+    height: 30%;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .roxo-BoasVindas{
-    border: 4px solid rgb(103, 13, 133);
+    /* border: 4px solid rgb(103, 13, 133); */
     width: 100%;
-    height: 20%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .marrom-BoasVinda{
-    border: 4px solid rgb(98, 53, 8);
+    /* border: 4px solid rgb(98, 53, 8); */
     width: 100%;
-    height: 13%;
+    height: 10%;
     background-color: #3B444F;
 
 }
 
 .carrossel-infor-BoasVindas{
-    border: 4px solid powderblue;
-    width: 50%;
-    height: 80%;
-} 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: sans-serif;
+    width: 900%;
+  }
+
+  .Bem-vindo{
+    /* border: 4px solid red; */
+    height: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #607E98;
+    font-size: 40px;
+     font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style:normal;
+  }
+
+  .icones-presentação-boasvindas{
+    /* border: 4px solid red; */
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .icone-estudante{
+    width: 10%;
+  }
+
+  .icone-hospital{
+    width: 10%;
+  }
+
+  .icone-trasporte{
+    width: 10%;
+  }
+
+  .icone-entreterimento{
+    width: 10%;
+  }
+
+  .icone-viajante{
+    width: 10%; 
+  }
+
+  .texto1-boasvindas{
+    /* border: 4px solid rgb(0, 255, 13); */
+    height: 15%;
+    color:#3B444F ;
+    font: size 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style:normal;
+  }
+
+  .texto2-Boasvindas{
+    /* border: 4px solid rgb(119, 0, 255); */
+    height: 30%;
+    color: #607E98;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style:normal;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
 
 .texto-infor-BoasVindas{
     border: 4px solid rgb(8, 132, 148);
     width: 20%;
     height: 80%;
+}
 
+.icones{
+    /* border: 4px solid rgb(105, 74, 28); */
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
 }
     
-   
+.links{
+    /* border: 4px solid rgb(214, 134, 14); */
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
 
+.instagram{
+    width: 3%;
+    padding-top: 1%;
+}
+   
+.linkedin{
+    width: 3%;
+    padding-top: 1%;
+}
+   
+.whatsapp{
+    width: 3%;
+    padding-top: 1%;
+}
+   
+ .YouTube{
+    width: 3%;
+    padding-top: 1%;
+}
+
+.nume-contato-boasvindas{
+    font-size:130% ;
+    color: #E4E7EB;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style:normal;
+}
+    
+.gmail-boasvindas{
+    font-size:130% ;
+    color: #E4E7EB;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style:normal;
+
+}
+
+.inter-tight-uniquifier {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style:normal;
+}
     

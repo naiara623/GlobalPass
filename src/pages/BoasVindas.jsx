@@ -1,9 +1,15 @@
 import './BoasVindas.css'
-
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
 
 function BoasVindas() {
   return (
     <div className='amarela-BoasVindas'>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+            
              <div className="vermelha-BoasVindas">
                    <button className='botaoEntrar-boasvindas'>ENTRAR</button>
                    <button className='botaoLogin-boasvindas' >LOGIN</button>
@@ -34,17 +40,78 @@ function BoasVindas() {
                <div className="laranja-BoasVindas"></div>
 
                  <div className="Rosa-BoasVindas">
-                        <div className="carrossel-infor-BoasVindas"></div>
-                        <div className="texto-infor-BoasVindas"></div>
+                    <div className='Bem-vindo' >Bem-vindo à GlobalPass!</div>
+                        <div className="carrossel-infor-BoasVindas">
+                            <Splide
+                                options={{
+                                type: 'loop',
+                                perPage: 2,
+                                autoplay: true,
+                                interval: 3000,
+                                pauseOnHover: true,
+                                arrows: true,
+                                pagination: true,
+                                gap: '1rem',
+                                }}
+                                aria-label="Imagens de exemplo"
+                            >
+                                <SplideSlide>
+                                <img src="img-ganela.jpg" alt="" />
+                                </SplideSlide>
+
+                                <SplideSlide>
+                                <img src="img-montanha.jpg
+                                " alt="" />
+                                </SplideSlide>
+
+                                {/* <SplideSlide>
+                                <img src="https://placekitten.com/402/300" alt="Gatinho 3" />
+                                </SplideSlide>
+
+                                <SplideSlide>
+                                <img src="https://placekitten.com/403/300" alt="Gatinho 4" />
+                                </SplideSlide> */}
+                            </Splide>
+                                                    
+                                
+
+                        </div> 
                 </div>
 
 
+                <div className="roxo-BoasVindas">
+                    <div className="icones-presentação-boasvindas">
 
-                <div className="roxo-BoasVindas"></div>
-                <div className="marrom-BoasVinda"></div>
+                        <img src="icone-estudante.png" alt="" className='icone-estudante' />
+                        <img src="icone-hospital.png" alt="" className='icone-hospital' />
+                        <img src="icone-tranporte.png" alt="" className='icone-trasporte' />
+                        <img src="icone-entreterimento.png" alt="" className='icone-entreterimento' />
+                        <img src="icone-viajante.png" alt="" className='icone-viajante' />
+                    </div>
+
+                    <div className="texto1-boasvindas">Apoio completo para imigrantes em Florianópolis</div>
+                    <div className="texto2-Boasvindas">Encontre aqui tudo o que você precisa saber sobre educação,  saúde, transporte, <br />entreterimento e muito mais para começar sua nova vida com segurança e confiança.</div>
+                </div>
+
+                <div className="marrom-BoasVinda">
+                    <div className="icones">
+                            <img src="instagram-circle-icone.png" alt="" className='instagram'/>
+                            <img src="linkedin-circled-icone.png" alt="" className='linkedin'/>
+                            <img src="whatsapp_Icone.png" alt="" className='whatsapp'/>
+                            <img src="youtube-play-icone.png" alt="" className='YouTube'/>
+                    </div>
+
+                    <div className="links">
+                            <p className='nume-contato-boasvindas'>(00) 0000-0000</p> <p className='gmail-boasvindas' >globalpass.nkl@gmail.com</p>
+                    </div>
+
+
+                </div>
 
     </div>
   )
 }
 
 export default BoasVindas
+
+
