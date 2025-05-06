@@ -6,6 +6,10 @@ import Cadastro from "../pages/cadastro.jsx";
 // import Saude from "../pages/Saude.jsx";
 // import Transporte from "../pages/Transporte.jsx";
 
+<<<<<<< HEAD
+
+import (createBrowserRouter)
+=======
 const router = createBrowserRouter([
     {path: "/", element: <BoasVindas/>},
     {path: "/cadastro", element: <Cadastro />},
@@ -17,3 +21,4 @@ const router = createBrowserRouter([
 
 
 export default router;
+>>>>>>> 59e8e0a0386e2f9e8f9d280334037f7701822312
