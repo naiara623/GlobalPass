@@ -7,3 +7,11 @@
 #root, body, html{
   min-height: 100vh;
 }
+
+:root{
+--cor-fundo:#F9FAFB;
+--cor-1-claro:#545D69;
+--cor-2-claro:#607E98;
+--cor-1-escuro:#2D405A;
+--cor-2-escuro:#3B444F;
+}
