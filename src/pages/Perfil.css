@@ -43,6 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
     
 }
 
@@ -63,6 +64,7 @@
     height: 80%;
     width: 100%;
     display: flex;
+    /* gap: 1rem; */
 }
 
  .divroxaescuro-perfil{
@@ -182,4 +184,28 @@
 .NomePessoa-Perfil{
     /* border: 2px solid red; */
     height: 50px;
+}
+
+.Excluir-perfil{
+    height: 25%;
+    width: 25%;
+    background-color: #F9FAFB;
+    color: #2D405A;
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 100%;
+}
+
+.Sair-perfil{
+    height: 25%;
+    width: 25%;
+    background-color: #F9FAFB;
+    color: #2D405A;
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 100%;
 }

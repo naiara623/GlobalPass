@@ -1,0 +1,62 @@
+/* Estilo do overlay (fundo escuro) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: end;
+ 
+  }
+  
+  /* Estilo do modal em si */
+  .modal {
+    background-color:var(--cor-2-escuro);
+    display: inline;
+    justify-content: center;
+    align-items: start;
+    border-radius: 8px;
+    max-width: 20%;
+    width: 80%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo do botão de fechar */
+  .modal button {
+    padding: 8px 16px;
+    background-color: var(--cor-1-escuro);
+    color: white;
+    border: none;
+    /* border-radius: 4px; */
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color:var(--cor-2-claro);
+  }
+
+  .modal-button{
+    background-color: var(--cor-2-escuro);
+    border: #0057b300;
+  }
+
+  h2{color: var(--cor-fundo);}
+
+  .modal-arrumar{
+    border: 4px solid blue;
+height: 93%;
+width: 100%;
+  }
+
+  .modal-arruma{
+    border: 4px solid rgb(232, 121, 121);
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }

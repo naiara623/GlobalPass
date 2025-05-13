@@ -27,18 +27,18 @@ https://github.com/Kayllany04?tab=repositories
 # Requisitos Funcionais:
 
 Naiara: 
-O usuário deve ser capaz de se cadastrar na plataforma, editar ou excluir sua conta.
+ O usuário deve ser capaz de se cadastrar na plataforma, editar ou excluir sua conta.
 
 O usuário poderá ter acesso às informações oferecidas em nossa plataforma, como pontos turísticos, postos de saúde, leis do estados de Florianópolis, acesso à educação escolar e informações básicas de como obter passes para os ônibus.
 
 Kallany:
 O usuário deve ser capaz de cadastrar uma ou mais postagem.
 
-O usuário deve ser capaz de comenta em uma ou mais postagens.
+O usuário poderá visualizar o google maps com endereços oferecidos pela nossa plataforma.
+
 
 Laura:
-O usuário deve ser capaz de comentár em uma ou mais postagens.
+O usuário deve ser capaz de comenta em uma ou mais postagens.
 
-O usuário poderá visualizar o google maps com endereços oferecidos pela nossa plataforma.
 
 

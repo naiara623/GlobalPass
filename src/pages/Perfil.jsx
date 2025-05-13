@@ -50,7 +50,8 @@ function Perfil() {
         </div>
         <div className="qualquer3-perfil"></div>
         <div className="divazul-perfil">
-          <h1 className='Titulo-Perfil'>Global Pass</h1>
+          <button className='Excluir-perfil'>Excluir</button>
+          <button className='Sair-perfil'>Sair</button>
         </div>
       </div>
 
@@ -104,6 +105,8 @@ function Perfil() {
                   onChange={handleChange}
                 />
               </div>
+
+              
             </div>
           </div>
         </div>

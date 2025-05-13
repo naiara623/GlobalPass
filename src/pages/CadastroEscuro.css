@@ -76,9 +76,13 @@
     height: 15%;
     border-radius:0 0 20px 20px;  
     display: flex;            
-    justify-content: center;
 }
 
+.sla-cadastro{
+  border: 2px solid orangered;
+  width: 1%;
+  height: 100%;
+}
 .Input-Cadastro1{
 
     height: 100%;
@@ -100,12 +104,12 @@
     gap: 3.3%;
 }
 
-.divDentroDeOutra-Cadastro{
+.divDentroDeOutra-Cadastro {
   border: 2px solid red;
-width: 60%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 60%;
+  height: 100px; /* adicione uma altura definida */
+  display: flex;
+  
 }
 
 .DivDoOutroLado-Cadastro{
@@ -299,17 +303,21 @@ select.vistoIn-Cadastro:valid {
   }
 
   .checkbox-wrapper-46 .cbx {
-    /* border: 2px solid black; */
-    margin: auto;
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: pointer;
+    .checkbox-wrapper-46 .cbx {    /* Adicionado */
+      border: 2px solid black; 
+      margin: auto;
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: pointer;
+    }
   }
+
   .checkbox-wrapper-46 .cbx span {
     display: inline-block;
     vertical-align: middle;
     transform: translate3d(0, 0, 0);
   }
+
   .checkbox-wrapper-46 .cbx span:first-child {
     position: relative;
     width: 18px;
