@@ -1,7 +1,7 @@
 # Links de divulgação do projeto GlobalPass
 
 # Naiara/Instagram
-[Instagram](https://www.instagram.com/globalpass.ofc/)
+[Instagram](https://www.instagram.com/global.pass_ofc/)
 
 # Kayllany/Linkedin
 
@@ -9,3 +9,4 @@
 
 # Laura/Youtube
 
+[Youtube](https://www.youtube.com/@GLOBALPASS-y6k)

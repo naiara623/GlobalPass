@@ -1,8 +1,25 @@
 import './BoasVindas.css'
+import { useNavigate } from 'react-router-dom';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
 function BoasVindas() {
+
+    const navigate = useNavigate();
+
+  const irParaTela2 = () => {
+    navigate('/cadastro');
+  };
+
+  const irParaTela3 = () => {
+    navigate('/login');
+  };
+
+  const irParaTela4 = () => {
+    navigate('/telainicial');
+  };
+
+
   return (
     <div className='amarela-BoasVindas'>
         <style>
@@ -11,8 +28,8 @@ function BoasVindas() {
 
             
              <div className="vermelha-BoasVindas">
-                   <button className='botaoEntrar-boasvindas'>ENTRAR</button>
-                   <button className='botaoLogin-boasvindas' >LOGIN</button>
+                   <button className='botaoEntrar-boasvindas' onClick={irParaTela4}>ENTRAR</button>
+                   <button className='botaoLogin-boasvindas' onClick={irParaTela3} >LOGIN</button>
              </div>
 
                     <div className="Roxa-BoasVindas">
@@ -24,7 +41,7 @@ function BoasVindas() {
                                     </div>
 
                                     <div className='div-button-cadastro-Boasvindas'>
-                                        <button className='button-cadastro-BoasVindas' >Cadastro</button>
+                                        <button className='button-cadastro-BoasVindas' onClick={irParaTela2} >Cadastro</button>
                                     </div>
 
                                 </div>

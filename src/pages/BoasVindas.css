@@ -232,8 +232,12 @@
   
   /* img {
     width: 100%;
+<<<<<<< HEAD
     /* border-radius: 12px; */
    */
+=======
+  }
+>>>>>>> 91e7e2f37027bfc29f7de23803af0d14fa6f0df3
 
 .texto-infor-BoasVindas{
     border: 4px solid rgb(8, 132, 148);

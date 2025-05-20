@@ -1,0 +1,152 @@
+.divAmarela-Login{
+    background-color: #F9FAFB;
+    height: 100vh;
+    display: flex;
+}
+
+.divAzul-Login{
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+
+.divRosa-Login{
+    height: 100%;
+    width: 40%;
+}
+
+.divVermelha-Login{
+    /* border: 2px solid orange; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divMarron-Login{
+    background-color: #3B444F;
+    width: 25%;
+}
+
+.divMarronEscuro-Login{
+    background-color: #545D69;
+    width: 15%;
+}
+
+.divVerde-Login{
+    /* border: 2px solid greenyellow; */
+    width: 70%;
+    height: 70%;
+}
+
+.divPerta-Login{
+    /* border: 2px solid red; */
+    background-color: #3B444F;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px 20px 0 0;
+}
+
+.divRosaEscuro-Login{
+    /* border: 2px solid pink; */
+    background-color: #3B444F;
+    height: 60%;
+    display: flex;
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center;
+    gap: 15px;
+}
+
+.divPreta-Login{
+    /* border: 2px solid blue; */
+    background-color: #3B444F;
+    height: 20%;
+    width: 100%;
+    border-radius:0 0 20px 20px ;
+}
+
+.nome-Login{
+    height: 71px;
+    width: 74%;
+    /* border: 2px solid red; */
+}
+
+
+.Titulo-Login{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 48px;
+}
+
+
+
+.NomeIn-Login{
+    width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  height: 55%;
+}
+
+.nomeLabel-Login{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   left: 1%;
+}
+
+.Cpf-Login{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 22%;
+}
+
+.email-Login{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 20%; 
+}
+
+.Senha-Login{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 17%;
+}
+
+
+
+.button-Login{
+    background-color: #F9FAFB;
+    color: #2D405A;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 100%;
+  }
+
+  .Button-Login{
+    width: 30%;
+    height: 35%;
+    position: relative;
+    left: 65%;
+    top: 20%;
+  }
+
+  .imgSenha-Login{
+    width: 30px;
+    position: relative;
+    left: 90%;
+    top: -50px;
+  }

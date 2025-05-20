@@ -30,7 +30,7 @@
     background-color: var(--cor-1-escuro);
     color: white;
     border: none;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     cursor: pointer;
   }
   

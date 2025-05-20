@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@radix-ui/react-slot": "^1.2.2",
     "@splidejs/react-splide": "^0.7.12",
     "class-variance-authority": "^0.7.1",
     "framer-motion": "^12.10.4",
     "leaflet": "^1.9.4",
+=======
+    "@splidejs/react-splide": "^0.7.12",
+    "framer-motion": "^12.10.0",
+>>>>>>> 91e7e2f37027bfc29f7de23803af0d14fa6f0df3
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-leaflet": "^5.0.0",
