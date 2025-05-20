@@ -55,14 +55,14 @@ function BoasVindas() {
                                 }}
                                 aria-label="Imagens de exemplo"
                             >
-                                <SplideSlide>
-                                <img src="img-ganela.jpg" alt="" />
+                                {/* <SplideSlide>
+                                <img src="img-ganela.jpg" alt="" className='' />
                                 </SplideSlide>
 
                                 <SplideSlide>
                                 <img src="img-montanha.jpg
                                 " alt="" />
-                                </SplideSlide>
+                                </SplideSlide> */}
 
                                 {/* <SplideSlide>
                                 <img src="https://placekitten.com/402/300" alt="Gatinho 3" />
@@ -102,7 +102,8 @@ function BoasVindas() {
                     </div>
 
                     <div className="links">
-                            <p className='nume-contato-boasvindas'>(00) 0000-0000</p> <p className='gmail-boasvindas' >globalpass.nkl@gmail.com</p>
+                            
+                            
                     </div>
 
 

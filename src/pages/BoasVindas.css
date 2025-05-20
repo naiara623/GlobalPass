@@ -230,10 +230,10 @@
     font-style:normal;
   }
   
-  img {
+  /* img {
     width: 100%;
-    border-radius: 12px;
-  }
+    /* border-radius: 12px; */
+   */
 
 .texto-infor-BoasVindas{
     border: 4px solid rgb(8, 132, 148);
