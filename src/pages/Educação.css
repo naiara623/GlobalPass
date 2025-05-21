@@ -49,14 +49,14 @@
 }
 
 .Vermelha2-educação{
-    border: 4px solid red;
+    /* border: 4px solid red; */
     height: 30%;
     width: 100%;
     display: flex;
 }
 
 .Marrom-educação{
-    border: 4px solid brown;
+    /* border: 4px solid brown; */
     height: 100%;
     width: 30%;
     display: flex;
@@ -67,48 +67,26 @@
 }
 
 .Cinza2-educação{
-    border: 4px solid gray;
+    /* border: 4px solid gray; */
     height: 100%;
     width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .RoxoClaro-educação{
-    border: 4px solid purple;
+    /* border: 4px solid purple; */
     height: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .RosoEscuro-educação{
-    border: 4px solid darkorchid;
+    /* border: 4px solid darkorchid; */
     background-color: #3B444F;
     height: 5%;
-}
-
-.Fundamental{
-    /* border: 2px solid black; */
-    height: 20%;
-    width: 30%;
-    background-color: #607E98;
-}
-
-.médio{
-    /* border: 2px solid black; */
-    background-color: #607E98;
-    height: 20%;
-    width: 30%;
-}
-
-.cursos{
-    /* border: 2px solid black; */
-    background-color: #607E98;
-    height: 20%;
-    width: 30%;
-}
-
-.Faculdade{
-    /* border: 2px solid black; */
-    background-color: #607E98;
-    height: 20%;
-    width: 30%;
 }
 
 .Branco-educação{
@@ -146,8 +124,171 @@
 .Titulo1-educação{
     /* border: 2px solid yellow; */
     height: 50%;
-    font-size: 60px;
+    font-size: 58px;
     color: white;
     position: relative;
     left: 5%;
+}
+
+.FotoMédio-educação{
+width:80%;
+height: 80%;
+}
+
+.abacaxi-educação{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    background-color: #607E98;
+}
+
+.tubarão-educação{
+    border: 4px solid black;
+    height: 90%;
+    width: 90%;
+}
+
+/* .carrossel-educação{
+    border: 3px solid red;
+    height: 100%;
+    width: 100%;
+}
+
+.funsl{
+    height: 100%;
+    width: 100%;
+} */
+
+.Titulo2-educação{
+    color: white;
+    font-size: 50px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style:normal;
+}
+
+.abacaxi2-educação{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.abacaxi3-educação{
+    height: 40%;
+    display: flex;
+}
+
+.abacaxi4-educação{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bobesponja-educação{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bobesponja2-educação{
+    border: 3px solid red;
+    width: 100%;
+    height: 100%;
+}
+
+.Titulooi-educação{
+    border: 3px solid pink;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipos-educação{
+    border: 2px solid yellow;
+    height: 80%;
+    width: 100%;
+}
+
+.patrik-educação{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Lista-educação{
+    color: white;
+    font-size: 25px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style:normal;
+
+}
+
+.bu2-educação{
+    color: white;
+}
+
+.bu-educação{
+color: white;
+}
+
+.arrumar-butao{
+    /* border: 4px solid aqua; */
+    height: 100%;
+    width: 50%;
+}
+
+
+.info-button{
+    background-color: #607E98;
+    width: 60%;
+}
+
+.alguma-coisa-educaçõa{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.telao-informações-educação{
+    /* border: 2px solid pink; */
+    height: 76%;
+    width: 89%;
+}
+
+.Paragrafo1-educação{
+    color: white;
+    height: 70%;
+    /* border: 2px solid red; */
+    font-size: 25px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style:normal;
+}
+
+.divParagrafo-educação{
+    /* border: 2px solid orangered; */
+    height: 90%;
+    width: 90%
+
 }

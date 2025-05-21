@@ -15,3 +15,24 @@
 --cor-1-escuro:#2D405A;
 --cor-2-escuro:#3B444F;
 }
+
+/* Estilizando a barra de rolagem inteira */
+::-webkit-scrollbar {
+  width: 5px; /* Largura mais fina */
+}
+::-webkit-scrollbar-thumb {
+  background: var(--cor-2-claro);
+  border-radius: 10px; /* Aumentando o raio da borda */
+ width: 2%;/* Adicionando preenchimento */
+  height: 20%;
+  
+}
+/* Estilizando a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: var(--cor-1-claro); /* Cinza claro para a trilha */
+}
+
+/* Estilizando o polegar da barra de rolagem ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-fundo); /* Cinza mais escuro ao passar o mouse */
+}

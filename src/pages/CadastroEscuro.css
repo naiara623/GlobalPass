@@ -105,16 +105,15 @@
 }
 
 .divDentroDeOutra-Cadastro {
-  border: 2px solid red;
-  width: 60%;
+  /* border: 2px solid red; */
+  width: 55%;
   height: 100px; /* adicione uma altura definida */
-  display: flex;
-  
+  display: flex;  
 }
 
 .DivDoOutroLado-Cadastro{
-  border: 2px solid white;
-    width: 40%;
+  /* border: 2px solid white; */
+    width: 45%;
     display: flex;
 justify-content: center;
 align-items: center;
@@ -297,6 +296,11 @@ select.vistoIn-Cadastro:valid {
 
 /* CHECBOX */
 
+.checkbox-wrapper-46{
+  /* border: 2px solid red; */
+  width: 94%;
+}
+
 .checkbox-wrapper-46 input[type="checkbox"] {
     display: none;
     visibility: hidden;
@@ -409,8 +413,9 @@ select.vistoIn-Cadastro:valid {
 
   .divDentroDeOutra-Cadastro {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-start; */
     gap: 4px;
   }
   

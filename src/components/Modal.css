@@ -25,7 +25,7 @@
   }
   
   /* Estilo do botão de fechar */
-  .modal button {
+  .modal .button1 {
     padding: 8px 16px;
     background-color: var(--cor-1-escuro);
     color: white;
@@ -33,14 +33,24 @@
     /* border-radius: 4px; */
     cursor: pointer;
   }
+
+  .button2{
+    background-color: var(--cor-1-escuro);
+    border: none;
+    width: 100%;
+    height: 20%;
+  }
   
-  .modal button:hover {
+  .modal .button1:hover {
     background-color:var(--cor-2-claro);
   }
 
   .modal-button{
     background-color: var(--cor-2-escuro);
     border: #0057b300;
+    width: 60%;
+    position: relative;
+    left: 35%;
   }
 
   h2{color: var(--cor-fundo);}
@@ -49,6 +59,10 @@
     border: 4px solid blue;
 height: 93%;
 width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
   }
 
   .modal-arruma{
@@ -59,4 +73,9 @@ width: 100%;
     justify-content: center;
     align-items: center;
     gap: 10%;
+  }
+
+  .icon-img{
+    height: 50%;
+    width:  30%;
   }
