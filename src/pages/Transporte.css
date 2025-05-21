@@ -1,0 +1,310 @@
+
+.Trans-conteiner{
+    border: 4px solid rgb(34, 83, 206);
+    height: 260vh;
+    background-color: var(--cor-fundo);
+    }
+
+    .navbar-Transporte{
+        background-color: var(--cor-2-escuro);
+        height: 4%;
+        width: 100%;
+        border: 4px solid rgb(180, 152, 206);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-arrumar{
+        width: 90%;
+        height: 100%;
+        border: 4px solid rgb(132, 1, 255);
+    }
+
+    .navbar-arrumar-modal{
+        width: 10%;
+        height: 100%;
+        border: 4px solid rgb(44, 0, 85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .navbar-arruma{
+        /* border: 4px solid rgb(198, 153, 239); */
+        height:50%;
+        width: 50%;
+        display: flex;
+align-items: center;
+justify-content: center;
+    }
+
+    .transporte-texto-img{
+        height: 30%;
+        width: 100%;
+        border: 4px solid rgb(0, 78, 85);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.transporte-texto{
+    background-color: var(--cor-2-claro);
+    height: 60%;
+    width: 80%;
+    border: 4px solid rgb(10, 146, 158);
+}
+
+.img{
+  height: 100%;
+}
+
+    .transporte-quadrado1{
+        background-color: var(--cor-1-escuro);
+        height: 14%;
+        width: 100%;
+        border: 4px solid rgb(177, 15, 15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quadrado-vermelho-arrumado{
+      /* border: 4px solid rgb(54, 8, 8); */
+      width: 50%;
+      height: 90%;
+    }
+
+  .transporte-asunto{
+    height: 30%;
+        width: 100%;
+        border: 4px solid rgb(246, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  .asunto-buttos{
+    border: 4px solid rgb(170, 175, 21);
+height: 100%;
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+.butt-asun{    height: 100%;
+  width: 50%;
+  border: 4px solid rgb(184, 156, 32);
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+justify-content: center;
+align-items: center;
+ }
+
+  .asunto-contes{
+    border: 4px solid rgb(255, 216, 109);
+height: 100%;
+width: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+  .button-asunto{  border: 4px solid rgb(255, 216, 109);
+    height: 25%;
+    width: 60%;
+  }
+
+
+    .transporte-container {
+      font-family: Arial, sans-serif;
+    }
+
+    .botoes {
+      border: 4px solid rgb(3, 2, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      height: 100%;
+    width: 55%;
+      justify-content: center;
+    }
+    
+    
+    .info-button {
+      background-color: var(--cor-2-claro);
+      color: var(--cor-fundo);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s;
+      width: 97%;
+      height: 20%;
+    }
+    .info-arruma{border: 1px solid black;
+    height: 90%;
+    width:  90%;
+
+    }
+    .p-trans{color: rgb(84, 143, 194);
+    font-size: 40px;
+    
+    }
+
+    
+    .info-button:hover {
+      background-color: var(--cor-1-escuro);
+    }
+    
+    .info-button.ativo {
+      background-color: var(--cor-1-claro);
+      color: var(--cor-fundo);
+      transform: scale(1.05);
+    }
+    
+    .info-box {
+      background-color: #e9e9e9;
+      border-radius: 10px;
+   height: 60%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      border-left: 10px solid var(--cor-2-escuro);
+    }
+    
+    .info-box h3 {
+      color: var(--cor-2-claro);
+     
+    }
+    
+    .info-box ul {
+      padding-left: 20px;
+    }
+    
+    .info-box li {
+      margin-bottom: 8px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .transporte-map{
+    height: 16%;
+    width: 100%;
+    border: 4px solid rgb(209, 5, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.map{
+    border: 4px solid rgb(255, 126, 240);
+    height: 85%;
+    width: 80%;
+}
+
+
+
+
+  .transporte-roda-pe{
+    background-color: var(--cor-2-escuro);
+    height: 6%;
+    width: 100%;
+    border: 4px solid rgb(84, 151, 75);
+    display: flex;
+  }
+
+  .lado-esquerdo{
+    border: 2px solid rgb(255, 255, 255);
+  width: 40%;
+height: 100%;}
+
+.loggo{width: 24%;
+height: 100%;}
+
+   .lado-direito{
+    border: 2px solid rgb(255, 255, 255);
+  width: 60%;
+height: 100%;}
+
+
+.icon-link{
+  border-radius: 20px;
+  height: 20%;
+  width: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollable-container {
+  height: 100%; /* ou qualquer altura fixa ou max-height */
+  overflow-y: auto; /* scroll vertical quando necessário */
+  border: 1px solid var(--cor-1-escuro); /* opcional, para visualização */
+  padding: 50px;
+}
+
+
+
+.scrollable-container {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Estilizando a scrollbar */
+.scrollable-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: var(--cor-1-claro);
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background:var(--cor-2-claro);
+  border-radius: 5px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-2-claro);
+}

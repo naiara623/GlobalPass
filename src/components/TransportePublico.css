@@ -1,0 +1,34 @@
+
+.info-button:hover {
+    background-color: var(--cor-1-escuro);
+  }
+  
+  .info-button.ativo {
+    background-color: var(--cor-1-claro);
+    color: var(--cor-fundo);
+    transform: scale(1.05);
+  }
+  
+  .info-box {
+    background-color: #e9e9e9;
+    border-radius: 10px;
+ height: 60%;
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+    border-left: 10px solid var(--cor-2-escuro);
+  }
+  
+  .info-box h3 {
+    color: var(--cor-2-claro);
+   
+  }
+  
+  .info-box ul {
+    padding-left: 20px;
+  }
+  
+  .info-box li {
+    margin-bottom: 8px;
+  }

@@ -10,11 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@splidejs/react-splide": "^0.7.12",
-=======
     "framer-motion": "^12.6.3",
->>>>>>> 104ec3b9d45d349829a360abe4dea7ec33a71e06
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0",
