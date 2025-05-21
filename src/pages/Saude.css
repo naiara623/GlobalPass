@@ -1,0 +1,130 @@
+.global-saude{
+  border: 4px solid blue;
+  height: 330vh;
+
+}
+
+.nav-bar-saude{
+ /* border: 4px solid rgb(255, 0, 0);    */
+ height: 2%;
+ background-color: #3B444F;
+}
+
+.conteine-desing-saude{
+border: 4px solid yellow;
+height: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.conteine-propagandas-saude{
+border: 4px solid rgb(72, 48, 4);
+height: 20%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #2D405A;
+
+}
+
+.conteine-icones-telao{
+border: 4px solid rgb(210, 134, 10);
+height: 30%;
+width: 100%;
+display: flex;
+}
+
+.mapa-saude{
+border: 4px solid rgb(19, 234, 37);
+height: 23%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.roda-pe-saude{
+border: 4px solid rgb(19, 195, 234);
+height: 5%;
+background-color: #3B444F;
+}
+
+.azul-saude{
+border: 4px solid rgb(130, 19, 234);
+height: 70%;
+width: 70%;
+}
+
+.marrom-propaganda-saude{
+border: 4px solid rgb(234, 19, 170);
+height: 70%;
+width: 70%;
+background-color: rgb(205, 200, 200);
+
+}
+
+.menu-saude{
+/* border: 4px solid rgb(118, 4, 26); */
+height: 100%;
+width: 5%;
+position: relative;
+left: 95%;
+}
+
+.conteine-do-canto-esquerdo-saude{
+border: 4px solid rgb(123, 234, 19);
+height: 100%;
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+}
+
+.conteine-do-canto-direto-saude{
+border: 4px solid rgb(36, 21, 32);
+height: 100%;
+width: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.vacinas-saude{
+ height: 20%;
+ width: 30%;
+ background-color: #607E98;
+}
+
+.vacinas2-saude{
+height: 100%;
+ width: 100%;
+background-color: #607E98;
+border: 1px solid #607E98;
+}
+
+/* .ajuda-medica-saude{
+    
+}
+.farmacia-saude{
+    
+} */
+
+.design-png{
+height: 70%;
+width: 70%;
+}
+
+.google-maps{
+border: 4px solid green;
+height: 80%;
+width: 80%;
+}
+
+.mapa{
+height: 100%;
+width: 100%;
+
+}
