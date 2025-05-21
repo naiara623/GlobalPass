@@ -1,0 +1,73 @@
+.inicio-navebar{
+   /* border: 3px solid #ff0000; */
+   height: 10%;
+   background-color: var(--cor-2-escuro);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.inicio-shine {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o texto */
+    
+    /* border: 4px solid rgb(123, 34, 206); */
+    height: 100%;
+    width: 15%;
+    
+    font-size: 2em;
+    font-weight: 900;
+    color: #f9f9f975;
+    
+    background: linear-gradient(
+        -50deg,
+        transparent 0%,
+        transparent 40%,
+        #ffffff 55%,
+        transparent 60%,
+        transparent 100%
+    );
+    background-size: 100% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    animation: shine 8s infinite linear;
+}
+
+/* Animação do brilho */
+@keyframes shine {
+    0% {
+        background-position: -200px;
+    }
+    100% {
+        background-position: 200px;
+    }
+}
+
+
+.inicio-divisão{
+  /* border: 3px solid #9f6262; */
+  height: 100%;
+  width:80%;
+  }
+
+  .inicio-div-modal{
+    /* border: 3px solid #148c04; */
+    height: 100%;
+  width:5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .inicio-modal{ 
+    /* border: 3px solid #ffffff22; */
+    height:80%;
+    width: 80%;
+  }

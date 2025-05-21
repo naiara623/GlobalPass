@@ -5,9 +5,9 @@ import Login from "../pages/Login.jsx";
 import Saude from "../pages/Saude.jsx";
 // import Transporte from "../pages/Transporte.jsx";
 import CadastroEscuro from "../pages/CadastroEscuro.jsx";
-import Login from "../pages/Login.jsx";
 import Perfil from "../pages/Perfil.jsx"
 import Educação from "../pages/Educação.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 const router = createBrowserRouter([
     {path: "/", element: <BoasVindas/>},
@@ -17,7 +17,8 @@ const router = createBrowserRouter([
     {path: "/telainicial", element: <Inicio />},
     {path: "/cadastro", element: < CadastroEscuro />},
     {path: "/perfildeusuario", element: <Perfil/>},
-    {path: "/educação", element: <Educação />}
+    {path: "/educação", element: <Educação />},
+    {path: "/navbar", element: <Navbar/>}
    
 ])
 

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './Educação.css'
-import Modal from '../components/Modal'
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import GraduationCapIMG from '../assets/GraduationCapIMG.png'
 import ABC from '../assets/ABC.png'
 import book from '../assets/book.png'
 import Books from '../assets/Books.png'
+import Navbar from '../components/Navbar';
 
 
 function Educação() {
@@ -231,7 +231,7 @@ function Educação() {
 </style>
 
        <div className='Vermelho-educação'>
-         <div className='Branco-educação'> <Modal/> </div>
+         {/* <div className='Branco-educação'> <Navbar/> </div> */}
        </div>
 
        <div className='Rosa-educação'>
