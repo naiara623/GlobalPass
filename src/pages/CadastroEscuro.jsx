@@ -14,29 +14,21 @@ function CadastroEscuro() {
   const [mensagemErro, setMensagemErro] = useState({});
   const [confirmaSenha, setConfirmaSenha] = useState('');
   const [termosAceitos, setTermosAceitos] = useState(false);
-  const [erroTermos, setErroTermos] = useState(false);
 
   function handleCadastro() {
     const novosErros = {};
 
-    if (!nome) novosErros.nome = "O nome é obrigatório.";
-    if (!cpf) novosErros.cpf = "O CPF é obrigatório.";
-    if (!email) novosErros.email = "O e-mail é obrigatório.";
-    if (!telefone) novosErros.telefone = "O telefone é obrigatório.";
-    if (!idioma) novosErros.idioma = "O idioma é obrigatório.";
-    if (!nacionalidade) novosErros.nacionalidade = "A nacionalidade é obrigatória.";
-    if (!destino) novosErros.destino = "O destino é obrigatório.";
-    if (!visto) novosErros.visto = "O tipo de visto é obrigatório.";
-    if (!senha) novosErros.senha = "A senha é obrigatória.";
-    if (!confirmaSenha) novosErros.confirmaSenha = "A confirmação é obrigatória.";
-    if (senha && confirmaSenha && senha !== confirmaSenha) novosErros.confirmaSenha = "As senhas não conferem.";
-
-    if (!termosAceitos) {
-      setErroTermos(true);
-      return;
-    } else {
-      setErroTermos(false);
-    }
+    if (!nome) novosErros.nome = "Campo obrigatorio.";
+    if (!cpf) novosErros.cpf = "Campo obrigatorio.";
+    if (!email) novosErros.email = "Campo obrigatorio.";
+    if (!telefone) novosErros.telefone = "Campo obrigatorio.";
+    if (!idioma) novosErros.idioma = "Campo obrigatorio.";
+    if (!nacionalidade) novosErros.nacionalidade = "Campo obrigatorio.";
+    if (!destino) novosErros.destino = "Campo obrigatorio.";
+    if (!visto) novosErros.visto = "Campo obrigatorio.";
+    if (!senha) novosErros.senha = "Campo obrigatorio.";
+    if (!confirmaSenha) novosErros.confirmaSenha = "Campo obrigatorio.";
+    if (senha && confirmaSenha && senha !== confirmaSenha) novosErros.confirmaSenha = "Senhas não conferem.";
 
     if (Object.keys(novosErros).length > 0) {
       setMensagemErro(novosErros);
@@ -193,7 +185,7 @@ function CadastroEscuro() {
 
           <div className="roxaClaro-Cadastro">
           <div className="divDentroDeOutra-Cadastro">
-            <div className="sla-cadastro"></div>
+            {/* <div className="sla-cadastro"></div> */}
 
   <div className="checkbox-wrapper-46">
     <input type="checkbox" id="cbx-46" className="inp-cbx" />

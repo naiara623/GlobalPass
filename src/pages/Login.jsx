@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import './LoginClaro.css';
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 function LoginClaro() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [mensagemEmail, setMensagemEmail] = useState('');
@@ -39,7 +41,7 @@ function LoginClaro() {
       senha === usuarioSalvo.senha
     ) {
       alert('Login realizado com sucesso!');
-      window.location.href = "/inicio";
+      navigate('/telainicial');
     } else {
       setMensagemSenha('Dados incorretos! Verifique suas informações.');
     }
