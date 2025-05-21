@@ -1,0 +1,211 @@
+.divAmarela-Perfil{
+    /* border: 4px solid yellow; */
+    height: 100vh;
+    display: flex;
+}
+
+.divMarrom-perfil{
+    background-color: #3B444F;
+    /* border: 2px solid brown; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center;
+}
+
+.divVermelha-perfil{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 60%;
+}
+
+
+.divQualquer2-perfil{
+    /* border: 2px solid rgb(41, 30, 81); */
+    height: 10%;
+    width: 20%;
+}
+.divRosa-Perfil{
+    /* border: 2px solid pink; */
+    height: 60%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divazul-perfil{
+    /* border: 2px solid blue; */
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    
+}
+
+.qualquer3-perfil{
+    /* border: 2px solid rgb(41, 30, 81); */
+    height: 10%;
+    width: 20%;
+}
+
+.divverde-perfil{
+    /* border: 2px solid greenyellow; */
+    height: 20%;
+    width: 100%;
+}
+
+.divazulcaro{
+    /* border: 2px solid rgb(21, 69, 84); */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    /* gap: 1rem; */
+}
+
+ .divroxaescuro-perfil{
+    /* border: 2px solid darkviolet; */
+    height: 100%;
+    width: 15%;
+} 
+
+.divlaranja-perfil{
+    /* border: 2px solid orangered; */
+    background-color: #545D69;
+    height: 100% ;
+    width: 85%;
+    box-shadow: inset 0 8px 8px -4px rgba(0, 0, 0, 0.4); /* sombra interna no topo */;
+    display: flex;
+    border-radius: 5% 0 0 0 ;
+}
+
+.divverdeescuro-perfil{
+    background-color: #3B444F;
+    /* border: 3px solid green; */
+    width: 97%;
+    height: 95%;
+    position: relative;
+    top: 5%;
+    border-radius: 5% 0 0 0 ;
+    display: flex;
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center;
+    gap: 5%;
+}
+
+.nada-perfil{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 3%;
+}
+
+
+
+.nome-perfil{
+    height: 71px;
+    width: 60%;
+    /* border: 2px solid red; */
+}
+
+.NomeIn-perfil{
+    width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  height: 60%;
+}
+
+.nomeLabel-perfil{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   left: 1%;
+}
+
+
+
+.Titulo-Perfil{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 300%;
+}
+
+
+.profile-container {
+    position: relative;
+    width: 260px;  /* Aumentado */
+  height: 260px;
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: inset -5px 5px 10px rgba(0, 0, 0, 0.1),
+                0 5px 10px rgba(0, 100, 0, 0.2); /* sombra parecida com a da imagem */
+  }
+  
+  .add-button {
+    position: absolute;
+    bottom: 5px;
+    right: 15%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #333c48;
+    border: 2px solid black;
+    color: #fefffe;
+    font-size: 24px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+
+.titulo2-perfil{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 210%;
+    
+}
+
+.NomePessoa-Perfil{
+    /* border: 2px solid red; */
+    height: 50px;
+}
+
+.Excluir-perfil{
+    height: 25%;
+    width: 25%;
+    background-color: #F9FAFB;
+    color: #2D405A;
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 100%;
+}
+
+.Sair-perfil{
+    height: 25%;
+    width: 25%;
+    background-color: #F9FAFB;
+    color: #2D405A;
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 100%;
+}

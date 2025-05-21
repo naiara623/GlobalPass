@@ -1,195 +1,152 @@
-.Amarela-Login{
-    background-color: #060A14;
+.divAmarela-Login{
+    background-color: #F9FAFB;
     height: 100vh;
     display: flex;
 }
 
-.vermelha1-Login{
-    height: 99vh;
-    width: 30%;
-}
-
-.azul-Login{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.vermelha2-Login{
-    height: 99vh;
-    width: 30%;
-}
-
-.roxo-Login{
-    width: 65%;
-    height: 70%;
-    background-color: #13349F;
-    border-radius: 100px 0 100px 0;
-}
-
-.rosa-Login{
-height: 20%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.rosa2-Login{
-height: 15%;
-
-}
-
-.amarelo-Login{
-    height: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.marron-login{
+.divAzul-Login{
     height: 100%;
-    width: 70%;
-    background-color: #13349F;
-    
+    width: 20%;
+    display: flex;
 }
 
-.azulClaro1-Login{
-    background-color: #13349F;
-    height: 9%;
-    width: 44%;
-    position: relative;
-    top: 92%;
-    border-radius: 50px 0 50px 0;
+.divRosa-Login{
+    height: 100%;
+    width: 40%;
 }
 
-.azulClaro2-Login{
-    background-color: #13349F;
-    height: 9%;
-    width: 44%;
-    position: relative;
-     left: 56%;
-     border-radius: 50px 0 50px 0;
-}
-/* 
-Titulo */
-
-.titulo-login{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 300%;
-    color: white;
-    position: relative;
-    top: 30%;
-}
-/* Inputs */
-
-.inputNome-login{
-    width: 90%;
-    height: 10%;
-    position: relative;
-    top: 13%;
-    left: 2%;
-    border-radius: 5px;
-    background-color: transparent;
-    outline: none;
-    border: 2px solid white;
-    color: white;
+.divVermelha-Login{
+    /* border: 2px solid orange; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.inputcpf-login{
-    width: 90%;
-    height: 10%;
-    position: relative;
-    top: 21%;
-    left: 2%;
-    border-radius: 5px;
-    background-color: transparent;
-    outline: none;
-    border: 2px solid white;
-    color: white;
-}
-
-.inputemail-login{
-    width: 90%;
-    height: 10%;
-    position: relative;
-    top: 29%;
-    left: 2%;
-    border-radius: 5px;
-    background-color: transparent;
-    outline: none;
-    border: 2px solid white;
-    color: white;
-}
-
-.inputtele-login{
-    width: 90%;
-    height: 10%;
-    position: relative;
-    top: 37%;
-    left: 2%;
-    border-radius: 5px;
-    background-color: transparent;
-    outline: none;
-    border: 2px solid white;
-    color: white;
-}
-
-
-/* Label */
-
-
-.labelnome-login{
-    color: white;
-    position: relative;
-    top: 13%;
-    left: 3%;
-}
-
-.labelcpf-login{
-    color: white;
-    position: relative;
-    top: 21%;
-    left: 3%;
-}
-
-.labelemail-login{
-    color: white;
-    position: relative;
-    top: 29.5%;
-    left: 3%;
-}
-
-.labeltele-login{
-    color: white;
-    position: relative;
-    top: 37.5%;
-    left: 3%;
-}
-
-
-.Entrar-login{
+.divMarron-Login{
+    background-color: #3B444F;
     width: 25%;
-    height: 30%;
-    position: relative;
-    left: 60%;
-    top: 45%;
-    border-radius: 5px;
-    background-color: white;
-    outline: none;
-    border: 2px solid white;
 }
 
-button:hover  {
-    color: #13349F;
-   }
+.divMarronEscuro-Login{
+    background-color: #545D69;
+    width: 15%;
+}
 
-   button span {
+.divVerde-Login{
+    /* border: 2px solid greenyellow; */
+    width: 70%;
+    height: 70%;
+}
+
+.divPerta-Login{
+    /* border: 2px solid red; */
+    background-color: #3B444F;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px 20px 0 0;
+}
+
+.divRosaEscuro-Login{
+    /* border: 2px solid pink; */
+    background-color: #3B444F;
+    height: 60%;
+    display: flex;
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center;
+    gap: 15px;
+}
+
+.divPreta-Login{
+    /* border: 2px solid blue; */
+    background-color: #3B444F;
+    height: 20%;
+    width: 100%;
+    border-radius:0 0 20px 20px ;
+}
+
+.nome-Login{
+    height: 71px;
+    width: 74%;
+    /* border: 2px solid red; */
+}
+
+
+.Titulo-Login{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 48px;
+}
+
+
+
+.NomeIn-Login{
+    width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  height: 55%;
+}
+
+.nomeLabel-Login{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   left: 1%;
+}
+
+.Cpf-Login{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 22%;
+}
+
+.email-Login{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 20%; 
+}
+
+.Senha-Login{
+    Color: #FFFFFF;
+    font-family: Roboto;
+   position: relative;
+   right: 17%;
+}
+
+
+
+.button-Login{
+    background-color: #F9FAFB;
+    color: #2D405A;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 100%;
+  }
+
+  .Button-Login{
+    width: 30%;
+    height: 35%;
     position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 120%;
-    left: -1%;
-   }
+    left: 65%;
+    top: 20%;
+  }
+
+  .imgSenha-Login{
+    width: 30px;
+    position: relative;
+    left: 90%;
+    top: -50px;
+  }

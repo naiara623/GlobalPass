@@ -43,13 +43,9 @@ function Inicio() {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style> */}
 
-      <div className='inicio-navebar'>
-  <div className="inicio-shine">GLOBAL PASS</div>
-  <div className='inicio-divisão'></div>
-  <div className='inicio-div-modal'>
-    <Modal/>
-   </div>
-      </div>
+      {/* <div className='inicio-navebar'>
+  
+      </div> */}
       
       <div className='inicio-conteiner-imagens'>
       

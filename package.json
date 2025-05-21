@@ -10,13 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.2",
     "@splidejs/react-splide": "^0.7.12",
-    "framer-motion": "^12.6.3",
+    "class-variance-authority": "^0.7.1",
+    "framer-motion": "^12.10.4",
+    "leaflet": "^1.9.4",
+    "bootstrap": "^5.3.6",
     "react": "^19.0.0",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
+    "react-leaflet": "^5.0.0",
     "react-router-dom": "^7.5.0",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.6",
+    "tailwind-variants": "^1.0.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

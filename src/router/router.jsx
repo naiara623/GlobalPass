@@ -2,19 +2,24 @@ import { createBrowserRouter } from "react-router-dom";
 import BoasVindas from "../pages/BoasVindas.jsx";
 import Inicio from "../pages/Inicio.jsx";
 import Login from "../pages/Login.jsx";
-import Cadastro from "../pages/cadastro.jsx";
-import Estudo from "../pages/Estudo.jsx";
-// import Saude from "../pages/Saude.jsx";
-import Transporte from "../pages/Transporte.jsx";
+import Saude from "../pages/Saude.jsx";
+// import Transporte from "../pages/Transporte.jsx";
+import CadastroEscuro from "../pages/CadastroEscuro.jsx";
+import Perfil from "../pages/Perfil.jsx"
+import Educação from "../pages/Educação.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 const router = createBrowserRouter([
     {path: "/", element: <BoasVindas/>},
-    {path: "/cadastro", element: <Cadastro />},
     {path: "/login", element: <Login />},
-    {path: "/inicio", element: <Inicio />},
-    {path: "/estudo", element: <Estudo/>},
-    // {path: "/saude", element: <Saude />},
-    {path: "/transporte", element: <Transporte />},
+     {path: "/saude", element: <Saude />},
+    // {path: "/transporte", element: <Transporte />},
+    {path: "/telainicial", element: <Inicio />},
+    {path: "/cadastro", element: < CadastroEscuro />},
+    {path: "/perfildeusuario", element: <Perfil/>},
+    {path: "/educação", element: <Educação />},
+    {path: "/navbar", element: <Navbar/>}
+   
 ])
 
 
