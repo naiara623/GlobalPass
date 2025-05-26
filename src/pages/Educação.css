@@ -4,8 +4,8 @@
 }
 
 .Vermelho-educação{
-    /* border: 4px solid red; */
-    background-color: #3B444F;
+    border: 4px solid red;
+    /* background-color: #3B444F; */
     height: 2%;
 }
 
@@ -90,9 +90,9 @@
 }
 
 .Branco-educação{
-    /* border: 4px solid white; */
+    border: 4px solid rgb(255, 0, 0);
     height: 100%;
-    width: 4%;
+    width: 100%;
     position: relative;
     left: 95%;
 }
@@ -142,10 +142,31 @@ height: 80%;
     background-color: #607E98;
 }
 
+.info1-educação{
+    border: 2px solid red;
+    height: 100%;
+    width: 50%;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.info2-educação{
+    border: 2px solid red;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .tubarão-educação{
     border: 4px solid black;
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
 }
 
 /* .carrossel-educação{
@@ -217,6 +238,7 @@ height: 80%;
     border: 2px solid yellow;
     height: 80%;
     width: 100%;
+    display: flex;
 }
 
 .patrik-educação{
@@ -291,4 +313,24 @@ color: white;
     height: 90%;
     width: 90%
 
+}
+
+.botao-imagem{
+    border: 2px solid red;
+    width: 90%;
+}
+
+.curso1-educação{
+    color: white;
+    font-size: 17px;
+}
+
+.curso2-educação{
+    color: white;
+    font-size: 17px;
+}
+
+.curso3-educação{
+    color: white;
+    font-size: 17px;
 }

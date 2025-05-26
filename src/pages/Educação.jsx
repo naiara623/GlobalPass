@@ -137,7 +137,6 @@ function Educação() {
                            <h3 className='Paragrafo1-educação'>Os cursos são formações específicas que complementam a educação ou preparam para o mercado de trabalho. Podem ser feitos após ou durante o Ensino Médio.</h3>
                            </div>
                       
-                       
                       </div>
   
                       <div className='abacaxi3-educação'>
@@ -145,9 +144,16 @@ function Educação() {
                             <div className='Titulooi-educação'>
                               <h2>Tipos de cursos</h2>
                             </div>
-
                             <div className='tipos-educação'>
-                              
+                              <div className='info1-educação'>
+                                <ul>
+                                  <p className='curso1-educação'>Técnico:Focado em formação prática para atuar em áreas específicas, geralmente de curta duração (de meses a 2 anos).</p>
+                                  <p className='curso2-educação'>Livre: Cursos sem regulamentação formal, voltados para aprendizado rápido em temas variados.</p> 
+                                  <p className='curso3-educação'>Graduação: Ensino superior que confere diploma de bacharelado, licenciatura ou tecnólogo, com duração média de 2 a 6 anos</p>
+                                </ul>
+                              </div>
+
+                              <div className='info2-educação'></div>
                             </div>
   
                              
@@ -229,10 +235,10 @@ function Educação() {
         <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
-
-       <div className='Vermelho-educação'>
-         {/* <div className='Branco-educação'> <Navbar/> </div> */}
-       </div>
+                <Navbar/>
+       {/* <div className='Vermelho-educação'>
+         <div className='Branco-educação'>  </div>  */}
+        {/* </div>  */}
 
        <div className='Rosa-educação'>
         <div className='Azul-educação'>
@@ -251,18 +257,18 @@ function Educação() {
          <div className='AzulEscuro-educação'>
             <div className='Cinza-educação'>
             <div className="carrossel-educação"> {/* altura total da tela */}
-      <Splide
+{/* <Splide
         options={{
-          type: "loop",
-          perPage: 1, // Um slide por vez
-          autoplay: true,
+          toplay: true,
           interval: 3000,
           pauseOnHover: true,
           arrows: true,
           pagination: true,
         }}
-        aria-label="Imagens de exemplo"
-        className=""
+        ariatype: "loop",
+          perPage: 1, // Um slide por vez
+          au-label="Imagens de exemplo"
+        clas      sName=""
       >
         <SplideSlide>
            <img
@@ -278,7 +284,7 @@ function Educação() {
             className="eja-educação"
           />
          </SplideSlide>
-      </Splide> 
+      </Splide>  */}
     </div>
             </div>
          </div>

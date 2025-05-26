@@ -9,6 +9,7 @@ function LoginClaro() {
   const [mensagemEmail, setMensagemEmail] = useState('');
   const [mensagemSenha, setMensagemSenha] = useState('');
   const [mostrarSenha, setMostrarSenha] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   function handleLogin() {
     let erro = false;
@@ -29,7 +30,7 @@ function LoginClaro() {
 
     if (erro) return;
 
-    const usuarioSalvo = JSON.parse(localStorage.getItem('usuarioCadastro'));
+    const usuarioSalvo = JSON.parse(localStorage.getItem('userProfile'));
 
     if (!usuarioSalvo) {
       setMensagemEmail('Nenhum usuário cadastrado!');
@@ -40,8 +41,7 @@ function LoginClaro() {
       email === usuarioSalvo.email &&
       senha === usuarioSalvo.senha
     ) {
-      alert('Login realizado com sucesso!');
-      navigate('/telainicial');
+      setShowModal(true); // Exibe o modal em vez do alert
     } else {
       setMensagemSenha('Dados incorretos! Verifique suas informações.');
     }
@@ -49,6 +49,11 @@ function LoginClaro() {
 
   function alternarSenha() {
     setMostrarSenha(!mostrarSenha);
+  }
+
+  function fecharModal() {
+    setShowModal(false);
+    navigate('/telainicial'); // redireciona para a tela inicial ao fechar o modal
   }
 
   return (
@@ -76,7 +81,7 @@ function LoginClaro() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              {mensagemEmail && <p style={{ color: 'red', marginTop: '5px' }}>{mensagemEmail}</p>}
+              {mensagemEmail && <p style={{ color: 'red', marginTop: '-3%', fontSize: '1rem' }}>{mensagemEmail}</p>}
             </div>
 
             <div className="nome-Cadastro">
@@ -89,10 +94,11 @@ function LoginClaro() {
                 onChange={(e) => setSenha(e.target.value)}
               />
               <img
-                src="/SenhaInvisivel.png"
-                alt="Mostrar senha"
+                src={mostrarSenha ? "/SenhaVisivel.png" : "/SenhaInvisivel.png"}
+                alt={mostrarSenha ? "Ocultar senha" : "Mostrar senha"}
                 className='imgSenha-Login'
                 onClick={alternarSenha}
+                style={{ cursor: 'pointer' }}
               />
               {mensagemSenha && <p style={{ color: 'red', marginTop: '-5%' }}>{mensagemSenha}</p>}
             </div>
@@ -105,8 +111,49 @@ function LoginClaro() {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {showModal && (
+        <div style={modalOverlayStyle}>
+          <div style={modalContentStyle}>
+            <h2>Login realizado com sucesso!</h2>
+            <button onClick={fecharModal} style={buttonStyle}>Fechar</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+
+const modalOverlayStyle = {
+  position: 'fixed',
+  top: 0, left: 0,
+  width: '100vw',
+  height: '100vh',
+  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  zIndex: 9999,
+};
+
+const modalContentStyle = {
+  backgroundColor: '#3B444F',
+  padding: '30px',
+  borderRadius: '8px',
+  boxShadow: '0 2px 10px rgba(0,0,0,0.3)',
+  textAlign: 'center',
+  maxWidth: '400px',
+  width: '90%',
+};
+
+const buttonStyle = {
+  marginTop: '20px',
+  padding: '10px 20px',
+  fontSize: '16px',
+  cursor: 'pointer',
+  borderRadius: '20px',
+  color: '#2D405A'
+};
 
 export default LoginClaro;

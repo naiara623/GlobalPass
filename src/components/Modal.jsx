@@ -1,11 +1,33 @@
 import React, { useState } from 'react';
 import './Modal.css'; // Criaremos este arquivo depois
+import {useNavigate} from 'react-router-dom';
 
 function Modal() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
+  };
+
+  const irparainicio = () => {
+    navigate('/telainicial')
+  };
+
+  const irparaperfil = () => {
+    navigate('/perfildeusuario')
+  };
+
+  const irparasaude = () => {
+    navigate('/saude')
+  };
+
+  const irparaeducacao = () => {
+    navigate('/educação')
+  };
+
+  const irparatransporte = () => {
+    navigate('/transporte')
   };
 
   return (
@@ -16,13 +38,21 @@ function Modal() {
         <div className="modal-overlay">
           <div className="modal">
             <div className='modal-arruma'>
-            <h2>GLOABL PASS</h2>
+            <h2>GLOBAL PASS</h2>
             
             <button onClick={toggleModal}>X</button>
             </div>
             <div className='modal-arrumar'>
 
+           <div className='Perfil'><button className='butonmodal2' onClick={irparainicio}><img className='img-modal' src="home-page.png" alt="Tela inicial" /> <h3>Tela Inicial</h3></button></div>
 
+           <div className='Perfil'><button className='butonmodal2' onClick={irparaperfil}><img className='img-modal' src="user.png" alt="Perfil de usuario" /> <h3>Perfil de Usuario</h3></button></div>
+
+           <div className='saude'><button className='butonmodal2' onClick={irparasaude}><img className='img-modal' src="hospital.png" alt="Tela de Saude" /> <h3>Saude</h3></button></div>
+
+           <div className='educação'><button className='butonmodal2' onClick={irparaeducacao}><img className='img-modal' src="school.png" alt="tela de educação" /> <h3>Educação</h3></button></div>
+
+           <div className='transporte'><button className='butonmodal2' onClick={irparatransporte}><img className='img-modal' src="bus-stop.png" alt="tela de transportes" /> <h3>Transportes</h3></button></div>
               
             </div>
           </div>

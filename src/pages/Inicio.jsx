@@ -2,7 +2,8 @@ import './Inicio.css'
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Comentarios from '../components/Comentarios';
-import Modal from '../components/Modal';
+// import Modal from '../components/Modal';
+import Navbar from '../components/Navbar';
 
 
 function Inicio() {
@@ -31,6 +32,8 @@ function Inicio() {
    {/* <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style> */}
+
+<Navbar/>
 
       {/* <div className='inicio-navebar'>
   
