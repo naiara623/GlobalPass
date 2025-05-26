@@ -2,11 +2,19 @@ import './Inicio.css'
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Comentarios from '../components/Comentarios';
-// import Modal from '../components/Modal';
-import Navbar from '../components/Navbar';
+import Modal from '../components/Modal';
+import { useNavigate } from 'react-router-dom';
+
 
 
 function Inicio() {
+
+  const navigate = useNavigate()
+
+  const telaTrans = () =>{
+    navigate('/transporte');
+  }
+
 
   const [comentariosExtra, setComentariosExtra] = useState([]);
 
@@ -21,6 +29,8 @@ function Inicio() {
       setNovoComentario(""); // limpar input
     }
   };
+
+ 
 
 
   return (
@@ -51,6 +61,8 @@ function Inicio() {
         
         <div className='inicio-imagens'>
 
+          <div className='inicio-cor'>
+
         <div className="card-3d">
 
   <div className='imagem'><img className='imagens' src="CENTRO-FL.jpg" alt="" /></div>
@@ -65,6 +77,9 @@ function Inicio() {
   <div className='imagem'><img className='imagens' src="PLACAMAR-FL.jpg" alt="" /></div>
 
         </div>
+
+          </div>
+
 
         </div>
       
@@ -82,9 +97,11 @@ function Inicio() {
         <div className='inicio-quadrado-icons'>
 
 <div className='inicio-button'>
-          <button className='inicio-transporte-icon'>
+
+          <button className='inicio-transporte-icon' onClick={telaTrans}>
           <img className='icon-inicio' src="trannsporte.png" alt="" />
           </button>
+
           
           <button className='inicio-estudo-icon'>
           <img className='icon-inicio' src="book.png" alt="" />
@@ -133,7 +150,7 @@ Saúde
         <div className='inicio-div-texto'>
 
 <div className='inicio-texto-video'>
-<h4 className='inicio-titulo'>Floriaópolis, capital de Santa Catarina</h4>
+<h4 className='inicio-titulo'>Florianópolis, capital de Santa Catarina</h4>
         <p className='inicio-frases2'>È uma ilha no sul do Brasil famosa
 por suas prais, natureza e qualidade
 de vida.
@@ -154,7 +171,7 @@ frutos do mar</p>
         </div>
         
         <div className='inicio-div-video'>
-       <iframe width="280px" height="500px" src="floripa-video.mp4" frameborder="0" allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowFullScreen />
+       <iframe width="280px" height="500px" src="floripa-video.mp4" frameBorder="0" allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowFullScreen />
         </div>
       
       </div>
@@ -193,19 +210,7 @@ frutos do mar</p>
 </div>
 </div>
 
-
-
-
-
-
             </div>
-
-      
-            
-        
-
-
-
 
 <div className='inicio-cards-comentarios'>
 <Comentarios comentariosExtras={comentariosExtra}/>

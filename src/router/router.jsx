@@ -4,7 +4,7 @@ import Inicio from "../pages/Inicio.jsx";
 import Login from "../pages/Login.jsx";
 import Saude from "../pages/Saude.jsx";
 import CadastroEscuro from "../pages/CadastroEscuro.jsx";
-import Perfil from "../pages/Perfil.jsx"
+import Perfil from "../pages/Perfil.jsx";
 import Educação from "../pages/Educação.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Transporte from "../pages/Transporte.jsx";

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Modal.css'; // Criaremos este arquivo depois
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Modal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ function Modal() {
             <div className='modal-arruma'>
             <h2>GLOBAL PASS</h2>
             
-            <button onClick={toggleModal}>X</button>
+            <button className='button1' onClick={toggleModal}>X</button>
             </div>
             <div className='modal-arrumar'>
 
