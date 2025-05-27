@@ -44,15 +44,15 @@ function Modal() {
             </div>
             <div className='modal-arrumar'>
 
-           <div className='Perfil'><button className='butonmodal2' onClick={irparainicio}><img className='img-modal' src="home-page.png" alt="Tela inicial" /> <h3>Tela Inicial</h3></button></div>
+           <div className='inicio'><button className='butonmodal1' onClick={irparainicio}><img className='img-modal' src="home-page.png" alt="Tela inicial" /> <h3 className='lulamolusco1-modal'>Tela Inicial</h3></button></div>
 
-           <div className='Perfil'><button className='butonmodal2' onClick={irparaperfil}><img className='img-modal' src="user.png" alt="Perfil de usuario" /> <h3>Perfil de Usuario</h3></button></div>
+           <div className='Perfil'><button className='butonmodal2' onClick={irparaperfil}><img className='img-modal' src="user.png" alt="Perfil de usuario" /> <h3 className='lulamolusco-modal'>Perfil de Usuario</h3></button></div>
 
-           <div className='saude'><button className='butonmodal2' onClick={irparasaude}><img className='img-modal' src="hospital.png" alt="Tela de Saude" /> <h3>Saude</h3></button></div>
+           <div className='saude'><button className='butonmodal3' onClick={irparasaude}><img className='img-modal' src="hospital.png" alt="Tela de Saude" /> <h3 className='lulamolusco2-modal'>Saude</h3></button></div>
 
-           <div className='educação'><button className='butonmodal2' onClick={irparaeducacao}><img className='img-modal' src="school.png" alt="tela de educação" /> <h3>Educação</h3></button></div>
+           <div className='educação'><button className='butonmodal4' onClick={irparaeducacao}><img className='img-modal' src="school.png" alt="tela de educação" /> <h3 className='lulamolusco3-modal'>Educação</h3></button></div>
 
-           <div className='transporte'><button className='butonmodal2' onClick={irparatransporte}><img className='img-modal' src="bus-stop.png" alt="tela de transportes" /> <h3>Transportes</h3></button></div>
+           <div className='transporte'><button className='butonmodal5' onClick={irparatransporte}><img className='img-modal' src="bus-stop.png" alt="tela de transportes" /> <h3 className='lulamolusco4-modal'>Transportes</h3></button></div>
               
             </div>
           </div>

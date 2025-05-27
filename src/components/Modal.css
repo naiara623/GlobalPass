@@ -76,9 +76,19 @@ align-items: center;
     gap: 10%;
   }
 
+  .inicio{
+   /* border: 2px solid red; */
+    height: 10%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .Perfil{
    /* border: 2px solid red; */
     height: 10%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,6 +97,7 @@ align-items: center;
   .saude{
     /* border: 2px solid blue; */
     height: 10%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +106,7 @@ align-items: center;
   .educação{
     /* border: 2px solid rgb(237, 94, 42); */
     height: 10%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,22 +115,122 @@ align-items: center;
   .transporte{
     /* border: 2px solid greenyellow; */
     height: 10%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .butonmodal2{
-    /* border: 2px solid yellow; */
-    height: 90%;
-    width: 90%;
+  .butonmodal1{
+    border: 2px solid #545d69;
+    height: 80%;
+    width: 100%;
+    outline: none;
+    background-color: #545d69;
+
+    /* height: 90%;
+    width: 100%;
     background-color: #545d69;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+  }
+
+  .butonmodal2{
+    border: 2px solid #545d69;
+    height: 80%;
+    width: 100%;
+    outline: none;
+    background-color: #545d69;
+
+    /* height: 90%;
+    width: 100%;
+    background-color: #545d69;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .butonmodal3{
+    border: 2px solid #545d69;
+    height: 80%;
+    width: 100%;
+    outline: none;
+    background-color: #545d69;
+
+    /* height: 90%;
+    width: 100%;
+    background-color: #545d69;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .butonmodal4{
+    border: 2px solid #545d69;
+    height: 80%;
+    width: 100%;
+    outline: none;
+    background-color: #545d69;
+
+    /* height: 90%;
+    width: 100%;
+    background-color: #545d69;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .butonmodal5{
+    border: 2px solid #545d69;
+    height: 80%;
+    width: 100%;
+    outline: none;
+    background-color: #545d69;
+    /* height: 90%;
+    width: 100%;
+    background-color: #545d69;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
   }
 
   .img-modal{
     width: 20%;
     height: 90%;
+    display: flex;
+  }
+
+  .lulamolusco-modal{
+    color: white;
+    position: relative;
+    top: -55%;
+  }
+
+   .lulamolusco1-modal{
+    color: white;
+    position: relative;
+    top: -55%;
+    right: 10%;
+  }
+
+   .lulamolusco2-modal{
+    color: white;
+    position: relative;
+    top: -55%;
+     right: 18%;
+  }
+
+   .lulamolusco3-modal{
+    color: white;
+    position: relative;
+    top: -55%;
+     right: 11%;
+  }
+
+   .lulamolusco4-modal{
+    color: white;
+    position: relative;
+    top: -55%;
+     right: 7%;
   }
