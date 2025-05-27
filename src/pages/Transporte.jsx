@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Transporte.css';
-import Modal from '../components/Modal';
 import busIMG from '../assets/bus.png';
 import bikeIMG from '../assets/bike.png';
 import patineteIMG from '../assets/patinete.png';
 import CarrosselAutomatico from '../components/CarrosselAutomatico';
+import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 
 
@@ -138,6 +138,13 @@ function Transporte() {
         <li>Limite: Não pode sair da ilha, mas pode circular por vias urbanas e ciclovias.</li>
         </ul>
       </ExpandableSection>
+      <h4>Bicicleta </h4> <p>é melhor para trajetos mais longos (ex.: Centro → Lagoa).</p>
+      <h4>Verifique no app </h4> <p>a disponibilidade e áreas de estacionamento para evitar multas.</p>
+
+      <Link to={"https://www.tembici.com.br/pt/"}><img className='icon-app' src="tembici.png" alt="" />  </Link>
+      <Link to={"https://www.biketogofloripa.com.br/"}><img className='icon-app' src="biketogo.png" alt="" />  </Link>
+      <Link to={"https://pedale.net.br/"}><img className='icon-app' src="Pedale.png" alt="" />  </Link>
+      <Link to={"https://jetshr.com/br/"}><img className='icon-app' src="jet.png" alt="" />   </Link>
                 </div>
                 </div>
             )
@@ -148,25 +155,56 @@ function Transporte() {
             imagem: patineteIMG,
             conteudo: (
                 <div className='info-arruma'>
-                    <h3>Patinetes Elétricos</h3>
-                    <p>Novo modal de transporte urbano.</p>
-                    <ul>
-                        <li>Custo médio: R$ 0,50/min</li>
-                        <li>Vantagens: Praticidade</li>
-                        <li>Desafios: Segurança</li>
-                    </ul>
+
+<div className='scrollable-container'> 
+
+                    <h3> Patinetes Elétricos (Lime, Bird, etc.)</h3>
+                  
+                    <ExpandableSection title="Como funciona:">
+        <ul>
+        <li>Empresas como Lime e Bird operam patinetes elétricos espalhados pela cidade.</li>
+        <li>Baixe o app da operadora, escaneie o QR code do patinete e comece a rodar.</li>
+        <li>Estacionamento: Deve ser em locais permitidos (não pode bloquear calçadas).</li>
+        </ul>
+      </ExpandableSection>
+
+      <ExpandableSection title="Valor:">
+        <ul>
+        <li>Desbloqueio: R$ 5,00 a R$ 5,00 a R$ 7,00 (varia por empresa).</li>
+        <li>Por minuto: R$0,50, a R$1,00</li>
+        <li>Exemplo: 15 min = ~R$ 10,00 a R$ 10,00aR 15,00.</li>
+        </ul>
+      </ExpandableSection>
+
+      <ExpandableSection title="Tempo de uso:">
+        <ul>
+        <li>Cobrado por minuto, sem limites pré-definidos (mas a bateria acaba após ~20-30 km).</li>
+        </ul>
+      </ExpandableSection>
+
+      <ExpandableSection title="Onde pode andar:">
+        <ul>
+        <li>Cobertura: Áreas turísticas e planas como Beira-Mar, Lagoa, Jurerê, Centro.</li>
+        <li>Limite: Alguns apps travam se você tentar ir para regiões afastadas (ex.: Santo Antônio de Lisboa ou Costa Norte).</li>
+        <li>Proibido: Calçadas, avenidas de alta velocidade (como a SC-401) e fora da área de operação.</li>
+        </ul>
+      </ExpandableSection>
+      <h4>Patinete  </h4> <p>é mais prático para curtas distâncias (ex.: Beira-Mar → Ponte Hercílio Luz).</p>
+      <h4>Verifique no app </h4> <p>a disponibilidade e áreas de estacionamento para evitar multas.</p>
+      <Link to={"https://jetshr.com/br/"}><img className='icon-app' src="jet.png" alt="" />   </Link>
+      <Link to={"https://whoosh.bike/br"}><img className='icon-app' src="whoosh.png" alt="" />   </Link>
+                </div>
                 </div>
             )
         }
     ];
 
+
+
   return (
     <div className='Trans-conteiner'>
 
-<div className='navbar-Transporte'>
-<div className='navbar-arrumar'></div>
-<div className='navbar-arrumar-modal'> <div className='navbar-arruma'><Modal/></div>  </div>
-</div>
+ <Navbar/>
 
 <div className='transporte-texto-img'>
 <div className='transporte-texto'> 
@@ -189,7 +227,7 @@ function Transporte() {
   {botoesInfo.map((botao) => (
                     <button
                         key={botao.id}
-                        className={`info-button ${infoAtiva === botao.id ? 'ativo' : ''}`}
+                        className={`info-button1 ${infoAtiva === botao.id ? 'ativo' : ''}`}
                         onClick={() => setInfoAtiva(botao.id)}
                     >
                         <img src={botao.imagem} alt={botao.label} className="botao-imagem" />

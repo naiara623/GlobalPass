@@ -8,6 +8,7 @@ import CadastroEscuro from "../pages/CadastroEscuro.jsx";
 import Perfil from "../pages/Perfil.jsx";
 import Educação from "../pages/Educação.jsx";
 import Navbar from "../components/Navbar.jsx";
+import Transporte from "../pages/Transporte.jsx";
 
 const router = createBrowserRouter([
     {path: "/", element: <BoasVindas/>},
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
     {path: "/cadastro", element: < CadastroEscuro />},
     {path: "/perfildeusuario", element: <Perfil/>},
     {path: "/educação", element: <Educação />},
-    {path: "/navbar", element: <Navbar/>}
+    {path: "/navbar", element: <Navbar/>},
+   {path: "/transporte", element: <Transporte/>}
    
 ])
 

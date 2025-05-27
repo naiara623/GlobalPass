@@ -1,69 +1,74 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import './Educação.css'
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import GraduationCapIMG from '../assets/GraduationCapIMG.png'
 import ABC from '../assets/ABC.png'
-import book from '../assets/book.png'
+import ensino from '../assets/ensino.png'
 import Books from '../assets/Books.png'
 import Navbar from '../components/Navbar';
+import { div } from 'framer-motion/client';
 
 
 function Educação() {
 
-  const [infoAtiva, setInfoAtiva] = useState(null);
+const ExpandableSection = ({ title, children }) => {
+        const [isExpanded, setIsExpanded] = useState(false);
+      
+        return (
+          <div className="expandable-section">
+            <div 
+              className="section-header" 
+              onClick={() => setIsExpanded(!isExpanded)}
+              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            >
+              <span className="arrow" style={{ 
+                marginRight: '8px',
+                transform: isExpanded ? 'rotate(90deg)' : 'rotate(0)',
+                transition: 'transform 0.2s ease'
+              }}>
+                ➤
+              </span>
+              <h3>{title}</h3>
+            </div>
+            
+            {isExpanded && (
+              <div className="section-content">
+                {children}
+              </div>
+            )}
+          </div>
+        );
+      };
+
+        const [infoAtiva, setInfoAtiva] = useState(null);
     
     const botoesInfo = [
         {
             id: 'onibus',
-            label: 'fundamental',
+            label: 'ensino fundamental',
             imagem: ABC,
             conteudo: (
-                <div className='telao-informações-educação'>
-            <div className='abacaxi-educação'>
-                    <div className='abacaxi2-educação'>
-                         <h1 className='Titulo2-educação'>Ensino Fundamental</h1>
-                         <div className='divParagrafo-educação'>
-                         <h3 className='Paragrafo1-educação'>O Ensino Fundamental é uma etapa obrigatoria da educação basica no brasil, destinada a crianças de 6 a 14 anos, com duração de 9 anos</h3>
-                         </div>
-                    
-                     
-                    </div>
+              <div className='info-arruma'>
+                <div className='scrollable-container'>
+                  <h3 className='tituloFundamental-educação'>Ensino Fundamental</h3>
 
-                    <div className='abacaxi3-educação'>
-                        <div className='bobesponja-educação'>
+                  <p className='pInformativo-educação'>O Ensino Fundamental é uma etapa obrigatoria da educação basica no brasil, destinada a crianças de 6 a 14 anos, com duração de 9 anos</p>
+                      <ExpandableSection title="1. Estrutura">
+                        <ul>
+                          <li><h4>Anos Inicias</h4> 1º ao 5º ano</li>
+                          <li><h4>Anos Final</h4> 6º ao 9º ano</li>
+                        </ul>
+                      </ExpandableSection>
 
-                            <h2 className='bu-educação'>Estrutura</h2>
+                      <ExpandableSection title="2. Materias">
+                        <ul>
+                          <li><h4>Anos Inicias</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física e Ingles (em algumas escolas)</li>
+                          <li><h4>Anos Final</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física, Ingles e Ensino Religioso (em algumas escolas)</li>
+                        </ul>
+                      </ExpandableSection>
 
-                            <ul className="Lista-educação">
-        <li><strong>Anos Iniciais:</strong> 1º ao 5º ano</li>
-        <li><strong>Anos Finais:</strong> 6º ao 9º ano</li>
-      </ul>
-                        </div>
-
-                        <div className='patrik-educação'>
-
-                         <h2 className='bu2-educação'>Disciplinas</h2>
-
-                         <ul className="Lista-educação">
-        <li>Português, Matemática</li>
-        <li>Ciências, História, Geografia</li>
-        <li>Artes, Inglês, Educação Física</li>
-      </ul>
-
-                        </div>
-                    </div>
-
-                    <div className='abacaxi4-educação'>
-                         <h1 className='Titulo2-educação'>Objetivos</h1>
-
-                         <div className='divParagrafo-educação'>
-                         <h3 className='Paragrafo1-educação'>Promover a alfabetização, o pensamento critico, e a preparação para o ensino médio, alem do desenvolvimento da cidadania</h3>
-                         </div>
-                    
-                     
-                    </div>
-                    
+                      <h3>Objetivos</h3>
+                      <p>Promover a alfabetização, o pensamento critico, e a preparação para o ensino médio, alem do desenvolvimento da cidadania</p>
                 </div>
                 </div>
             )
@@ -71,57 +76,30 @@ function Educação() {
         {
             id: 'bike',
             label: 'Ensino Médio',
-            imagem: book,
+            imagem: ensino,
             conteudo: (
-              <div className='telao-informações-educação'>
-              <div className='abacaxi-educação'>
-                      <div className='abacaxi2-educação'>
-                           <h1 className='Titulo2-educação'>Ensino Médio</h1>
-                           <div className='divParagrafo-educação'>
-                           <h3 className='Paragrafo1-educação'>Última etapa da educação básica, geralmente dos 15 aos 17 anos.
-                           Tem duração de 3 anos e aprofunda os conhecimentos do Ensino Fundamental.</h3>
-                           </div>
-                      
-                       
-                      </div>
-  
-                      <div className='abacaxi3-educação'>
-                          <div className='bobesponja-educação'>
-  
-                              <h2 className='bu-educação'>Estrutura</h2>
-  
-                              <ul className="Lista-educação">
-          <li><strong> Duração:</strong> 3 anos (1º, 2º e 3º anos)</li>
-         
-        </ul>
-                          </div>
-  
-                          <div className='patrik-educação'>
-  
-                           <h2 className='bu2-educação'>Disciplinas</h2>
-  
-                           <ul className="Lista-educação">
-          <li>Português, Matemática</li>
-          <li>Biologia, História, Geografia</li>
-          <li>Artes, Inglês, Educação Física</li>
-          <li>Entre outras</li>
-        </ul>
-  
-                          </div>
-                      </div>
-  
-                      <div className='abacaxi4-educação'>
-                           <h1 className='Titulo2-educação'>Objetivos</h1>
-  
-                           <div className='divParagrafo-educação'>
-                           <h3 className='Paragrafo1-educação'>Preparar o estudante para a vida adulta, faculdade e mercado de trabalho, desenvolvendo a autonomia e aprofundando os conhecimentos adquiridos no Ensino Fundamental.</h3>
-                           </div>
-                      
-                       
-                      </div>
-                      
-                  </div>
-                  </div>
+               <div className='info-arruma'>
+                <div className='scrollable-container'>
+                  <h3 className='tituloFundamental-educação'>Ensino Médio</h3>
+
+                  <p className='pInformativo-educação'>Última etapa da educação básica, geralmente dos 15 aos 17 anos.
+                           Tem duração de 3 anos e aprofunda os conhecimentos do Ensino Fundamental.</p>
+                      <ExpandableSection title="1. Estrutura">
+                        <ul>
+                          <li><h4>Duração</h4>3 anos (1º, 2º e 3º anos)</li>
+                        </ul>
+                      </ExpandableSection>
+
+                      <ExpandableSection title="2. Materias">
+                        <ul>
+                          <li> Portugues, Matemática, Biologia, Histórias, Geografia, Artes, Educação Física, Ingles, Espanhol, Filosofia, Sociologia e Quimica </li>
+                        </ul>
+                      </ExpandableSection>
+
+                      <h3>Objetivos</h3>
+                      <p>Preparar o estudante para a vida adulta, faculdade e mercado de trabalho, desenvolvendo a autonomia e aprofundando os conhecimentos adquiridos no Ensino Fundamental.</p>
+                </div>
+                </div>
             )
         },
         {
@@ -129,43 +107,29 @@ function Educação() {
             label: 'Cursos',
             imagem: Books,
             conteudo: (
-              <div className='telao-informações-educação'>
-              <div className='abacaxi-educação'>
-                      <div className='abacaxi2-educação'>
-                           <h1 className='Titulo2-educação'>Cursos</h1>
-                           <div className='divParagrafo-educação'>
-                           <h3 className='Paragrafo1-educação'>Os cursos são formações específicas que complementam a educação ou preparam para o mercado de trabalho. Podem ser feitos após ou durante o Ensino Médio.</h3>
-                           </div>
-                      
-                       
-                      </div>
-  
-                      <div className='abacaxi3-educação'>
-                          <div className='bobesponja2-educação'>
-                            <div className='Titulooi-educação'>
-                              <h2>Tipos de cursos</h2>
-                            </div>
+              <div className='info-arruma'>
+                <div className='scrollable-container'>
+                  <h3 className='tituloFundamental-educação'>Ensino Fundamental</h3>
 
-                            <div className='tipos-educação'>
-                              
-                            </div>
-  
-                             
-                          </div>
-                      </div>
-  
-                      <div className='abacaxi4-educação'>
-                           <h1 className='Titulo2-educação'>Objetivos</h1>
-  
-                           <div className='divParagrafo-educação'>
-                           <h3 className='Paragrafo1-educação'>Promover a alfabetização, o pensamento critico, e a preparação para o ensino médio, alem do desenvolvimento da cidadania</h3>
-                           </div>
-                      
-                       
-                      </div>
-                      
-                  </div>
-                  </div>
+                  <p className='pInformativo-educação'>O Ensino Fundamental é uma etapa obrigatoria da educação basica no brasil, destinada a crianças de 6 a 14 anos, com duração de 9 anos</p>
+                      <ExpandableSection title="1. Estrutura">
+                        <ul>
+                          <li><h4>Anos Inicias</h4> 1º ao 5º ano</li>
+                          <li><h4>Anos Final</h4> 6º ao 9º ano</li>
+                        </ul>
+                      </ExpandableSection>
+
+                      <ExpandableSection title="2. Materias">
+                        <ul>
+                          <li><h4>Anos Inicias</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física e Ingles (em algumas escolas)</li>
+                          <li><h4>Anos Final</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física, Ingles e Ensino Religioso (em algumas escolas)</li>
+                        </ul>
+                      </ExpandableSection>
+
+                      <h3>Objetivos</h3>
+                      <p>Promover a alfabetização, o pensamento critico, e a preparação para o ensino médio, alem do desenvolvimento da cidadania</p>
+                </div>
+                </div>
             )
         },
         {
@@ -173,66 +137,65 @@ function Educação() {
           label: 'Faculdade',
           imagem: GraduationCapIMG,
           conteudo: (
-            <div className='telao-informações-educação'>
-            <div className='abacaxi-educação'>
-                    <div className='abacaxi2-educação'>
-                         <h1 className='Titulo2-educação'>Faculdade</h1>
-                         <div className='divParagrafo-educação'>
-                         <h3 className='Paragrafo1-educação'>O Ensino Fundamental é uma etapa obrigatoria da educação basica no brasil, destinada a crianças de 6 a 14 anos, com duração de 9 anos</h3>
-                         </div>
-                    
-                     
-                    </div>
+            <div className='info-arruma'>
+                <div className='scrollable-container'>
+                  <h3 className='tituloFundamental-educação'>Ensino Fundamental</h3>
 
-                    <div className='abacaxi3-educação'>
-                        <div className='bobesponja-educação'>
+                  <p className='pInformativo-educação'>O Ensino Fundamental é uma etapa obrigatoria da educação basica no brasil, destinada a crianças de 6 a 14 anos, com duração de 9 anos</p>
+                      <ExpandableSection title="1. Estrutura">
+                        <ul>
+                          <li><h4>Anos Inicias</h4> 1º ao 5º ano</li>
+                          <li><h4>Anos Final</h4> 6º ao 9º ano</li>
+                        </ul>
+                      </ExpandableSection>
 
-                            <h2 className='bu-educação'>Estrutura</h2>
+                      <ExpandableSection title="2. Materias">
+                        <ul>
+                          <li><h4>Anos Inicias</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física e Ingles (em algumas escolas)</li>
+                          <li><h4>Anos Final</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física, Ingles e Ensino Religioso (em algumas escolas)</li>
+                        </ul>
+                      </ExpandableSection>
 
-                            <ul className="Lista-educação">
-        <li><strong>Anos Iniciais:</strong> 1º ao 5º ano</li>
-        <li><strong>Anos Finais:</strong> 6º ao 9º ano</li>
-      </ul>
-                        </div>
-
-                        <div className='patrik-educação'>
-
-                         <h2 className='bu2-educação'>Disciplinas</h2>
-
-                         <ul className="Lista-educação">
-        <li>Português, Matemática</li>
-        <li>Ciências, História, Geografia</li>
-        <li>Artes, Inglês, Educação Física</li>
-      </ul>
-
-                        </div>
-                    </div>
-
-                    <div className='abacaxi4-educação'>
-                         <h1 className='Titulo2-educação'>Objetivos</h1>
-
-                         <div className='divParagrafo-educação'>
-                         <h3 className='Paragrafo1-educação'>Promover a alfabetização, o pensamento critico, e a preparação para o ensino médio, alem do desenvolvimento da cidadania</h3>
-                         </div>
-                    
-                     
-                    </div>
-                    
+                      <h3>Objetivos</h3>
+                      <p>Promover a alfabetização, o pensamento critico, e a preparação para o ensino médio, alem do desenvolvimento da cidadania</p>
                 </div>
                 </div>
           )
         }
+
     ];
+
+  //   const imagens = [
+  //   'enem.png',
+  //   'eja.png',
+  //   'enceja.png',
+  // ];
+    
+      // const [indiceAtual, setIndiceAtual] = useState(0);
+    
+      // useEffect(() => {
+      //   const timer = setInterval(() => {
+      //     setIndiceAtual((prev) => (prev + 1) % imagens.length);
+      //   }, 3000);
+    
+      //   return () => clearInterval(timer);
+      // }, [imagens.length]);
+    
+      // const vaiParaSlide = (index) => {
+      //   setIndiceAtual(index);
+      // };
+    
+      // // Função para debug - verifique no console do navegador
+      // console.log('Caminhos das imagens:', 
+      //   imagens.map(img => `/images/carrossel/${img}`));
   return (
     <div className='Amarelo-educação'>
         
         <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
-
-       <div className='Vermelho-educação'>
-         {/* <div className='Branco-educação'> <Navbar/> </div> */}
-       </div>
+                <Navbar/>
+       
 
        <div className='Rosa-educação'>
         <div className='Azul-educação'>
@@ -250,36 +213,7 @@ function Educação() {
 
          <div className='AzulEscuro-educação'>
             <div className='Cinza-educação'>
-            <div className="carrossel-educação"> {/* altura total da tela */}
-      <Splide
-        options={{
-          type: "loop",
-          perPage: 1, // Um slide por vez
-          autoplay: true,
-          interval: 3000,
-          pauseOnHover: true,
-          arrows: true,
-          pagination: true,
-        }}
-        aria-label="Imagens de exemplo"
-        className=""
-      >
-        <SplideSlide>
-           <img
-            src="img-ganela.jpg"
-            alt="Imagem janela"
-            className="enem-educação"
-          /> </SplideSlide>
 
-        <SplideSlide>
-          <img
-            src="img-montanha.jpg"
-            alt="Imagem montanha"
-            className="eja-educação"
-          />
-         </SplideSlide>
-      </Splide> 
-    </div>
             </div>
          </div>
 
@@ -303,12 +237,15 @@ function Educação() {
             </div>
 
             <div className='Cinza2-educação'>
-
-            {infoAtiva ? (
+              <div className='info-box'>
+                {infoAtiva ? (
                     botoesInfo.find(b => b.id === infoAtiva).conteudo
                 ) : (
                     <p className='p-trans'>Selecione um modal de educação</p>
                 )}
+              </div>
+                
+            
 
             </div>
          </div>

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./Saude.css"
 import Modal from '../components/Modal'
-import { Link } from 'react-router-dom';
-
 
 function Saude() {
 
@@ -170,11 +168,12 @@ const imagens = [
 
     <div className='global-saude'>
 
-      <div className="nav-bar-saude">
+ <Navbar/>
+       {/* <div className="nav-bar-saude">
         <div className="menu-saude">
             <Modal/>
         </div>
-      </div>
+      </div>  */}
 
         <div className="conteine-desing-saude">
             <div className="azul-saude">
