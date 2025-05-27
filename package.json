@@ -12,10 +12,10 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.2",
     "@splidejs/react-splide": "^0.7.12",
+    "bootstrap": "^5.3.6",
     "class-variance-authority": "^0.7.1",
     "framer-motion": "^12.10.4",
     "leaflet": "^1.9.4",
-    "bootstrap": "^5.3.6",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
