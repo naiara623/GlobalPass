@@ -185,8 +185,15 @@ select.vistoIn-Cadastro:valid {
     padding: 10px;              /* espaço interno */
     font-size: 16px;            /* tamanho da fonte */
     width: 100%;                /* largura do select */
-    box-sizing: border-box;     /* inclui a borda e o padding na largura */
+    box-sizing: border-box;   
+     outline: none;  /* inclui a borda e o padding na largura */
   }
+
+  input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 
 .NomeIn-Cadastro{
@@ -198,6 +205,7 @@ select.vistoIn-Cadastro:valid {
   background-color: transparent;
   color: white;
   height: 39%;
+   outline: none;
 }
 
 .cpfIn-Cadastro{
@@ -405,10 +413,10 @@ select.vistoIn-Cadastro:valid {
 
 
   .imgSenha-Cadastro{
-    width: 26px;
+    width: 22px;
     position: relative;
     left: 80%;
-    top: -47px;
+    top: -42px;
   }
 
   .divDentroDeOutra-Cadastro {

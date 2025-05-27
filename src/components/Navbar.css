@@ -1,6 +1,7 @@
 .inicio-navebar{
    /* border: 3px solid #ff0000; */
-   height: 10%;
+   height: 100%;
+   width: 100%;
    background-color: var(--cor-2-escuro);
    display: flex;
    justify-content: center;

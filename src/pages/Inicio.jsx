@@ -1,9 +1,8 @@
 import './Inicio.css'
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import Comentarios from '../components/Comentarios';
-import Modal from '../components/Modal';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 
 
@@ -42,6 +41,8 @@ function Inicio() {
    {/* <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style> */}
+
+<Navbar/>
 
       {/* <div className='inicio-navebar'>
   
@@ -97,16 +98,16 @@ function Inicio() {
 <div className='inicio-button'>
 
           <button className='inicio-transporte-icon' onClick={telaTrans}>
-          <img className='icon-inicio' src="trannsporte.png" alt="" />
+          <img className='icon-inicio' src="trannsporte.png" alt="Tela de transporte" />
           </button>
 
           
           <button className='inicio-estudo-icon'>
-          <img className='icon-inicio' src="book.png" alt="" />
+          <img className='icon-inicio' src="school.png" alt="Tela de educação" />
           </button>
           
           <button className='inicio-saude-icon'>
-          <img className='icon-inicio' src="saude.png" alt="" />
+          <img className='icon-inicio' src="saude.png" alt="Tela de saude" />
           </button>
 </div>
 

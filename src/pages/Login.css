@@ -94,6 +94,7 @@
   background-color: transparent;
   color: white;
   height: 55%;
+  outline: none;
 }
 
 .nomeLabel-Login{
@@ -145,7 +146,7 @@
   }
 
   .imgSenha-Login{
-    width: 30px;
+    width: 25px;
     position: relative;
     left: 90%;
     top: -50px;

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Transporte.css';
-import Modal from '../components/Modal';
 import busIMG from '../assets/bus.png';
 import bikeIMG from '../assets/bike.png';
 import patineteIMG from '../assets/patinete.png';
 import CarrosselAutomatico from '../components/CarrosselAutomatico';
+import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 
 
@@ -204,10 +204,7 @@ function Transporte() {
   return (
     <div className='Trans-conteiner'>
 
-<div className='navbar-Transporte'>
-<div className='navbar-arrumar'></div>
-<div className='navbar-arrumar-modal'> <div className='navbar-arruma'><Modal/></div>  </div>
-</div>
+ <Navbar/>
 
 <div className='transporte-texto-img'>
 <div className='transporte-texto'> 
