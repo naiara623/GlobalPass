@@ -314,7 +314,10 @@ function Educação() {
          </div>
 
          <div className='RoxoClaro-educação'>
-            <div className='tubarão-educação'></div>
+            <div className='tubarão-educação'>
+
+               <div><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cG76n36kAR8emNl415kZpH6B-QXa6aQ&ehbc=2E312F&noprof=1" width="640" height="480" className='mapa-educacao'></iframe></div>
+            </div>
 
             
          </div>
