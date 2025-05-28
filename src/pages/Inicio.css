@@ -184,7 +184,7 @@ display: flex;
   
   .card-3d .imagem {
     position: absolute;
-    width: 35%;
+    width: 40%;
     height: 80%;
     background-color: var(--cor-2-escuro);
     border: solid 1px var(--cor-2-escuro);
@@ -206,52 +206,52 @@ display: flex;
   }
   
   .card-3d .imagem:nth-child(1) {
-    transform: translate(-50%, -50%) rotateY(0deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(0deg) translateZ(300px);
     animation-delay: -0s;
   }
   
   .card-3d .imagem:nth-child(2) {
-    transform: translate(-50%, -50%) rotateY(36deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(36deg) translateZ(300px);
     animation-delay: -2s;
   }
   
   .card-3d .imagem:nth-child(3) {
-    transform: translate(-50%, -50%) rotateY(72deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(72deg) translateZ(300px);
     animation-delay: -4s;
   }
   
   .card-3d .imagem:nth-child(4) {
-    transform: translate(-50%, -50%) rotateY(108deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(108deg) translateZ(300px);
     animation-delay: -6s;
   }
   
   .card-3d .imagem:nth-child(5) {
-    transform: translate(-50%, -50%) rotateY(144deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(144deg) translateZ(300px);
     animation-delay: -8s;
   }
   
   .card-3d .imagem:nth-child(6) {
-    transform: translate(-50%, -50%) rotateY(180deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(180deg) translateZ(300px);
     animation-delay: -10s;
   }
   
   .card-3d .imagem:nth-child(7) {
-    transform: translate(-50%, -50%) rotateY(216deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(216deg) translateZ(300px);
     animation-delay: -12s;
   }
   
   .card-3d .imagem:nth-child(8) {
-    transform: translate(-50%, -50%) rotateY(252deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(252deg) translateZ(300px);
     animation-delay: -14s;
   }
   
   .card-3d .imagem:nth-child(9) {
-    transform: translate(-50%, -50%) rotateY(288deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(288deg) translateZ(300px);
     animation-delay: -16s;
   }
   
   .card-3d .imagem:nth-child(10) {
-    transform: translate(-50%, -50%) rotateY(324deg) translateZ(350px);
+    transform: translate(-50%, -50%) rotateY(324deg) translateZ(300px);
     animation-delay: -18s;
   }
   
@@ -508,8 +508,11 @@ gap: 5%;
 
     .inicio-conteiner-arrumar{
         /* border: 5px solid #664c29; */
-        height: 90%;
-        width:  80%; 
+        height: 100%;
+        width:  100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 .inicio-bloco{background-image: radial-gradient(circle 800px at 50% -150%, var(--cor-1-claro), var(--cor-2-escuro));

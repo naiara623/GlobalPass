@@ -1,135 +1,226 @@
+/* Estilos do container principal */
 .comentarios-container {
   position: relative;
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+  top: 40%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Pilha de comentários no fundo */
+.comentario-stack {
+  position: absolute;
+  
+
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.comentario-stack:nth-child(1) {
+  top: -10px;
+  left: 1%;
+  width: 98%;
+  z-index: 3;
+  height: 95%;
+    background-color: #eeecec;
+}
+
+.comentario-stack:nth-child(2) {
+  top: -15px;
+  left: 2%;
+  width: 96%;
+  z-index: 2;
+  height: 90%;
+    background-color: #e1dddd;
+}
+
+.comentario-stack:nth-child(3) {
+  top: -20px;
+  left: 3%;
+  width: 94%;
+  z-index: 1;
+  height: 100%;
+    background-color: #c4bfbf;
+}
+
+/* Card do comentário principal */
+.comentario-card {
+  position: relative;
+  z-index: 4;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.comentarios-arruma-pelo-amor-de-deus {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+
+/* Estilos do avatar e conteúdo */
+.flex.items-center {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100%;
-
-  overflow: hidden; /* Adicionado para evitar rolagem padrão */
+  gap: 12px;
 }
 
-/* Caixa principal do comentário */
-.comentario-card {
-  border: 1px solid #2d2d2d;
-  top: 5%;
-  position: relative;
-  width: 80%;
-  height: 60%;
-  background: var(--cor-2-escuro);
-  color: white;
-  border-radius: 20px;
-  box-shadow: 0% 10% 20% rgba(0, 0, 0, 0.3);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-
-}
-
-/* Estilo das camadas de fundo */
-.comentario-stack {
-   /* border: 5px solid #91ff00; */
-  position: absolute;
-  width: 80%;
-  height: 60%;
-  background: var(--cor-2-claro);
-  border-radius: 16px;
-  box-shadow: 0% 10% 15% rgba(0, 0, 0, 0.2);
-  }
-
-
-
-/* Primeira camada */
-.comentario-stack:nth-child(1) {
-  transform: translateY(10%) scale(1);
-  opacity: 0.9;
-  width: 65%;
-  top: 5%;
-left: 17.5%;}
-
-/* Segunda camada */
-.comentario-stack:nth-child(2) {
-  transform: translateY(16%) scale(1);
-  opacity: 0.95;
-  width: 70%;
-  top: 6%;
-  left: 15%
-}
-
-/* Terceira camada */
-.comentario-stack:nth-child(3) {
-  transform: translateY(22%) scale(1);
-  opacity: 1;
-  width: 75%;
-  top: 7%;
-  left: 12.5%}
-
-/* Avatar do usuário */
-.comentario-avatar { 
-  /* border: 5px solid #91ff00; */
-  width: 10%;
-  height: 50px;
-  background: var(--cor-2-claro);
+.comentario-avatar {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
- 
-
+  background-color: #e0e0e0;
+  background-image: linear-gradient(45deg, #f5f5f5, #e0e0e0);
 }
 
-.comentario-arrumar{
-  /* border: 5px solid  #002766;; */
-  width: 100%;
-  height: 10%;
+.comentario-arrumar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-/* Texto do comentário */
+.font-bold {
+  font-weight: 600;
+  color: #333;
+}
+
 .comentario-texto {
-   /* border: 5px solid #e40000; */
-  font-size: 15px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
-/* Tempo e botão responder */
+/* Rodapé do comentário */
 .comentario-footer {
-   /* border: 5px solid #0004ff; */
-  font-size: 15px;
-  color: #b0c4de;
-  width: 100%;
-  height: 12%;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
 }
 
 .comentario-footer span {
-   /* border: 5px solid #f34704; */
-  color: white;
+  color: #3897f0;
+  margin-left: 8px;
+}
+
+.comentario-footer span:hover {
+  text-decoration: underline;
   cursor: pointer;
-  font-weight: bold;
 }
 
-
-.comentario-stack { 
-  border: 1px solid #2d2d2d;
-  position: absolute;
-  top: 3%;
-  left: 10%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 60%;
-  background: var(--cor-1-claro);
-  border-radius: 16px;
-  box-shadow: 0% 10% 15% rgba(0, 0, 0, 0.589);
+/* Estilos para respostas */
+.resposta-card {
+  margin-top: 12px;
+  margin-left: 20px;
+  padding: 12px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border-left: 3px solid #ddd;
 }
 
-.comentarios-arruma-pelo-amor-de-deus{ 
-  /* border: 5px solid #f9b7af; */
-height: 100%;
-width: 100%;
+.resposta-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #d4edda;
+  background-image: linear-gradient(45deg, #e8f5e9, #d4edda);
 }
 
+.resposta-footer {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 4px;
+}
 
+/* Estilos do input (mantendo suas classes originais) */
+.inicio-arrumar1 {
+  margin-top: 20px;
+  width: 100%;
+}
 
+.inicio-input-comentar {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
 
+.inicio-input-comentar:focus {
+  border-color: #3897f0;
+}
 
+.inicio-arrumar2 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
 
+.inicio-de-emoje, 
+.inicio-de-imagem, 
+.inicio-de-comentar {
+  display: flex;
+  align-items: center;
+}
 
+.inicio-button-emoje, 
+.inicio-button-imagem {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
 
+.inicio-button-emoje:hover, 
+.inicio-button-imagem:hover {
+  opacity: 1;
+}
 
+.inicio-button-emoje {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/><circle cx="8.5" cy="10.5" r="1.5"/><circle cx="15.5" cy="10.5" r="1.5"/><path d="M12 18c4 0 5-4 5-4H7s1 4 5 4z"/></svg>');
+}
 
+.inicio-button-imagem {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z"/><path d="m10 14-1-1-3 4h12l-5-7z"/><circle cx="8.5" cy="9.5" r="1.5"/></svg>');
+}
 
+.inicio-button-comentar {
+  padding: 8px 16px;
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
 
+.inicio-button-comentar:hover {
+  background-color: #2680e0;
+}
 
+.inicio-button-comentar:disabled {
+  background-color: #b2dffc;
+  cursor: not-allowed;
+}
+
+/* Efeitos de animação */
+.comentario-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.comentario-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}

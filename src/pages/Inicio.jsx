@@ -15,19 +15,41 @@ function Inicio() {
   }
 
 
-  const [comentariosExtra, setComentariosExtra] = useState([]);
-
   const [novoComentario, setNovoComentario] = useState("");
+  const [respondendoPara, setRespondendoPara] = useState(null);
+  const [comentariosExtras, setComentariosExtras] = useState([]);
+
+  const handleResponder = (usuario) => {
+    setRespondendoPara(usuario);
+    setNovoComentario(`@${usuario} `);
+  };
 
   const adicionarComentario = () => {
-    if (novoComentario.trim() !== "") {
-      setComentariosExtra((prev) => [
-        ...prev,
-        { usuario: "Novo Usuario", texto: novoComentario, tempo: "agora" }
-      ]);
-      setNovoComentario(""); // limpar input
+    if (novoComentario.trim()) {
+      if (respondendoPara) {
+        // Lógica para adicionar resposta (pode precisar ser ajustada)
+        const novoComentarioObj = {
+          usuario: "Você",
+          texto: novoComentario,
+          tempo: "Agora",
+          respondendoA: respondendoPara
+        };
+        setComentariosExtras([...comentariosExtras, novoComentarioObj]);
+      } else {
+        // Lógica para novo comentário principal
+        const novoComentarioObj = {
+          usuario: "Você",
+          texto: novoComentario,
+          tempo: "Agora"
+        };
+        setComentariosExtras([...comentariosExtras, novoComentarioObj]);
+      }
+      
+      setNovoComentario("");
+      setRespondendoPara(null);
     }
   };
+
 
  
 
@@ -189,30 +211,50 @@ frutos do mar</p>
 
 <div className='inicio-bloco'>
 
-<div className='inicio-arrumar1'>
-                <input className='inicio-input-comentar' type="text"   value={novoComentario}
-          onChange={(e) => setNovoComentario(e.target.value)}/>
-</div>
 
-<div className='inicio-arrumar2'>
 
-<div className='inicio-de-emoje'>
-                <button className='inicio-button-emoje'></button>
-</div>
 
-<div className='inicio-de-imagem'>
-                <button className='inicio-button-imagem'></button>
-</div>
+      {/* Seção de input (mantendo suas classes originais) */}
+      <div className='inicio-arrumar1'>
+        <input 
+          className='inicio-input-comentar' 
+          type="text"   
+          value={novoComentario}
+          onChange={(e) => setNovoComentario(e.target.value)}
+          placeholder={respondendoPara ? `Respondendo a ${respondendoPara}...` : "Adicione um comentário..."}
+        />
+      </div>
 
-<div className='inicio-de-comentar'>
-                <button className='inicio-button-comentar'  onClick={adicionarComentario}></button>
-</div>
-</div>
+      <div className='inicio-arrumar2'>
+        <div className='inicio-de-emoje'>
+          <button className='inicio-button-emoje'></button>
+        </div>
+
+        <div className='inicio-de-imagem'>
+          <button className='inicio-button-imagem'></button>
+        </div>
+
+        <div className='inicio-de-comentar'>
+          <button 
+            className='inicio-button-comentar'  
+            onClick={adicionarComentario}
+          >
+            {respondendoPara ? "Responder" : "Comentar"}
+          </button>
+        </div>
+      </div>
+    </div>
+
 
             </div>
 
 <div className='inicio-cards-comentarios'>
-<Comentarios comentariosExtras={comentariosExtra}/>
+  
+  <Comentarios 
+        comentariosExtras={comentariosExtras} 
+        onResponder={handleResponder}
+      />
+
 </div>
 
 
@@ -222,8 +264,7 @@ frutos do mar</p>
        
 
         </div>
-      
-      </div>
+     
 
       <div className='inicio-roda-pe'>
 
