@@ -1,5 +1,5 @@
 import './Inicio.css'
-import { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import Comentarios from '../components/Comentarios';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -7,6 +7,22 @@ import Navbar from '../components/Navbar';
 
 
 function Inicio() {
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const items = [
+    { value: '1.2 × 0.5 = 0.48', color: '#ff6b6b' },
+    { value: '1.2', color: '#ff8787' },
+    { value: '× 0.5', color: '#fa5252' },
+    { value: '0.48', color: '#ff6b6b' }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex(prev => (prev + 1) % items.length);
+    }, 1500); // Roda a cada 1.5 segundos
+
+    return () => clearInterval(interval);
+  }, []);
 
   const navigate = useNavigate()
 
@@ -81,26 +97,31 @@ function Inicio() {
         </div>
         
         <div className='inicio-imagens'>
-
-          <div className='inicio-cor'>
-
-        <div className="card-3d">
-
-  <div className='imagem'><img className='imagens' src="CENTRO-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="CENTRO-SOL-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="CENTROIGREJA-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="IGREJA-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="MERCADO-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="MUSEL-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="PRAIA-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="PREDA-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="PLACA-FL.jpg" alt="" /></div>
-  <div className='imagem'><img className='imagens' src="PLACAMAR-FL.jpg" alt="" /></div>
-
-        </div>
-
-          </div>
-
+          
+<div className="carrossel-horizontal-container">
+      <div className="carrossel-track">
+        {items.map((item, index) => {
+          let position = (index - activeIndex + items.length) % items.length;
+          let scale = position === 0 ? 1.1 : 0.9;
+          let opacity = position === 0 ? 1 : 0.6;
+          
+          return (
+            <div 
+              key={index}
+              className="carrossel-item"
+              style={{
+                transform: `translateX(${position * 110 - 10}%) scale(${scale})`,
+                backgroundColor: item.color,
+                opacity: opacity,
+                zIndex: items.length - position
+              }}
+            >
+              <span className="math-value">{item.value}</span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
 
         </div>
       
@@ -213,7 +234,6 @@ frutos do mar</p>
 
 
 
-
       {/* Seção de input (mantendo suas classes originais) */}
       <div className='inicio-arrumar1'>
         <input 
@@ -249,12 +269,12 @@ frutos do mar</p>
             </div>
 
 <div className='inicio-cards-comentarios'>
-  
-  <Comentarios 
+
+{/* Seção de comentários */}
+      <Comentarios 
         comentariosExtras={comentariosExtras} 
         onResponder={handleResponder}
       />
-
 </div>
 
 

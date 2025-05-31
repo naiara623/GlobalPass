@@ -12,10 +12,17 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.2",
     "@splidejs/react-splide": "^0.7.12",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
     "bootstrap": "^5.3.6",
     "class-variance-authority": "^0.7.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "framer-motion": "^12.10.4",
+    "jsonwebtoken": "^9.0.2",
     "leaflet": "^1.9.4",
+    "multer": "^2.0.0",
+    "mysql2": "^3.14.1",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
@@ -38,5 +45,18 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
     "vite": "^6.1.0"
-  }
+  },
+  "description": "O GlobalPass é um site dedicado a imigrantes e emigrantes, oferecendo informações essenciais para quem está mudando de país. Com um design intuitivo e acessível, o site fornece guias sobre saúde, educação e transportes, além de uma comunidade interativa onde usuários podem compartilhar experiências e receber suporte.\r   Nosso objetivo é facilitar a adaptação e integração dos migrantes, conectando culturas e promovendo uma transição mais tranquila para a nova jornada.\r   Site para ajudar imigrantes ou emigrantes em um novo pais",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naiara623/GlobalPass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naiara623/GlobalPass/issues"
+  },
+  "homepage": "https://github.com/naiara623/GlobalPass#readme"
 }

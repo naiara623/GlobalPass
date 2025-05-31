@@ -13,14 +13,17 @@ import Navbar from "../components/Navbar.jsx";
 const router = createBrowserRouter([
     {path: "/", element: <BoasVindas/>},
     {path: "/login", element: <Login />},
-     {path: "/saude", element: <Saude />},
+    {path: "/saude", element: <Saude />},
     {path: "/transporte", element: <Transporte />},
     {path: "/telainicial", element: <Inicio />},
     {path: "/cadastro", element: < CadastroEscuro />},
     {path: "/perfildeusuario", element: <Perfil/>},
     {path: "/educação", element: <Educação />},
     {path: "/navbar", element: <Navbar/>},
-   {path: "/transporte", element: <Transporte/>}
+   {path: "/transporte", element: <Transporte/>},
+  
+   
+
    
 ])
 
