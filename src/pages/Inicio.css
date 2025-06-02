@@ -92,17 +92,14 @@ background-color: var(--cor-fundo);
 }
  .inicio-imagens{
     /* border: 3px solid #012bff; */
-    height: 50%;
+    height: 70%;
     width: 100%;
-    right: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
  }
 
  .inicio-comentario{
     /* border: 3px solid #256306; */
-    height: 50%;
+    height: 30%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -165,24 +162,25 @@ background-color: var(--cor-fundo);
 /* CarrosselHorizontal.css */
 .carrossel-horizontal-container {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 40px 0;
+  height: 100%;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  justify-content: end;
 }
 
 .carrossel-track {
   display: flex;
   position: relative;
-  height: 120px;
+  height: 100%;
+  width: 50%;
   align-items: center;
+left: -70%;
 }
 
 .carrossel-item {
   position: absolute;
-  width: 100px;
-  height: 80px;
+  width: 40%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,10 +189,20 @@ background-color: var(--cor-fundo);
   font-weight: bold;
   color: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 4s cubic-bezier(0.25, 0.1, 0.25, 0.1, 0.25, 0.1, 0.25, 0.1, 1);
   left: 50%;
   transform-origin: center;
 }
+
+.carrossel-item:nth-child(1) { transition-delay: 0s; }
+.carrossel-item:nth-child(2) { transition-delay: 0.1s; }
+.carrossel-item:nth-child(3) { transition-delay: 0.2s; }
+.carrossel-item:nth-child(4) { transition-delay: 0.3s; }
+.carrossel-item:nth-child(5) { transition-delay: 0.4s; }
+.carrossel-item:nth-child(6) { transition-delay: 0.5s; }
+.carrossel-item:nth-child(7) { transition-delay: 0.6s; }
+.carrossel-item:nth-child(8) { transition-delay: 0.7s; }
+.carrossel-item:nth-child(9) { transition-delay: 0.8s; }
 
 .math-value {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -219,6 +227,38 @@ background-color: var(--cor-fundo);
   .carrossel-track {
     height: 100px;
   }
+}
+
+.imagens-fl1{
+  height: 50%; 
+width: 70%;
+}
+.imagens-fl2{
+  height: 50%; 
+width: 70%;
+}
+.imagens-fl3{
+  height: 50%; 
+width: 70%;
+}.imagens-fl4{
+  height: 50%; 
+width: 70%;
+}.imagens-fl5{
+  height: 50%; 
+width: 70%;
+}.imagens-fl6{
+  height: 50%; 
+width: 70%;
+}
+.imagens-fl7{
+  height: 50%; 
+width: 70%;
+}.imagens-fl8{
+  height: 50%; 
+width: 70%;
+}.imagens-fl9{
+  height: 50%; 
+width: 70%;
 }
   /* linha bonita */
   

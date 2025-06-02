@@ -6,14 +6,75 @@ import Navbar from '../components/Navbar';
 
 
 
+
 function Inicio() {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
-    { value: '1.2 × 0.5 = 0.48', color: '#ff6b6b' },
-    { value: '1.2', color: '#ff8787' },
-    { value: '× 0.5', color: '#fa5252' },
-    { value: '0.48', color: '#ff6b6b' }
+    { id:'1',
+      conteudo: (
+<div className='div-imagens-fl'>
+  < img className='imagens-fl1' src="./fl-pedra.png" alt="" />
+</div>
+      ),
+    },
+
+    { id:'2',
+      conteudo: (
+        <div  className='div-imagens-fl'>
+          <img className='imagens-fl2' src="./fl-manha.png" alt="" />
+        </div>
+              ),
+    },
+    { id:'3',
+      conteudo: (
+        <div  className='div-imagens-fl'>
+          <img className='imagens-fl3' src="./fl-noite.png" alt="" />
+        </div>
+              ),
+    },
+    { id:'4', 
+      conteudo: (
+        <div  className='div-imagens-fl'>
+          <img className='imagens-fl4' src="./fl-porsol.png" alt="" />
+        </div>
+              ),
+    },
+    { id:'5', 
+      conteudo: (
+        <div  className='div-imagens-fl'>
+          <img className='imagens-fl5' src="./fl-museu.png" alt="" />
+        </div>
+              ),
+    },
+    { id:'6', 
+      conteudo: (
+        <div  className='div-imagens-fl'>
+          <img className='imagens-fl6' src="./fl-praia.png" alt="" />
+        </div>
+              ),
+    },
+    { id:'7', 
+      conteudo: (
+        <div  className='div-imagens-fl'>
+          <img className='imagens-fl7' src="./fl-igreja.png" alt="" />
+        </div>
+              ),
+    },
+    { id:'8', 
+      conteudo: (
+        <div  className='div-imagens-fl'>
+          <img className='imagens-fl8' src="./fl-dia.png" alt="" />
+        </div>
+              ),
+    },
+    { id:'9', 
+      conteudo: (
+        <div  className='div-imagens-fl'>
+          <img className='imagens-fl9' src="./fl-parque.png" alt="" />
+        </div>
+              ),
+    }
   ];
 
   useEffect(() => {
@@ -81,10 +142,6 @@ function Inicio() {
 </style> */}
 
 <Navbar/>
-
-      {/* <div className='inicio-navebar'>
-  
-      </div> */}
       
       <div className='inicio-conteiner-imagens'>
       
@@ -102,8 +159,8 @@ function Inicio() {
       <div className="carrossel-track">
         {items.map((item, index) => {
           let position = (index - activeIndex + items.length) % items.length;
-          let scale = position === 0 ? 1.1 : 0.9;
-          let opacity = position === 0 ? 1 : 0.6;
+          let scale = position === 0 ? 1.2 : 0.9;
+          let opacity = position === 0 ? 2 : 0.8;
           
           return (
             <div 
@@ -111,12 +168,12 @@ function Inicio() {
               className="carrossel-item"
               style={{
                 transform: `translateX(${position * 110 - 10}%) scale(${scale})`,
-                backgroundColor: item.color,
+                backgroundColor: item.i,
                 opacity: opacity,
                 zIndex: items.length - position
               }}
             >
-              <span className="math-value">{item.value}</span>
+              <span className="math-value">{item.conteudo}</span>
             </div>
           );
         })}
@@ -234,7 +291,7 @@ frutos do mar</p>
 
 
 
-      {/* Seção de input (mantendo suas classes originais) */}
+      {/* Seção de input (mantendo suas classNames originais) */}
       <div className='inicio-arrumar1'>
         <input 
           className='inicio-input-comentar' 
