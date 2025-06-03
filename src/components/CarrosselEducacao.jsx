@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './CarrosselAu.css';
 
-const CarrosselAutomatico = () => {
+const CarrosselEducacao = () => {
   // Nomes dos arquivos (certifique-se que existem na pasta public/images/carrossel)
   const imagens = [
     'bikes.jpg',
@@ -60,4 +60,4 @@ const CarrosselAutomatico = () => {
   );
 };
 
-export default CarrosselAutomatico;
+export default CarrosselEducacao;

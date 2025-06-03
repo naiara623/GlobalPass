@@ -7,6 +7,7 @@ function Perfil() {
 
   const [dados, setDados] = useState({
     nome: '',
+    telefone: '',
     email: '',
     nacionalidade: '',
     idioma: ''
@@ -15,6 +16,7 @@ function Perfil() {
   const [editando, setEditando] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [acao, setAcao] = useState(''); // 'sair' ou 'excluir'
+  const [showSuccessModal, setShowSuccessModal] = useState(false); // Modal de sucesso
 
   useEffect(() => {
     const storedData = localStorage.getItem('userProfile');
@@ -37,6 +39,10 @@ function Perfil() {
     if (editando) {
       // Se estiver editando, ao clicar no botão, salvar as alterações
       saveToLocalStorage(dados);
+      setShowSuccessModal(true);
+      setTimeout(() => {
+        setShowSuccessModal(false);
+      }, 5000); // Fecha o modal automaticamente após 5 segundos
     }
     setEditando(!editando);
   };
@@ -73,15 +79,34 @@ function Perfil() {
         <div className="divQualquer2-perfil"></div>
         <div className="divRosa-Perfil">
           <div className="divRoxa-perfil">
-            <div className="profile-container">
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '90%', widows: '90%'}}>
               <div className="avatar">
-                {/* Imagem de perfil aqui (opcional) */}
+                
+                <img className='foto-perfil' src="Test Account.png" alt="Perfil de usuário" />
               </div>
-              <button className="add-button">+</button>
             </div>
-
             <div className="NomePessoa-Perfil">
-              <h1 className='titulo2-perfil'>{dados.nome || 'Nome da Pessoa'}</h1>
+              {editando ? (
+                <input
+                  type="text"
+                  className='NomeIno-perfil'
+                  placeholder='Digite seu nome'
+                  value={dados.nome}
+                  name="nome"
+                  onChange={handleChange}
+                  style={{
+                    fontSize: '31px',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    background: 'transparent',
+                    border: 'none',
+                    outline: 'none',
+                    color: 'white'
+                  }}
+                />
+              ) : (
+                <h1 className='titulo2-perfil'>{dados.nome || 'Nome da Pessoa'}</h1>
+              )}
             </div>
           </div>
         </div>
@@ -94,22 +119,20 @@ function Perfil() {
 
       <div className="divVermelha-perfil">
         <div className="divverde-perfil"></div>
-
         <div className="divazulcaro">
           <div className="divroxaescuro-perfil"></div>
-
           <div className="divlaranja-perfil">
             <div className="nada-perfil"></div>
             <div className="divverdeescuro-perfil">
 
               <div className="nome-perfil">
-                <label className='nomeLabel-perfil'>Nome:</label>
+                <label className='nomeLabel-perfil'>Telefone:</label>
                 <input
                   type="text"
                   className='NomeIn-perfil'
-                  placeholder='Ex: Maria'
-                  value={dados.nome}
-                  name="nome"
+                  placeholder='Ex: (00) 00000-0000'
+                  value={dados.telefone}
+                  name="telefone"
                   onChange={handleChange}
                   disabled={!editando}
                 />
@@ -176,6 +199,18 @@ function Perfil() {
             <div style={{ marginTop: '20px' }}>
               <button onClick={confirmarAcao} style={buttonStyle}>Sim</button>
               <button onClick={cancelarAcao} style={buttonStyle}>Não</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal de sucesso */}
+      {showSuccessModal && (
+        <div style={modalOverlayStyle}>
+          <div style={modalContentStyle}>
+            <h3>Salvo com sucesso!</h3>
+            <div style={{ marginTop: '20px' }}>
+              <button onClick={() => setShowSuccessModal(false)} style={buttonStyle}>OK</button>
             </div>
           </div>
         </div>

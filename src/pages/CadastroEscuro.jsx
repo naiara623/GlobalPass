@@ -14,7 +14,6 @@ function CadastroEscuro() {
   const [senha, setSenha] = useState('');
   const [confirmaSenha, setConfirmaSenha] = useState('');
   const [mensagemErro, setMensagemErro] = useState({});
-  const [termosAceitos, setTermosAceitos] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showSenha, setShowSenha] = useState(false);
   const [showConfirmaSenha, setShowConfirmaSenha] = useState(false);
@@ -50,7 +49,6 @@ function CadastroEscuro() {
     if (!senha) novosErros.senha = "Campo obrigatorio.";
     if (!confirmaSenha) novosErros.confirmaSenha = "Campo obrigatorio.";
     if (senha && confirmaSenha && senha !== confirmaSenha) novosErros.confirmaSenha = "Senhas não conferem.";
-    if (!termosAceitos) novosErros.termosAceitos = "Você precisa aceitar os termos.";
 
     if (Object.keys(novosErros).length > 0) {
       setMensagemErro(novosErros);
@@ -76,12 +74,11 @@ function CadastroEscuro() {
     setVisto('');
     setSenha('');
     setConfirmaSenha('');
-    setTermosAceitos(false);
     setMensagemErro({});
   }
 
   const renderErro = (campo) => mensagemErro[campo] && (
-    <p style={{ color: 'red', marginTop: '-8%', fontSize: '0.85rem' }}>{mensagemErro[campo]}</p>
+    <p style={{ color: 'red', marginTop: '-6%', fontSize: '0.85rem' }}>{mensagemErro[campo]}</p>
   );
 
   return (
@@ -212,7 +209,7 @@ function CadastroEscuro() {
           <div className="roxaClaro-Cadastro">
             <div className="divDentroDeOutra-Cadastro">
               <div className="checkbox-wrapper-46">
-                <input type="checkbox" id="cbx-46" className="inp-cbx" checked={termosAceitos} onChange={() => setTermosAceitos(!termosAceitos)} />
+                <input type="checkbox" id="cbx-46" className="inp-cbx" />
                 <label htmlFor="cbx-46" className="cbx">
                   <span>
                     <svg viewBox="0 0 12 10" height="10px" width="12px">
@@ -221,7 +218,6 @@ function CadastroEscuro() {
                   </span>
                   <span>Li e concordo com os termos de uso</span>
                 </label>
-                {renderErro('termosAceitos')}
               </div>
             </div>
 
