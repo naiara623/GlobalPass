@@ -9,6 +9,8 @@ import Perfil from "../pages/Perfil.jsx";
 import Educação from "../pages/Educação.jsx";
 import Navbar from "../components/Navbar.jsx";
 import GlobalPost from "../pages/GlobalPost.jsx";
+import TelaDePostagem from "../pages/TelaDePostagem.jsx";
+import PerfilDePostagem from "../pages/PerfilDePostagem.jsx";
 
 
 const router = createBrowserRouter([
@@ -21,8 +23,10 @@ const router = createBrowserRouter([
     {path: "/perfildeusuario", element: <Perfil/>},
     {path: "/educação", element: <Educação />},
     {path: "/navbar", element: <Navbar/>},
-   {path: "/transporte", element: <Transporte/>},
-  {path:"/postagem", element: <GlobalPost/>}
+    {path: "/transporte", element: <Transporte/>},
+    {path:"/postagem", element: <GlobalPost/>},
+    {path:"/telapostagem", element: <TelaDePostagem/>},
+    {path:"/Perfilpostagem", element: <PerfilDePostagem/>}
    
 
    
