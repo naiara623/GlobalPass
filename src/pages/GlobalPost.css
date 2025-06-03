@@ -1,0 +1,133 @@
+.body-globalpost{
+    background-color: #2D405A;
+    border: 4px solid rgb(51, 153, 83);
+    height: 300vh;
+}
+
+.navbar-globalpost{
+    border: 4px solid rebeccapurple;
+    background-color: #3B444F;
+    height: 3%;
+}
+
+.logo-globalpost{
+    border: 4px solid rebeccapurple;
+    width: 15%;
+    height: 100%;
+}
+
+.h2-da-logo-globalpost{
+font-size: 40px;
+
+}
+
+/* essa é a div que tem os dois butão dentro, o mais e o que tem a mensagem */
+.div-do-button-globalpost{
+    border: 4px solid rgb(225, 232, 227);
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* essa e a div que ingloba o butao que tem a mensagem */
+.div-do-butao-postagem-globalpost{
+    border: 4px solid rgb(136, 153, 51);
+    height: 30%;
+    width: 20%;
+}
+
+/* esse é o butao que tem o a mensagem */
+.butao-postagem-globalpost{
+     border: 4px solid rgb(9, 168, 192);
+    height: 100%;
+    width: 100%;
+    background-color: #545D69;
+}
+
+/* esse é o butao + */
+.butao-MAIS-globalpost{
+    border: 4px solid rgb(192, 61, 9);
+    height: 100%;
+    width: 100%;
+    background-color: #545D69;
+}
+
+/* essa é a div do butao + */
+.div-butao-MAIS-globalpost{
+border: 4px solid rgb(236, 41, 233);
+    height: 30%;
+    width: 5%;
+}
+
+.div-das-postagens-globalpost{
+    border: 4px solid rgb(21, 27, 205);
+    height: 87%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     padding-top: 3%;
+    }
+
+    .conteine-de-uma-postagem-globalpost{
+    border: 4px solid rgb(228, 231, 223);
+    height: 35%;
+    width: 40%;
+   
+    }
+
+    .containe-do-nome-foto-globalpost{
+        border: 4px solid rgb(83, 127, 7);
+        height: 10%;
+        width: 100%;
+    }
+
+    .conteine-DA-postagem-globalpost{
+        border: 4px solid rgb(245, 168, 34);
+        height: 80%;
+        width: 100%;
+    }
+
+    .conteine-icones-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 10%;
+        width: 100%;
+    }
+
+    .conteine-da-foto-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 100%;
+        width: 10%;
+    }
+
+    .conteine-do-nome-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 100%;
+        width: 40%;
+    }
+
+    .conteine-vazia-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 100%;
+        width: 50%;
+    }
+
+    .conteine-doicone-curtida-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 100%;
+        width: 10%;
+    }
+
+    .conteine-doicone-ccomentar-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 100%;
+        width: 10%;
+    }
+
+    .icone-conteine-vazia-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 100%;
+        width: 80%;
+
+    }

@@ -61,8 +61,6 @@ width: 70%;
 border: 4px solid rgb(234, 19, 170);
 height: 70%;
 width: 70%;
-background-color: rgb(205, 200, 200);
-
 }
 
 .menu-saude{
@@ -93,29 +91,25 @@ justify-content: center;
 align-items: center;
 }
 
-.vacinas-saude{
+
+
+
+/* .sus-saude{
  height: 20%;
  width: 30%;
  background-color: #607E98;
 }
 
-.vacinas2-saude{
+.sus2-saude{
 height: 100%;
  width: 100%;
 background-color: #607E98;
 border: 1px solid #607E98;
-}
-
-/* .ajuda-medica-saude{
-    
-}
-.farmacia-saude{
-    
 } */
 
 .design-png{
-height: 70%;
-width: 70%;
+height: 100%;
+width: 100%;
 }
 
 .google-maps{
@@ -127,5 +121,82 @@ width: 80%;
 .mapa{
 height: 100%;
 width: 100%;
-
 }
+
+
+
+
+.info-arruma{border: 1px solid black;
+    height: 90%;
+    width:  90%;
+
+    }
+    .p-trans{color: rgb(84, 143, 194);
+    font-size: 40px;
+    
+    }
+
+    
+    .info-button:hover {
+      background-color: var(--cor-1-escuro);
+    }
+    
+    .info-button.ativo {
+      background-color: var(--cor-1-claro);
+      color: var(--cor-fundo);
+      transform: scale(1.05);
+    }
+    
+    .info-box {
+      background-color: #e9e9e9;
+      border-radius: 10px;
+   height: 60%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      border-left: 10px solid var(--cor-2-escuro);
+    }
+    
+    .info-box h3 {
+      color: var(--cor-2-claro);
+     
+    }
+    
+    .info-box ul {
+      padding-left: 20px;
+    }
+    
+    .info-box li {
+      margin-bottom: 8px;
+    }
+    
+.botoes2-saude {
+      border: 4px solid rgb(3, 2, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    width: 80%;
+    height: 100%;
+      justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
