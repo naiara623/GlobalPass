@@ -8,6 +8,7 @@ import CadastroEscuro from "../pages/CadastroEscuro.jsx";
 import Perfil from "../pages/Perfil.jsx";
 import Educação from "../pages/Educação.jsx";
 import Navbar from "../components/Navbar.jsx";
+import GlobalPost from "../pages/GlobalPost.jsx";
 
 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     {path: "/educação", element: <Educação />},
     {path: "/navbar", element: <Navbar/>},
    {path: "/transporte", element: <Transporte/>},
-  
+  {path:"/postagem", element: <GlobalPost/>}
    
 
    
