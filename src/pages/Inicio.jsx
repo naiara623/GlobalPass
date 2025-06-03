@@ -11,79 +11,24 @@ function Inicio() {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
-    { id:'1',
-      conteudo: (
-<div className='div-imagens-fl'>
-  < img className='imagens-fl1' src="./fl-pedra.png" alt="" />
-</div>
-      ),
-    },
-
-    { id:'2',
-      conteudo: (
-        <div  className='div-imagens-fl'>
-          <img className='imagens-fl2' src="./fl-manha.png" alt="" />
-        </div>
-              ),
-    },
-    { id:'3',
-      conteudo: (
-        <div  className='div-imagens-fl'>
-          <img className='imagens-fl3' src="./fl-noite.png" alt="" />
-        </div>
-              ),
-    },
-    { id:'4', 
-      conteudo: (
-        <div  className='div-imagens-fl'>
-          <img className='imagens-fl4' src="./fl-porsol.png" alt="" />
-        </div>
-              ),
-    },
-    { id:'5', 
-      conteudo: (
-        <div  className='div-imagens-fl'>
-          <img className='imagens-fl5' src="./fl-museu.png" alt="" />
-        </div>
-              ),
-    },
-    { id:'6', 
-      conteudo: (
-        <div  className='div-imagens-fl'>
-          <img className='imagens-fl6' src="./fl-praia.png" alt="" />
-        </div>
-              ),
-    },
-    { id:'7', 
-      conteudo: (
-        <div  className='div-imagens-fl'>
-          <img className='imagens-fl7' src="./fl-igreja.png" alt="" />
-        </div>
-              ),
-    },
-    { id:'8', 
-      conteudo: (
-        <div  className='div-imagens-fl'>
-          <img className='imagens-fl8' src="./fl-dia.png" alt="" />
-        </div>
-              ),
-    },
-    { id:'9', 
-      conteudo: (
-        <div  className='div-imagens-fl'>
-          <img className='imagens-fl9' src="./fl-parque.png" alt="" />
-        </div>
-              ),
-    }
+    { id: '1', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-pedra.png" alt="" /></div> },
+    { id: '2', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-manha.png" alt="" /></div> },
+    { id: '3', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-noite.png" alt="" /></div> },
+    { id: '4', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-porsol.png" alt="" /></div> },
+    { id: '5', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-museu.png" alt="" /></div> },
+    { id: '6', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-praia.png" alt="" /></div> },
+    { id: '7', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-igreja.png" alt="" /></div> },
+    { id: '8', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-dia.png" alt="" /></div> },
+    { id: '9', conteudo: <div className='div-imagens-fl'><img className='imagens-fl' src="./fl-parque.png" alt="" /></div> }
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(prev => (prev + 1) % items.length);
-    }, 1500); // Roda a cada 1.5 segundos
+    }, 1500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [items.length]);
 
   const navigate = useNavigate()
 
@@ -133,7 +78,7 @@ function Inicio() {
 
   return (
     <div className='inicio-conteiner-inicio'>
-      <style>
+    <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
 
@@ -155,25 +100,35 @@ function Inicio() {
         
         <div className='inicio-imagens'>
           
-<div className="carrossel-horizontal-container">
-      <div className="carrossel-track">
+        <div className="carrossel-horizontal-container">
+      <div className="carrossel-track1">
         {items.map((item, index) => {
-          let position = (index - activeIndex + items.length) % items.length;
-          let scale = position === 0 ? 1.2 : 0.9;
-          let opacity = position === 0 ? 2 : 0.8;
+          // Cálculo ajustado para evitar o "choque" entre o primeiro e último item
+          let position = ((index - activeIndex + items.length) % items.length) - Math.floor(items.length / 2);
           
+          // Normaliza a posição para um carrossel infinito suave
+          if (position < -Math.floor(items.length / 2)) {
+            position += items.length;
+          } else if (position > Math.floor(items.length / 2)) {
+            position -= items.length;
+          }
+
+          // Ajuste de escala e opacidade baseado na posição
+          let scale = position === 0 ? 1.2 : 0.9;
+          let opacity = position === 0 ? 1 : 0.8;
+          let zIndex = items.length - Math.abs(position);
+
           return (
-            <div 
-              key={index}
-              className="carrossel-item"
+            <div
+              key={item.id}
+              className="carrossel-item1"
               style={{
-                transform: `translateX(${position * 110 - 10}%) scale(${scale})`,
-                backgroundColor: item.i,
+                transform: `translateX(${position * 100}%) scale(${scale})`,
                 opacity: opacity,
-                zIndex: items.length - position
+                zIndex: zIndex,
               }}
             >
-              <span className="math-value">{item.conteudo}</span>
+              <span className="math-value1">{item.conteudo}</span>
             </div>
           );
         })}
@@ -270,7 +225,14 @@ frutos do mar</p>
         </div>
         
         <div className='inicio-div-video'>
-       <iframe width="280px" height="500px" src="floripa-video.mp4" frameBorder="0" allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowFullScreen />
+     <video width="280px" height="500px" id="myVideo" controls>
+  <source src="floripa-video.mp4" type="video/mp4"/>
+</video>
+
+<script>
+  // Opcional: Forçar pausa inicial (redundante, pois já é o padrão)
+  document.getElementById('myVideo').pause();
+</script>
         </div>
       
       </div>
