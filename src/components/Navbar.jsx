@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
        <div className='inicio-navebar'>
-  <div class="inicio-shine">GLOBAL PASS</div>
+  <div className="inicio-shine">GLOBAL PASS</div>
   <div className='inicio-divisão'></div>
   <div className='inicio-div-modal'>
     <Modal/>
