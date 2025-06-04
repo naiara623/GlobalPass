@@ -1,189 +1,202 @@
-.body-globalpost{
-    background-color: #2D405A;
-    border: 4px solid rgb(51, 153, 83);
-    height: 300vh;
+
+.body-globalpost {
+  background-color: #2D405A;
+  min-height: 100vh;
+  color: white;
 }
 
-.navbar-globalpost{
-    border: 4px solid rebeccapurple;
-    background-color: #3B444F;
-    height: 3%;
-    display: flex;
+/* Navbar modernizada */
+.navbar-globalpost {
+  background-color: #3B444F;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.logo-globalpost{
-    border: 4px solid rebeccapurple;
-    width: 15%;
-    height: 100%;
+.logo-globalpost {
+  width: 15%;
+  display: flex;
+  align-items: center;
 }
 
-.h2-da-logo-globalpost{
-font-size: 40px;
-
+.h2-da-logo-globalpost {
+  font-size: 24px;
+  font-weight: 700;
+  color: #51a37f;
+  margin: 0;
 }
 
-.conteine-vazio-navbar{
-   border: 4px solid rgb(195, 177, 212);
-    width: 80%;
-    height: 100%;
-
+.conteine-vazio-navbar {
+  flex-grow: 1;
 }
 
-.conteine-icoUser-navnar-globalpost{
-    border: 4px solid rgb(199, 236, 10);
-    width: 5%;
-    height: 100%;
+.conteine-icoUser-navnar-globalpost {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #51a37f;
 }
 
-.icoUser-navnar-globalpos{
-    width: 100%;
-
+.icoUser-navnar-globalpos {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* essa é a div que tem os dois butão dentro, o mais e o que tem a mensagem */
-.div-do-button-globalpost{
-    border: 4px solid rgb(225, 232, 227);
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+/* Área de criação de post */
+.div-do-button-globalpost {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-/* essa e a div que ingloba o butao que tem a mensagem */
-.div-do-butao-postagem-globalpost{
-    border: 4px solid rgb(136, 153, 51);
-    height: 30%;
-    width: 20%;
+.div-do-butao-postagem-globalpost {
+  height: 40px;
+  width: 220px;
 }
 
-/* esse é o butao que tem o a mensagem */
-.butao-postagem-globalpost{
-     border: 4px solid rgb(9, 168, 192);
-    height: 100%;
-    width: 100%;
-    background-color: #545D69;
+.butao-postagem-globalpost {
+  height: 100%;
+  width: 100%;
+  background-color: #51a37f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-/* esse é o butao + */
-.butao-MAIS-globalpost{
-    border: 4px solid rgb(192, 61, 9);
-    height: 100%;
-    width: 100%;
-    background-color: #545D69;
+.butao-postagem-globalpost:hover {
+  background-color: #3d7a5f;
+  transform: translateY(-2px);
 }
 
-/* essa é a div do butao + */
-.div-butao-MAIS-globalpost{
-border: 4px solid rgb(236, 41, 233);
-    height: 30%;
-    width: 5%;
+.div-butao-MAIS-globalpost {
+  height: 40px;
+  width: 40px;
 }
 
-.div-das-postagens-globalpost{
-    border: 4px solid rgb(21, 27, 205);
-    height: 87%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-     padding-top: 3%;
-    }
+.butao-MAIS-globalpost {
+  height: 100%;
+  width: 100%;
+  background-color: #51a37f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
-    .conteine-de-uma-postagem-globalpost{
-    border: 4px solid rgb(228, 231, 223);
-    height: 35%;
-    width: 40%;
-   
-    }
+.butao-MAIS-globalpost:hover {
+  background-color: #3d7a5f;
+  transform: scale(1.1);
+}
 
-    .containe-do-nome-foto-globalpost{
-        border: 4px solid rgb(127, 7, 7);
-        height: 12%;
-        width: 100%;
-        display: flex;
-    }
+/* Feed de postagens */
+.div-das-postagens-globalpost {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
 
-    .conteine-DA-postagem-globalpost{
-        border: 4px solid rgb(182, 119, 11);
-        height: 77%;
-        width: 100%;
-        background-color: #D9D9D9;
-    }
+.conteine-de-uma-postagem-globalpost {
+  background-color: #3B444F;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .conteine-icones-globalpost{
-        border: 4px solid rgb(165, 123, 24);
-        height: 11%;
-        width: 100%;
-        display: flex;
-    }
+.containe-do-nome-foto-globalpost {
+  height: 60px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
 
-    .conteine-da-foto-globalpost{
-        border: 4px solid rgb(22, 30, 9);
-        height: 100%;
-        width: 15%;
-        display: flex;
-        justify-content: center;
-    }
+.conteine-da-foto-globalpost {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
 
-    .conteine-do-nome-globalpost{
-        border: 4px solid rgb(22, 30, 9);
-        height: 100%;
-        width: 40%;
-       padding-top: 3%;
-    }
+.icone-usuario-globalpost {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .conteine-vazia-globalpost{
-        border: 4px solid rgb(2, 249, 134);
-        height: 100%;
-        width: 36%;
-    }
+.conteine-do-nome-globalpost {
+  flex-grow: 1;
+}
 
-    .conteine-tresPontos-globalpost{
-         border: 4px solid rgb(2, 249, 134);
-        height: 100%;
-        width: 9%;
-       
-    }
+.nome-teste-globalpost {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
 
-    .icone-menu-trespont{
-        width:  60%;
-        padding-top: 40%;
-       
-    }
+.conteine-tresPontos-globalpost {
+  width: 24px;
+  cursor: pointer;
+}
 
-    .conteine-doicone-curtida-globalpost{
-        border: 4px solid rgb(107, 151, 35);
-        height: 100%;
-        width: 12%;
-    }
+.conteine-DA-postagem-globalpost {
+  height: 0;
+  padding-bottom: 100%; /* Quadrado */
+  position: relative;
+}
 
-    .conteine-doicone-comentar-globalpost{
-        border: 4px solid rgb(39, 59, 177);
-        height: 100%;
-        width: 12%;
-    }
+.conteine-DA-postagem-globalpost img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .icone-conteine-vazia-globalpost{
-        border: 4px solid rgb(202, 72, 167);
-        height: 100%;
-        width: 76%;
-    }
+.caption-container {
+  padding: 12px 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  border-bottom: 1px solid #4a5563;
+}
 
-    .icone-usuario-globalpost{
-    width: 140%;
-    }
-    
-    .nome-teste-globalpost{
-        font-size: 22px;
-        color: aliceblue;
-    }
+.conteine-icones-globalpost {
+  height: 50px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
 
-    .icone-curtida{
-        width:  70%;
+.conteine-doicone-curtida-globalpost,
+.conteine-doicone-comentar-globalpost {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
 
-    }
+.conteine-doicone-curtida-globalpost span {
+  margin-left: 5px;
+  font-size: 14px;
+}
 
-    .icone-coment{
-          width:  70%;
-          padding-top: 3%;
-    }
+.no-posts-message {
+  text-align: center;
+  padding: 50px;
+  color: #a1a1a1;
+  font-size: 16px;
+}

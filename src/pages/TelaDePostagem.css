@@ -1,67 +1,142 @@
-.div-q-inglobaTudo-TLPostagem{
-  border: 4px solid blue;
-  height: 100vh;  
-  background-color:  #2D405A;  
+.div-q-inglobaTudo-TLPostagem {
+  background-color: #2D405A;
+  min-height: 100vh;
+  color: white;
 }
 
-.din-navbar-TLPostagem{
-  border: 4px solid rgb(255, 106, 0);
-  height: 9%;  
+.din-navbar-TLPostagem {
+  height: 70px;
   background-color: #3B444F;
-}
-
-.div-arrow-TLPostagem{
-  border: 4px solid rgb(255, 106, 0);
-  height: 60px;
-  width: 5%;  
-  background-color: #3B444F;
-}
-
-.ingloba-post-text-butão-TLpostagem{
-  border: 4px solid rgb(4, 0, 255);
-  width: 100%;
-  height: 91%;  
-}
-
-.div-Q-ingloba-conteDa-post{
-  border: 4px solid rgb(0, 255, 115);
-  height: 60%;
-  width: 100%;
   display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.div-vazia-TLpostagem{
- border: 4px solid rgb(255, 0, 85);
-  height: 100%;
-  width: 30%;
+.div-arrow-TLPostagem {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
 }
 
-.conteine-DaPostagem-TLpostagem{
-  border: 4px solid rgb(17, 17, 8);
-  height: 100%;
-  width: 40%;
+.div-arrow-TLPostagem:hover {
+  background-color: #4a5563;
 }
 
-.div-2vazia-TLpostagem{
-    border: 4px solid rgb(255, 0, 85);
-  height: 100%;
-  width: 30%;
+.arrow-TLpostagem {
+  width: 60%;
+  filter: invert(1);
 }
 
-.div-Q-ingloba-conteDa-legenButton{
-border: 4px solid rgb(0, 187, 255);
-  height: 40%;
+.ingloba-post-text-butão-TLpostagem {
+  padding: 20px;
+}
+
+.div-Q-ingloba-conteDa-post {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.conteine-DaPostagem-TLpostagem {
   width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  background-color: #3B444F;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.conteine-dalegenda-TLpostagem{
-    border: 4px solid rgb(0, 187, 255);
-  height: 40%;
-  width: 100%;
+.conteine-DaPostagem-TLpostagem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.conteine-butao{
- border: 4px solid rgb(245, 249, 250);
-  height: 60%;
+.conteine-DaPostagem-TLpostagem img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteine-DaPostagem-TLpostagem::before {
+  content: "Clique para adicionar uma imagem";
+  position: absolute;
+  color: #a1a1a1;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.conteine-DaPostagem-TLpostagem.has-image::before {
+  display: none;
+}
+
+.div-Q-ingloba-conteDa-legenButton {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.conteine-dalegenda-TLpostagem {
+  margin-bottom: 20px;
+}
+
+.conteine-DA-legenda {
+  flex-grow: 1;
+}
+
+.input-legenda {
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #51a37f;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-legenda::placeholder {
+  color: #a1a1a1;
+  font-size: 16px;
+}
+
+.conteine-butao {
+  display: flex;
+  justify-content: center;
+}
+
+.Butao-postar-TLpostagem {
+  background-color: #51a37f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.Butao-postar-TLpostagem:hover {
+  background-color: #3d7a5f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Butao-postar-TLpostagem:disabled {
+  background-color: #4a5563;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
