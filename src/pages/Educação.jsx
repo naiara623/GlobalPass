@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Educação.css'
-import "@splidejs/react-splide/css";
 import GraduationCapIMG from '../assets/GraduationCapIMG.png'
 import ABC from '../assets/ABC.png'
 import ensino from '../assets/ensino.png'
 import Books from '../assets/Books.png'
 import Navbar from '../components/Navbar';
-import { div } from 'framer-motion/client';
 import CarrosselEducacao from '../components/CarrosselEducacao';
 
 
