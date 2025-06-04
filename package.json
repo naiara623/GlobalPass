@@ -17,6 +17,7 @@
     "bootstrap": "^5.3.6",
     "class-variance-authority": "^0.7.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "framer-motion": "^12.10.4",
     "jsonwebtoken": "^9.0.2",

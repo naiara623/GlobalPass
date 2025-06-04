@@ -36,6 +36,14 @@ function Inicio() {
     navigate('/transporte');
   }
 
+  const telaEduca = () =>{
+    navigate('/educação');
+  }
+
+  const telaSal = () =>{
+    navigate('/saude');
+  }
+
 
   const [novoComentario, setNovoComentario] = useState("");
   const [respondendoPara, setRespondendoPara] = useState(null);
@@ -157,11 +165,11 @@ function Inicio() {
           </button>
 
           
-          <button className='inicio-estudo-icon'>
+          <button className='inicio-estudo-icon'  onClick={telaEduca}>
           <img className='icon-inicio' src="school.png" alt="Tela de educação" />
           </button>
           
-          <button className='inicio-saude-icon'>
+          <button className='inicio-saude-icon'  onClick={telaSal}>
           <img className='icon-inicio' src="saude.png" alt="Tela de saude" />
           </button>
 </div>
