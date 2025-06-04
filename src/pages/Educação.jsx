@@ -7,6 +7,7 @@ import ensino from '../assets/ensino.png'
 import Books from '../assets/Books.png'
 import Navbar from '../components/Navbar';
 import { div } from 'framer-motion/client';
+import CarrosselEducacao from '../components/CarrosselEducacao';
 
 
 function Educação() {
@@ -53,7 +54,7 @@ const ExpandableSection = ({ title, children }) => {
                   <h3 className='tituloFundamental-educação'>Ensino Fundamental</h3>
 
                   <p className='pInformativo-educação'>O Ensino Fundamental é uma etapa obrigatoria da educação basica no brasil, destinada a crianças de 6 a 14 anos, com duração de 9 anos</p>
-                      <ExpandableSection title="1. Estrutura">
+                      <ExpandableSection title="1. Duração">
                         <ul>
                           <li><h4>Anos Inicias</h4> 1º ao 5º ano</li>
                           <li><h4>Anos Final</h4> 6º ao 9º ano</li>
@@ -84,9 +85,9 @@ const ExpandableSection = ({ title, children }) => {
 
                   <p className='pInformativo-educação'>Última etapa da educação básica, geralmente dos 15 aos 17 anos.
                            Tem duração de 3 anos e aprofunda os conhecimentos do Ensino Fundamental.</p>
-                      <ExpandableSection title="1. Estrutura">
+                      <ExpandableSection title="1. Duração">
                         <ul>
-                          <li><h4>Duração</h4>3 anos (1º, 2º e 3º anos)</li>
+                          <li>3 anos (1º, 2º e 3º anos)</li>
                         </ul>
                       </ExpandableSection>
 
@@ -109,25 +110,29 @@ const ExpandableSection = ({ title, children }) => {
             conteudo: (
               <div className='info-arruma'>
                 <div className='scrollable-container'>
-                  <h3 className='tituloFundamental-educação'>Ensino Fundamental</h3>
+                  <h3 className='tituloFundamental-educação'>Cursos</h3>
 
-                  <p className='pInformativo-educação'>O Ensino Fundamental é uma etapa obrigatoria da educação basica no brasil, destinada a crianças de 6 a 14 anos, com duração de 9 anos</p>
-                      <ExpandableSection title="1. Estrutura">
+                  <p className='pInformativo-educação'>Os cursos são formações específicas que complementam a educação ou preparam para o mercado de trabalho. Podem ser feitos após ou durante o Ensino Médio.</p>
+                      <ExpandableSection title="1. Duração">
                         <ul>
-                          <li><h4>Anos Inicias</h4> 1º ao 5º ano</li>
-                          <li><h4>Anos Final</h4> 6º ao 9º ano</li>
+                          <li>Meses a 2 anos</li>
                         </ul>
                       </ExpandableSection>
 
-                      <ExpandableSection title="2. Materias">
+                      <ExpandableSection title="2.Tipos de cursos">
                         <ul>
-                          <li><h4>Anos Inicias</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física e Ingles (em algumas escolas)</li>
-                          <li><h4>Anos Final</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física, Ingles e Ensino Religioso (em algumas escolas)</li>
+                          <li><h4>Técnico:</h4>Focado em formação prática para atuar em áreas específicas, geralmente de curta duração (de meses a 2 anos).</li>
+                          <li><h4>Livre:</h4> Cursos sem regulamentação formal, voltados para aprendizado rápido em temas variados.</li>
+                          <li><h4>Graduação:</h4>Ensino superior que confere diploma de bacharelado, licenciatura ou tecnólogo, com duração média de 2 a 6 anos</li>
+                          <li><h4>Pós-Graduação:</h4>Formação após a graduação, subdividida em lato sensu (especialização, MBA) e stricto sensu (mestrado e doutorado).</li>
+                          <li><h4>Online (EAD):</h4>Qualquer curso oferecido pela internet, pode ser técnico, graduação ou livre, com flexibilidade de horários..</li>
+                          <li><h4> Extensão:</h4> Cursos rápidos e focados em atualização ou aprofundamento em temas específicos, voltados para profissionais ou estudantes.</li>
+
                         </ul>
                       </ExpandableSection>
 
                       <h3>Objetivos</h3>
-                      <p>Promover a alfabetização, o pensamento critico, e a preparação para o ensino médio, alem do desenvolvimento da cidadania</p>
+                      <p>O objetivo dos cursos é capacitar e formar indivíduos, desenvolvendo habilidades e conhecimentos específicos para atuação profissional, aperfeiçoamento pessoal ou continuidade dos estudos. Eles visam preparar o estudante para o mercado de trabalho, promover o desenvolvimento social e estimular a inovação e o pensamento crítico.</p>
                 </div>
                 </div>
             )
@@ -139,25 +144,28 @@ const ExpandableSection = ({ title, children }) => {
           conteudo: (
             <div className='info-arruma'>
                 <div className='scrollable-container'>
-                  <h3 className='tituloFundamental-educação'>Ensino Fundamental</h3>
+                  <h3 className='tituloFundamental-educação'>Faculdade</h3>
 
-                  <p className='pInformativo-educação'>O Ensino Fundamental é uma etapa obrigatoria da educação basica no brasil, destinada a crianças de 6 a 14 anos, com duração de 9 anos</p>
-                      <ExpandableSection title="1. Estrutura">
+                  <p className='pInformativo-educação'>Faculdade é uma instituição de ensino superior que oferece cursos voltados à formação profissional e acadêmica, conferindo diplomas de graduação, como bacharelado, licenciatura ou tecnólogo.</p>
+                      <ExpandableSection title="1. Duração">
                         <ul>
-                          <li><h4>Anos Inicias</h4> 1º ao 5º ano</li>
-                          <li><h4>Anos Final</h4> 6º ao 9º ano</li>
+                          <li><h4>Tecnólogo:</h4>2 a 3 anos.</li>
+                          <li><h4>Bacharelado:</h4>4 a 6 anos.</li>
+                           <li><h4>Licenciatura:</h4>3 a 4 anos.</li>
                         </ul>
                       </ExpandableSection>
 
-                      <ExpandableSection title="2. Materias">
+                      <ExpandableSection title="2. Tipos de faculdades">
                         <ul>
-                          <li><h4>Anos Inicias</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física e Ingles (em algumas escolas)</li>
-                          <li><h4>Anos Final</h4> Portugues, Matemática, Ciências, Histórias, Geografia, Artes, Educação Física, Ingles e Ensino Religioso (em algumas escolas)</li>
+                          <li><h4>Bacharelado:</h4>formação generalista e ampla, prepara para diversas áreas de atuação.</li>
+                          <li><h4>Licenciatura:</h4>prepara para ser professor na educação básica.</li>
+                           <li><h4>Tecnólogo:</h4>formação mais rápida e prática, focada em necessidades específicas do mercado.</li>
+                            <li><h4>Sequencial:</h4>cursos rápidos, de complementação ou atualização profissional.</li>
                         </ul>
                       </ExpandableSection>
 
                       <h3>Objetivos</h3>
-                      <p>Promover a alfabetização, o pensamento critico, e a preparação para o ensino médio, alem do desenvolvimento da cidadania</p>
+                      <p>A faculdade tem como objetivo principal formar profissionais qualificados para atuar no mercado de trabalho, desenvolvendo habilidades técnicas e teóricas específicas de cada área. Além disso, busca estimular a pesquisa e a inovação, contribuindo para o avanço do conhecimento. Também promove o pensamento crítico e a cidadania, preparando os estudantes para participarem ativamente da sociedade.</p>
                 </div>
                 </div>
           )
@@ -213,7 +221,7 @@ const ExpandableSection = ({ title, children }) => {
 
          <div className='AzulEscuro-educação'>
             <div className='Cinza-educação'>
-
+<CarrosselEducacao  />
             </div>
          </div>
 
@@ -228,7 +236,7 @@ const ExpandableSection = ({ title, children }) => {
                         onClick={() => setInfoAtiva(botao.id)}
                     >
                         <img src={botao.imagem} alt={botao.label} className="botao-imagem" />
-                        <span>{botao.label}</span>
+                        <span className='span-oi'>{botao.label}</span>
                     </button>
                 ))}
 

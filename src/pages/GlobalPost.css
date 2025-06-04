@@ -1,0 +1,189 @@
+.body-globalpost{
+    background-color: #2D405A;
+    border: 4px solid rgb(51, 153, 83);
+    height: 300vh;
+}
+
+.navbar-globalpost{
+    border: 4px solid rebeccapurple;
+    background-color: #3B444F;
+    height: 3%;
+    display: flex;
+}
+
+.logo-globalpost{
+    border: 4px solid rebeccapurple;
+    width: 15%;
+    height: 100%;
+}
+
+.h2-da-logo-globalpost{
+font-size: 40px;
+
+}
+
+.conteine-vazio-navbar{
+   border: 4px solid rgb(195, 177, 212);
+    width: 80%;
+    height: 100%;
+
+}
+
+.conteine-icoUser-navnar-globalpost{
+    border: 4px solid rgb(199, 236, 10);
+    width: 5%;
+    height: 100%;
+}
+
+.icoUser-navnar-globalpos{
+    width: 100%;
+
+}
+
+/* essa é a div que tem os dois butão dentro, o mais e o que tem a mensagem */
+.div-do-button-globalpost{
+    border: 4px solid rgb(225, 232, 227);
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* essa e a div que ingloba o butao que tem a mensagem */
+.div-do-butao-postagem-globalpost{
+    border: 4px solid rgb(136, 153, 51);
+    height: 30%;
+    width: 20%;
+}
+
+/* esse é o butao que tem o a mensagem */
+.butao-postagem-globalpost{
+     border: 4px solid rgb(9, 168, 192);
+    height: 100%;
+    width: 100%;
+    background-color: #545D69;
+}
+
+/* esse é o butao + */
+.butao-MAIS-globalpost{
+    border: 4px solid rgb(192, 61, 9);
+    height: 100%;
+    width: 100%;
+    background-color: #545D69;
+}
+
+/* essa é a div do butao + */
+.div-butao-MAIS-globalpost{
+border: 4px solid rgb(236, 41, 233);
+    height: 30%;
+    width: 5%;
+}
+
+.div-das-postagens-globalpost{
+    border: 4px solid rgb(21, 27, 205);
+    height: 87%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     padding-top: 3%;
+    }
+
+    .conteine-de-uma-postagem-globalpost{
+    border: 4px solid rgb(228, 231, 223);
+    height: 35%;
+    width: 40%;
+   
+    }
+
+    .containe-do-nome-foto-globalpost{
+        border: 4px solid rgb(127, 7, 7);
+        height: 12%;
+        width: 100%;
+        display: flex;
+    }
+
+    .conteine-DA-postagem-globalpost{
+        border: 4px solid rgb(182, 119, 11);
+        height: 77%;
+        width: 100%;
+        background-color: #D9D9D9;
+    }
+
+    .conteine-icones-globalpost{
+        border: 4px solid rgb(165, 123, 24);
+        height: 11%;
+        width: 100%;
+        display: flex;
+    }
+
+    .conteine-da-foto-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 100%;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteine-do-nome-globalpost{
+        border: 4px solid rgb(22, 30, 9);
+        height: 100%;
+        width: 40%;
+       padding-top: 3%;
+    }
+
+    .conteine-vazia-globalpost{
+        border: 4px solid rgb(2, 249, 134);
+        height: 100%;
+        width: 36%;
+    }
+
+    .conteine-tresPontos-globalpost{
+         border: 4px solid rgb(2, 249, 134);
+        height: 100%;
+        width: 9%;
+       
+    }
+
+    .icone-menu-trespont{
+        width:  60%;
+        padding-top: 40%;
+       
+    }
+
+    .conteine-doicone-curtida-globalpost{
+        border: 4px solid rgb(107, 151, 35);
+        height: 100%;
+        width: 12%;
+    }
+
+    .conteine-doicone-comentar-globalpost{
+        border: 4px solid rgb(39, 59, 177);
+        height: 100%;
+        width: 12%;
+    }
+
+    .icone-conteine-vazia-globalpost{
+        border: 4px solid rgb(202, 72, 167);
+        height: 100%;
+        width: 76%;
+    }
+
+    .icone-usuario-globalpost{
+    width: 140%;
+    }
+    
+    .nome-teste-globalpost{
+        font-size: 22px;
+        color: aliceblue;
+    }
+
+    .icone-curtida{
+        width:  70%;
+
+    }
+
+    .icone-coment{
+          width:  70%;
+          padding-top: 3%;
+    }

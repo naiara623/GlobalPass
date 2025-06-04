@@ -1,6 +1,7 @@
 .Amarelo-educação{
      /* border: 4px solid yellow;  */
     height: 330vh;
+    background-color: #EAEAEA;
 }
 
 .Vermelho-educação{
@@ -15,6 +16,10 @@
     height: 100%;
     width: 5%;
 }
+
+/* .info-arruma{
+    background-color: var(--cor-2-escuro);
+} */
 
 .Rosa-educação{
     /* border: 4px solid pink; */
@@ -112,6 +117,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.span-oi{
+    color: white;
+    font-size: 20px;
 }
 
 .sla2-educação{
@@ -322,3 +332,118 @@ color: white;
     width: 90%
 
 }
+
+.botao-imagem{
+    /* border: 2px solid red; */
+    width: 60%;
+    height: 70%;
+    display: flex;
+    position: relative;
+    left: 20%;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.curso1-educação{
+    color: white;
+    font-size: 17px;
+}
+
+.curso2-educação{
+    color: white;
+    font-size: 17px;
+}
+
+.curso3-educação{
+    color: white;
+    font-size: 17px;
+}
+
+.tecnico-educação{
+    border: 2px solid red;
+    height: 30%;
+    width: 100%;
+}
+
+.info-box-educacao{
+   background-color: #e9e9e9;
+      border-radius: 10px;
+   height: 60%;
+  width: 70%;
+
+      border-left: 10px solid var(--cor-2-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info-arruma{
+     height: 90%;
+    width:  100%;
+ border: 1px solid black;
+
+}
+
+.scrollable-container {
+  height: 100%; /* ou qualquer altura fixa ou max-height */
+  overflow-y: auto; /* scroll vertical quando necessário */
+  border: 1px solid var(--cor-1-escuro); /* opcional, para visualização */
+  padding: 50px;
+}
+
+
+
+.scrollable-container {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Estilizando a scrollbar */
+.scrollable-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: var(--cor-1-claro);
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background:var(--cor-2-claro);
+  border-radius: 5px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-2-claro);
+}
+.tituloFundamental-educação{
+color: var(--cor-2-claro);
+font-size: 25px;
+}
+
+.pInformativo-educação{
+    color: black;
+}
+
+.info-box-educacao h3 {
+      color: var(--cor-2-claro);
+     
+    }
+
+     .info-box-educacao li {
+      margin-bottom: 8px;
+    }
+
+    .info-box-educacao h3 {
+      color: var(--cor-2-claro);
+     
+    }
+    
+   .info-box-educacao ul {
+      padding-left: 20px;
+    }
+    
+   .info-box-educacao li {
+      margin-bottom: 8px;
+    }

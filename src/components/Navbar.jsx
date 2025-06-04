@@ -1,4 +1,3 @@
-
 import Modal from '../components/Modal';
 import './Navbar.css'
 
