@@ -11,10 +11,16 @@ function Saude() {
   const [indiceAtual, setIndiceAtual] = useState(0);
 
   const imagens = [
-    'imagem1.png',
-    'imagem2.png',
-    'imagem3.png'
+   
   ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndiceAtual((prev) => (prev + 1) % imagens.length);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [imagens.length]);
 
   const vaiParaSlide = (index) => {
     setIndiceAtual(index);
@@ -23,6 +29,11 @@ function Saude() {
   const ExpandableSection = ({ title, children }) => {
           const [isExpanded, setIsExpanded] = useState(false);
         
+  // Função para debug - verifique no console do navegador
+  console.log('Caminhos das imagens:', 
+    imagens.map(img => `/images/carrossel/${img}`));
+
+
           return (
             <div className="expandable-section">
               <div 
@@ -135,34 +146,34 @@ function Saude() {
 
             <div className="conteine-propagandas-saude">
                 <div className="marrom-propaganda-saude">
-                                    <div className="carrossel-container">
-                        <div className="carrossel-track" 
-                            style={{ transform: `translateX(-${indiceAtual * 100}%)` }}>
-                          {imagens.map((imagem, index) => (
-                            <div className="slide" key={index}>
-                              <img 
-                                src={`/images/carrossel/${imagem}`} 
-                                alt={`Slide ${index + 1}`}
-                                onError={(e) => {
-                                  console.error('Erro ao carregar imagem:', e.target.src);
-                                  e.target.style.display = 'none';
-                                }}
-                              />
-                            </div>
-                          ))}
-                        </div>
-                        
-                        <div className="indicadores">
-                          {imagens.map((_, index) => (
-                            <button
-                              key={index}
-                              className={`indicador ${index === indiceAtual ? 'ativo' : ''}`}
-                              onClick={() => vaiParaSlide(index)}
-                              aria-label={`Ir para slide ${index + 1}`}
-                            />
-                          ))}
-                        </div>
-                 </div>
+                <div className="carrossel-container">
+      <div className="carrossel-track" 
+           style={{ transform: `translateX(-${indiceAtual * 100}%)` }}>
+        {imagens.map((imagem, index) => (
+          <div className="slide" key={index}>
+            <img 
+              src={`/images/carrossel/${imagem}`} 
+              alt={`Slide ${index + 1}`}
+              onError={(e) => {
+                console.error('Erro ao carregar imagem:', e.target.src);
+                e.target.style.display = 'none';
+              }}
+            />
+          </div>
+        ))}
+      </div>
+      
+      <div className="indicadores">
+        {imagens.map((_, index) => (
+          <button
+            key={index}
+            className={`indicador ${index === indiceAtual ? 'ativo' : ''}`}
+            onClick={() => vaiParaSlide(index)}
+            aria-label={`Ir para slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
 
                 </div>
             </div>
