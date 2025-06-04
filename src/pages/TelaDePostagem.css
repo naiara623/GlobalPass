@@ -1,0 +1,67 @@
+.div-q-inglobaTudo-TLPostagem{
+  border: 4px solid blue;
+  height: 100vh;  
+  background-color:  #2D405A;  
+}
+
+.din-navbar-TLPostagem{
+  border: 4px solid rgb(255, 106, 0);
+  height: 9%;  
+  background-color: #3B444F;
+}
+
+.div-arrow-TLPostagem{
+  border: 4px solid rgb(255, 106, 0);
+  height: 60px;
+  width: 5%;  
+  background-color: #3B444F;
+}
+
+.ingloba-post-text-butão-TLpostagem{
+  border: 4px solid rgb(4, 0, 255);
+  width: 100%;
+  height: 91%;  
+}
+
+.div-Q-ingloba-conteDa-post{
+  border: 4px solid rgb(0, 255, 115);
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+
+.div-vazia-TLpostagem{
+ border: 4px solid rgb(255, 0, 85);
+  height: 100%;
+  width: 30%;
+}
+
+.conteine-DaPostagem-TLpostagem{
+  border: 4px solid rgb(17, 17, 8);
+  height: 100%;
+  width: 40%;
+}
+
+.div-2vazia-TLpostagem{
+    border: 4px solid rgb(255, 0, 85);
+  height: 100%;
+  width: 30%;
+}
+
+.div-Q-ingloba-conteDa-legenButton{
+border: 4px solid rgb(0, 187, 255);
+  height: 40%;
+  width: 100%;
+}
+
+.conteine-dalegenda-TLpostagem{
+    border: 4px solid rgb(0, 187, 255);
+  height: 40%;
+  width: 100%;
+}
+
+.conteine-butao{
+ border: 4px solid rgb(245, 249, 250);
+  height: 60%;
+  width: 100%;
+}
