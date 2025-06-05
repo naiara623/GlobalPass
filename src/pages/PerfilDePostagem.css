@@ -1,0 +1,147 @@
+/* PerfilDePostagem.css */
+
+.div-q-inglobaTudo-PerfPostagem {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #2D405A; /* Nova cor de fundo */
+  min-height: 100vh;
+  color: white; /* Cor do texto alterada para contrastar com o fundo escuro */
+  padding: 20px;
+}
+
+.Navbar-PerfPostagem {
+     /* border: 5px solid; */
+  height: 60px;
+  background-color: #2D405A;
+  border-bottom: 1px solid #3a4f6d;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.arrow-PerfPostagem{
+    width: 5%;
+}
+
+.Conteine-foto-nomeUser-PerfPostagem {
+  background-color: #3a4f6d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  height: 250%;
+}
+
+.conteine-da-fotoPerfil-PerfPostagem {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.fotoPerfil-PerfPostagem {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #4e6b94;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 3px solid #5d7cab;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.fotoPerfil-PerfPostagem:hover {
+  transform: scale(1.05);
+}
+
+.fotoPerfil-PerfPostagem span {
+  font-size: 40px;
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+.n°-seguidores-seguindo-PerfPostagem {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 0 15px;
+}
+
+.stat-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 20px;
+  color: #f0f2f5;
+}
+
+.texto-dos-numeros-PerfPostagem {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.texto-dos-numeros-PerfPostagem h2 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.texto-dos-numeros-PerfPostagem p {
+  margin: 0;
+  color: #b8c6d8;
+  font-size: 14px;
+}
+
+.conteine-da-postagens-PerfPostagem {
+  background-color: #3a4f6d;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.conteine-texto-publicaçoes-PerfPostagem {
+  padding: 15px;
+  border-bottom: 1px solid #4a607d;
+}
+
+.conteine-texto-publicaçoes-PerfPostagem h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.conteine-das-publicaçoes {
+  padding: 20px;
+  text-align: center;
+  color: #b8c6d8;
+}
+
+/* Estilos para o input de arquivo escondido */
+input[type="file"] {
+  display: none;
+}
+
+/* Melhorias de contraste e hover */
+.stat-item:hover .stat-number {
+  color: #5dafff;
+}
+
+/* Ajustes para garantir que o fundo ocupe toda a tela */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #2D405A;
+}
